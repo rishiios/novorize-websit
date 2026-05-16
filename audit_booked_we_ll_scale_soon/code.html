@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#7a38bf",
+                    "on-secondary-container": "#00686f",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#7df4ff",
+                    "inverse-surface": "#e2e2ea",
+                    "on-primary": "#480082",
+                    "background": "#111319",
+                    "tertiary-fixed-dim": "#7fdd55",
+                    "secondary-fixed-dim": "#00dbe9",
+                    "tertiary-container": "#246a00",
+                    "on-surface": "#e2e2ea",
+                    "inverse-on-surface": "#2e3036",
+                    "error-container": "#93000a",
+                    "surface-bright": "#37393f",
+                    "on-tertiary-fixed": "#062100",
+                    "surface-container-lowest": "#0c0e13",
+                    "surface-container-high": "#282a30",
+                    "on-primary-fixed-variant": "#631ba8",
+                    "secondary-container": "#00eefc",
+                    "on-surface-variant": "#cec2d5",
+                    "on-secondary-fixed-variant": "#004f54",
+                    "primary-fixed": "#efdbff",
+                    "surface": "#111319",
+                    "on-primary-fixed": "#2b0052",
+                    "on-secondary": "#00363a",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed-dim": "#dbb8ff",
+                    "on-primary-container": "#e6cbff",
+                    "primary": "#dbb8ff",
+                    "outline": "#978d9e",
+                    "surface-variant": "#33353b",
+                    "surface-tint": "#dbb8ff",
+                    "inverse-primary": "#7c3bc1",
+                    "surface-container-highest": "#33353b",
+                    "surface-dim": "#111319",
+                    "surface-container-low": "#191b21",
+                    "on-tertiary": "#0f3900",
+                    "on-secondary-fixed": "#002022",
+                    "tertiary": "#7fdd55",
+                    "on-tertiary-container": "#8dec62",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#9afa6e",
+                    "on-background": "#e2e2ea",
+                    "secondary": "#d3fbff",
+                    "outline-variant": "#4c4453",
+                    "on-tertiary-fixed-variant": "#1a5200",
+                    "surface-container": "#1d1f25"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "48px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(238, 238, 246, 0.1);
+        }
+        .glow-violet {
+            box-shadow: 0 0 30px 2px rgba(122, 56, 191, 0.15);
+        }
+        .inner-glow {
+            border-top: 1px solid rgba(238, 238, 246, 0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #dbb8ff 0%, #7df4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-white">
+<!-- Header Suppression: TopNavBar removed due to "Transactional/Success" Page Rule -->
+<main class="min-h-screen pt-20 pb-12 flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Ambient Background Lights -->
+<div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary-container/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-secondary-container/10 blur-[120px] rounded-full"></div>
+<!-- Success Hero Section -->
+<section class="max-w-container-max px-margin-mobile md:px-margin-desktop w-full text-center mb-16 z-10">
+<div class="mb-8 inline-flex items-center justify-center p-4 rounded-full bg-primary-container/10 border border-primary-container/20 animate-pulse">
+<span class="material-symbols-outlined text-primary text-[48px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="font-display-lg text-[48px] md:text-display-lg mb-4 text-on-surface">
+                Audit Booked. <span class="gradient-text">Let's Scale.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                One of our growth architects will reach out within 2 hours. Get ready to transform your performance marketing into a high-yield revenue engine.
+            </p>
+</section>
+<!-- Preparation Steps - Bento Grid Style -->
+<section class="max-w-container-max px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-3 gap-gutter z-10">
+<!-- Step 1 -->
+<div class="glass-card inner-glow p-8 rounded-xl flex flex-col gap-4 group transition-all duration-300 hover:-translate-y-2">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high text-primary border border-outline-variant/30">
+<span class="material-symbols-outlined">settings_account_box</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Prep your account</h3>
+<p class="text-on-surface-variant">Ensure we have temporary observer access to your Meta and Google Ads dashboards for a comprehensive deep-dive.</p>
+<div class="mt-auto pt-4 flex items-center text-primary font-bold">
+<span class="text-label-md">01 / 03</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="glass-card inner-glow p-8 rounded-xl flex flex-col gap-4 group transition-all duration-300 hover:-translate-y-2">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high text-secondary-container border border-outline-variant/30">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Review your MER</h3>
+<p class="text-on-surface-variant">Have your Marketing Efficiency Ratio data ready. We'll cross-reference ad spend against total blended revenue.</p>
+<div class="mt-auto pt-4 flex items-center text-secondary-container font-bold">
+<span class="text-label-md">02 / 03</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="glass-card inner-glow p-8 rounded-xl flex flex-col gap-4 group transition-all duration-300 hover:-translate-y-2">
+<div class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-high text-tertiary border border-outline-variant/30">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Get ready for growth</h3>
+<p class="text-on-surface-variant">Clear 45 minutes for our strategy call. We’ll present a roadmap tailored to scaling your specific business model.</p>
+<div class="mt-auto pt-4 flex items-center text-tertiary font-bold">
+<span class="text-label-md">03 / 03</span>
+</div>
+</div>
+</section>
+<!-- Knowledge Resources -->
+<section class="max-w-container-max px-margin-mobile md:px-margin-desktop w-full mt-24 z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+<div class="max-w-xl">
+<span class="text-primary font-label-md text-label-md uppercase tracking-widest block mb-2">Deep Dives</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">While you wait, master the scale.</h2>
+</div>
+<a class="text-secondary-container font-label-md text-label-md flex items-center gap-2 hover:underline" href="#">
+                    EXPLORE ALL RESOURCES <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Case Study -->
+<div class="relative rounded-xl overflow-hidden group">
+<img alt="Case Study Dashboard" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A high-tech digital marketing dashboard displayed on multiple sleek monitors in a dark, professional agency office. The screens show vibrant data visualizations, line charts, and performance metrics in shades of violet and cyan. The lighting is moody and focused, highlighting the precision and technical expertise of Novorize's growth strategies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD_aippy_qokvs8JKVQmQsnIm3B7NL9OtBCWbP7e901VRmc6TTp-VE5dSQRr9HSPNdWDyjegeoWH9aa_6M3fBlYZyzLADIE9RaSJMbzN4vYgaORF0yZ3M7SoClwlj96VHIc25yvf7-fobiHmckLSfNrDI4gWvIuaMiWmkF0PQA96VgxO9fdy-K3XtzONz3wkYDc31rTMrX5uMAWcC4TQuzoRBtP_5HxQgVjqtl5c1zEjyxezLs9QZpmLWZvT68Oi_UDAhXT3Cxmw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent p-8 flex flex-col justify-end">
+<span class="bg-primary-container text-white px-3 py-1 rounded text-label-sm w-fit mb-3">Case Study</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">How we scaled a D2C brand to $1M/mo with Meta Ads</h4>
+<p class="text-on-surface-variant line-clamp-2">A technical breakdown of funnel optimization and creative testing frameworks used for high-velocity growth.</p>
+</div>
+</div>
+<!-- Blog Post -->
+<div class="relative rounded-xl overflow-hidden group">
+<img alt="Strategy Session" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A clean, minimalist desktop workspace featuring a high-end laptop, a cup of specialty coffee, and a notebook with technical marketing diagrams. The setting is illuminated by soft, natural morning light, creating a professional and focused atmosphere. The color palette consists of neutral whites, deep blacks, and subtle touches of electric violet, reflecting the Novorize brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChGelqsdguKVcB7dmrXLN2gO0ExjfNscyRwjpNxCl5ZkyN1Nxw3Y7MOVIlmtl9euxHTguUVEs1FpZIYtfhrZhE26zP-7Gays6AyEkpBNz5FwZ6VZ3LnQLOh6KhoCvEA_Eo4U_hBSQ9PA4OisMuP7TONbOA9A3by5u58RM3g43vdbEC5kapsR1H98sDJ94fjYpTkhtfspTz23w0_oevkHPBsw65YwapRkKZq3uakuUQhieTpWSsPUk61eK1Qf1ZNEdvUh0RU8Kj-g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent p-8 flex flex-col justify-end">
+<span class="bg-secondary-container/20 text-secondary-container border border-secondary-container/30 px-3 py-1 rounded text-label-sm w-fit mb-3">Growth Blog</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">The MER Trap: Why ROAS is lying to your business</h4>
+<p class="text-on-surface-variant line-clamp-2">An essential guide for founders on measuring the metrics that actually impact your bottom line and net profit.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Connection -->
+<section class="max-w-container-max px-margin-mobile md:px-margin-desktop w-full mt-24 py-16 text-center z-10 border-t border-outline-variant/20">
+<h5 class="font-headline-md text-headline-md text-on-surface mb-8">Stay Connected</h5>
+<div class="flex justify-center gap-8">
+<a class="w-12 h-12 flex items-center justify-center rounded-full glass-card hover:bg-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full glass-card hover:bg-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined">linked_camera</span>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-full glass-card hover:bg-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="w-full pt-20 pb-10 bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Novorize</span>
+<p class="text-on-surface-variant text-body-md">© 2024 Novorize. All rights reserved. Built for performance.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h6 class="text-primary font-bold">Services</h6>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Meta Ads</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Google Ads</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Funnels</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h6 class="text-primary font-bold">Connect</h6>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">X</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h6 class="text-primary font-bold">Legal &amp; Location</h6>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary-container transition-colors" href="#">India Office</a>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>

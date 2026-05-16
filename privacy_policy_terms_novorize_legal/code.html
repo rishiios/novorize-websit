@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Privacy &amp; Terms | Novorize</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #111319;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(29, 31, 37, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(238, 238, 246, 0.1);
+        }
+        .glow-border {
+            border-top: 1px solid rgba(219, 184, 255, 0.2);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#111319",
+                      "tertiary": "#7fdd55",
+                      "surface-container-lowest": "#0c0e13",
+                      "on-tertiary-fixed-variant": "#1a5200",
+                      "surface-variant": "#33353b",
+                      "inverse-surface": "#e2e2ea",
+                      "primary-container": "#7a38bf",
+                      "primary-fixed": "#efdbff",
+                      "on-secondary-container": "#00686f",
+                      "error": "#ffb4ab",
+                      "surface-container-highest": "#33353b",
+                      "outline-variant": "#4c4453",
+                      "inverse-primary": "#7c3bc1",
+                      "on-secondary-fixed-variant": "#004f54",
+                      "surface-container-low": "#191b21",
+                      "on-error-container": "#ffdad6",
+                      "background": "#111319",
+                      "on-surface": "#e2e2ea",
+                      "tertiary-fixed-dim": "#7fdd55",
+                      "outline": "#978d9e",
+                      "secondary-fixed-dim": "#00dbe9",
+                      "on-tertiary": "#0f3900",
+                      "surface": "#111319",
+                      "on-tertiary-container": "#8dec62",
+                      "on-background": "#e2e2ea",
+                      "surface-container": "#1d1f25",
+                      "surface-bright": "#37393f",
+                      "error-container": "#93000a",
+                      "tertiary-container": "#246a00",
+                      "surface-tint": "#dbb8ff",
+                      "primary": "#dbb8ff",
+                      "on-tertiary-fixed": "#062100",
+                      "on-secondary": "#00363a",
+                      "secondary": "#d3fbff",
+                      "on-primary-fixed-variant": "#631ba8",
+                      "on-primary-fixed": "#2b0052",
+                      "on-surface-variant": "#cec2d5",
+                      "inverse-on-surface": "#2e3036",
+                      "surface-container-high": "#282a30",
+                      "on-primary-container": "#e6cbff",
+                      "on-error": "#690005",
+                      "secondary-container": "#00eefc",
+                      "primary-fixed-dim": "#dbb8ff",
+                      "on-primary": "#480082",
+                      "secondary-fixed": "#7df4ff",
+                      "on-secondary-fixed": "#002022",
+                      "tertiary-fixed": "#9afa6e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "48px",
+                      "base": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Montserrat"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Montserrat"],
+                      "display-lg": ["Montserrat"],
+                      "body-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "headline-lg": ["Montserrat"],
+                      "label-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-[30px] border-b border-outline-variant/20 shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-on-surface">Novorize</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Case Studies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Pricing</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Blogs</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md hover:opacity-90 transition-all Active: scale-95 transition-transform">Book Consultation</button>
+</div>
+</header>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
+<div class="max-w-3xl">
+<span class="text-primary font-label-md tracking-widest uppercase mb-4 block">Legal Center</span>
+<h1 class="font-headline-lg text-headline-lg mb-6 leading-tight">Privacy Policy &amp; Terms of Service</h1>
+<p class="text-on-surface-variant text-body-lg mb-8">
+                    Your trust is our most valuable asset. We are committed to protecting your data and being transparent about how we operate at Novorize.
+                </p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 bg-surface-container px-4 py-2 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-on-surface-variant">Last Updated: October 24, 2024</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container px-4 py-2 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+<span class="font-label-sm text-on-surface-variant">Compliance: GDPR &amp; CCPA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter relative">
+<!-- Sticky Sidebar Navigation -->
+<aside class="lg:col-span-3 hidden lg:block">
+<nav class="sticky top-28 space-y-2">
+<p class="font-label-md text-on-surface-variant uppercase mb-4 ml-4">Table of Contents</p>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary font-bold border-l-4 border-primary transition-all" href="#introduction">
+<span class="material-symbols-outlined text-[20px]">info</span>
+                            Introduction
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="#data-collection">
+<span class="material-symbols-outlined text-[20px]">database</span>
+                            Data Collection
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="#usage">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+                            How We Use Data
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="#terms">
+<span class="material-symbols-outlined text-[20px]">article</span>
+                            Terms of Service
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="#security">
+<span class="material-symbols-outlined text-[20px]">security</span>
+                            Security Protocols
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="#contact">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+                            Contact Legal
+                        </a>
+</nav>
+</aside>
+<!-- Document Content -->
+<div class="lg:col-span-9 space-y-12">
+<!-- Section: Introduction -->
+<div class="glass-panel p-8 md:p-12 rounded-3xl glow-border" id="introduction">
+<h2 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">info</span>
+                            1. Introduction
+                        </h2>
+<div class="space-y-4 text-on-surface-variant text-body-md leading-relaxed">
+<p>Welcome to Novorize. This Privacy Policy describes how Novorize ("we", "us", or "our") collects, uses, and shares your personal information when you visit our website or use our performance marketing and CRM services.</p>
+<p>By accessing or using our services, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.</p>
+</div>
+</div>
+<!-- Section: Data Collection -->
+<div class="glass-panel p-8 md:p-12 rounded-3xl glow-border" id="data-collection">
+<h2 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">database</span>
+                            2. Data We Collect
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="bg-surface-container-high p-6 rounded-2xl border border-outline-variant/10">
+<h4 class="font-label-md text-primary mb-3">Direct Information</h4>
+<ul class="space-y-2 text-label-sm">
+<li class="flex items-start gap-2">• Full name and professional title</li>
+<li class="flex items-start gap-2">• Business email and contact numbers</li>
+<li class="flex items-start gap-2">• Billing and payment credentials</li>
+</ul>
+</div>
+<div class="bg-surface-container-high p-6 rounded-2xl border border-outline-variant/10">
+<h4 class="font-label-md text-secondary-fixed-dim mb-3">Automated Data</h4>
+<ul class="space-y-2 text-label-sm">
+<li class="flex items-start gap-2">• IP Address and geolocation</li>
+<li class="flex items-start gap-2">• Browser type and OS versions</li>
+<li class="flex items-start gap-2">• Interaction metrics and heatmaps</li>
+</ul>
+</div>
+</div>
+<p class="text-on-surface-variant text-body-md leading-relaxed">
+                            We use cookies and similar tracking technologies to track the activity on our Service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier.
+                        </p>
+</div>
+<!-- Section: Usage -->
+<div class="glass-panel p-8 md:p-12 rounded-3xl glow-border" id="usage">
+<h2 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">visibility</span>
+                            3. Use of Information
+                        </h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<div>
+<h3 class="font-headline-md text-[18px] mb-2">Service Optimization</h3>
+<p class="text-on-surface-variant text-body-md">We process data to maintain and improve our CRM features, ensuring high-performance lead generation for your specific market segment.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed-dim">campaign</span>
+</div>
+<div>
+<h3 class="font-headline-md text-[18px] mb-2">Marketing Communication</h3>
+<p class="text-on-surface-variant text-body-md">With your consent, we use your contact information to send newsletters, marketing or promotional materials that may be of interest to you.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Terms -->
+<div class="glass-panel p-8 md:p-12 rounded-3xl glow-border" id="terms">
+<h2 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">article</span>
+                            4. Terms of Service
+                        </h2>
+<div class="space-y-4 text-on-surface-variant text-body-md leading-relaxed">
+<p class="font-bold text-on-surface">1. Acceptance of Terms</p>
+<p>By using the Novorize platform, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you are prohibited from using our services.</p>
+<p class="font-bold text-on-surface">2. Intellectual Property</p>
+<p>All content, features, and functionality of the Novorize platform are the exclusive property of Novorize and are protected by international copyright and trademark laws.</p>
+<p class="font-bold text-on-surface">3. User Conduct</p>
+<p>Users are responsible for all activity under their account and must not use the service for any illegal or unauthorized purpose.</p>
+</div>
+</div>
+<!-- Section: Security -->
+<div class="relative overflow-hidden rounded-3xl p-8 md:p-12 border border-primary/20 bg-gradient-to-br from-surface-container-high to-surface-dim" id="security">
+<div class="relative z-10 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h2 class="font-headline-md text-headline-md mb-4 text-primary">Enterprise-Grade Security</h2>
+<p class="text-on-surface-variant text-body-md mb-6">
+                                    We employ TLS 1.3 encryption, SOC2-compliant data centers, and rigorous 24/7 monitoring to ensure your enterprise data remains impenetrable.
+                                </p>
+<button class="flex items-center gap-2 text-secondary-fixed-dim font-label-md hover:underline">
+                                    View Compliance Documents
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden glass-panel flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-[120px] text-primary/30" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+</div>
+<div class="absolute -bottom-20 -right-20 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
+</div>
+<!-- Section: Contact -->
+<div class="glass-panel p-8 md:p-12 rounded-3xl glow-border" id="contact">
+<h2 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">mail</span>
+                            Contact Legal Team
+                        </h2>
+<p class="text-on-surface-variant text-body-md mb-8">
+                            If you have any questions about these Terms or the Privacy Policy, please contact our data protection officer.
+                        </p>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-on-surface-variant ml-1">Your Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:border-secondary-container focus:ring-1 focus:ring-secondary-container outline-none transition-all" placeholder="name@company.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-on-surface-variant ml-1">Inquiry Type</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:border-secondary-container outline-none transition-all">
+<option>General Privacy Question</option>
+<option>Data Deletion Request</option>
+<option>Compliance Audit</option>
+<option>Other Legal Matters</option>
+</select>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-label-md text-on-surface-variant ml-1">Message</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 focus:border-secondary-container outline-none transition-all" placeholder="How can our legal team help you?" rows="4"></textarea>
+</div>
+<button class="md:w-fit bg-primary text-on-primary font-label-md px-10 py-3 rounded-xl hover:opacity-90 transition-all flex items-center justify-center gap-2" type="submit">
+                                Send Inquiry
+                                <span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="text-headline-md font-headline-md font-bold text-on-surface mb-6">Novorize</div>
+<p class="text-on-surface-variant text-body-md mb-6">Redefining performance marketing for high-growth enterprises in the Indian market.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
+<a class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-primary mb-6">Company</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">About</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Services</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-primary mb-6">Resources</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Pricing</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Blogs</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-md text-primary mb-6">Legal</h4>
+<ul class="space-y-3">
+<li><a class="text-primary font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md hover:translate-x-1 transition-transform inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-outline-variant/5">
+<p class="text-on-surface-variant text-label-sm text-center">© 2024 Novorize. All rights reserved. Built for the Indian Market.</p>
+</div>
+</footer>
+</body></html>

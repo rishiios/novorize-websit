@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Novorize | Performance Growth Partners</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#7a38bf",
+                        "on-secondary-container": "#00686f",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#7df4ff",
+                        "inverse-surface": "#e2e2ea",
+                        "on-primary": "#480082",
+                        "background": "#111319",
+                        "tertiary-fixed-dim": "#7fdd55",
+                        "secondary-fixed-dim": "#00dbe9",
+                        "tertiary-container": "#246a00",
+                        "on-surface": "#e2e2ea",
+                        "inverse-on-surface": "#2e3036",
+                        "error-container": "#93000a",
+                        "surface-bright": "#37393f",
+                        "on-tertiary-fixed": "#062100",
+                        "surface-container-lowest": "#0c0e13",
+                        "surface-container-high": "#282a30",
+                        "on-primary-fixed-variant": "#631ba8",
+                        "secondary-container": "#00eefc",
+                        "on-surface-variant": "#cec2d5",
+                        "on-secondary-fixed-variant": "#004f54",
+                        "primary-fixed": "#efdbff",
+                        "surface": "#111319",
+                        "on-primary-fixed": "#2b0052",
+                        "on-secondary": "#00363a",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#dbb8ff",
+                        "on-primary-container": "#e6cbff",
+                        "primary": "#dbb8ff",
+                        "outline": "#978d9e",
+                        "surface-variant": "#33353b",
+                        "surface-tint": "#dbb8ff",
+                        "inverse-primary": "#7c3bc1",
+                        "surface-container-highest": "#33353b",
+                        "surface-dim": "#111319",
+                        "surface-container-low": "#191b21",
+                        "on-tertiary": "#0f3900",
+                        "on-secondary-fixed": "#002022",
+                        "tertiary": "#7fdd55",
+                        "on-tertiary-container": "#8dec62",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#9afa6e",
+                        "on-background": "#e2e2ea",
+                        "secondary": "#d3fbff",
+                        "outline-variant": "#4c4453",
+                        "on-tertiary-fixed-variant": "#1a5200",
+                        "surface-container": "#1d1f25"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(29, 31, 37, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(238, 238, 246, 0.1);
+        }
+        .inner-glow {
+            border-top: 1px solid rgba(238, 238, 246, 0.15);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #7a38bf 0%, #480082 100%);
+        }
+        .cyan-glow:focus {
+            box-shadow: 0 0 10px rgba(0, 238, 252, 0.3);
+            border-color: #00eefc;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-sm flex justify-between items-center px-margin-desktop h-20 z-50">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">Novorize</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Case Studies</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Pricing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-primary font-body-md px-4 py-2 hover:bg-primary/10 rounded-lg transition-all active:scale-95">WhatsApp</button>
+<button class="bg-primary-container text-on-primary-container font-body-md px-6 py-2 rounded-lg font-bold shadow-sm hover:shadow-lg transition-all active:scale-95">Book Consultation</button>
+</div>
+</header>
+<main class="pt-32 pb-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="mb-20 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-surface-container-high border border-outline-variant/30 mb-6">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Response time: Under 2 hours</span>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-6 max-w-4xl mx-auto">Start Your <span class="text-primary">Growth Audit</span> Today</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Precision-engineered performance marketing and CRM solutions for the high-growth Indian market. Let's build your scale engine.</p>
+</section>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Lead Gen Form (Left/Center) -->
+<div class="lg:col-span-7 glass-card rounded-xl p-8 inner-glow">
+<div class="mb-8 flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md">Growth Diagnostic</h2>
+<div class="flex gap-2">
+<div class="h-1 w-12 rounded-full bg-primary"></div>
+<div class="h-1 w-12 rounded-full bg-surface-variant"></div>
+<div class="h-1 w-12 rounded-full bg-surface-variant"></div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">FULL NAME</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface outline-none cyan-glow transition-all" placeholder="Arjun Malhotra" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">WORK EMAIL</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface outline-none cyan-glow transition-all" placeholder="arjun@company.in" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">COMPANY WEBSITE</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-4 py-3 text-on-surface outline-none cyan-glow transition-all" placeholder="https://www.company.in" type="url"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">MONTHLY REVENUE GOAL</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="px-4 py-3 bg-surface-container rounded-lg border border-outline-variant/20 text-on-surface-variant hover:border-primary/50 transition-all font-label-md text-label-md" type="button">₹5L - ₹10L</button>
+<button class="px-4 py-3 bg-primary/10 border border-primary/50 rounded-lg text-primary transition-all font-label-md text-label-md" type="button">₹10L - ₹50L</button>
+<button class="px-4 py-3 bg-surface-container rounded-lg border border-outline-variant/20 text-on-surface-variant hover:border-primary/50 transition-all font-label-md text-label-md" type="button">₹50L+</button>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full primary-gradient text-white font-headline-md py-4 rounded-lg shadow-xl shadow-primary-container/15 hover:translate-y-[-2px] active:scale-95 transition-all">
+                            Analyze My Business
+                        </button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-4">Takes less than 60 seconds. Our experts will review manually.</p>
+</div>
+</form>
+</div>
+<!-- Contact Details & FAQ (Right) -->
+<div class="lg:col-span-5 space-y-gutter">
+<!-- Quick Contact Card -->
+<div class="glass-card rounded-xl p-8 inner-glow">
+<h3 class="font-headline-md text-headline-md mb-6">Direct Channels</h3>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="#">
+<div class="w-12 h-12 rounded-full bg-secondary-container/10 flex items-center justify-center text-secondary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">WHATSAPP DIRECT</p>
+<p class="font-body-md text-body-md text-on-surface">+91 98765 43210</p>
+</div>
+</a>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">EMAIL US</p>
+<p class="font-body-md text-body-md text-on-surface">growth@novorize.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant">INDIAN HQ</p>
+<p class="font-body-md text-body-md text-on-surface">Tech Hub, Indiranagar, Bengaluru 560038</p>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Snippet -->
+<div class="glass-card rounded-xl p-8 inner-glow">
+<h3 class="font-headline-md text-headline-md mb-4">Quick Answers</h3>
+<div class="space-y-4">
+<div class="pb-4 border-b border-outline-variant/20">
+<p class="font-label-md text-label-md text-primary mb-1">What's in the audit?</p>
+<p class="font-body-md text-body-md text-on-surface-variant">A deep dive into your funnel, ad account health, and CRM leakages.</p>
+</div>
+<div class="pb-4 border-b border-outline-variant/20">
+<p class="font-label-md text-label-md text-primary mb-1">Is it really free?</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Yes. We use it to demonstrate our value before you spend a rupee.</p>
+</div>
+</div>
+<button class="w-full mt-4 text-secondary-container font-label-md text-label-md py-2 border border-secondary-container/30 rounded-lg hover:bg-secondary-container/5 transition-all">View All FAQs</button>
+</div>
+</div>
+</div>
+<!-- Location Map Section (Asymmetric) -->
+<section class="mt-20 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-4 space-y-4">
+<h2 class="font-headline-lg text-headline-lg">We're in the Heart of <span class="text-tertiary">India's Tech Hub</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Visit our Bengaluru office for a face-to-face strategy session. Located in the vibrant tech ecosystem of Indiranagar.</p>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined" data-icon="directions">directions</span>
+                    Get Directions
+                </div>
+</div>
+<div class="md:col-span-8 h-80 rounded-2xl overflow-hidden glass-card relative">
+<img class="w-full h-full object-cover opacity-60" data-alt="A cinematic, high-angle aerial view of the Bengaluru tech district at twilight. The city lights are glowing in a mix of warm ambers and cool cyans, reflecting off modern glass office buildings. The atmosphere is professional, energetic, and high-tech, captured with a sharp, professional photography style that emphasizes the scale of the Indian Silicon Valley. The colors align with the deep navy and electric violet brand palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB866Fn2q-FhCaBgfhY1-y_BGsUIINCLN-ZkxNtEFrWSbgva9qkoUWCV3QCqd_u9ZWdnBsLeoTCmSAJLS92hURduxbU2xTffCUqxs6oec0kDKbLkuxiTFfwGSqnXM7ifOX_4ZGprcgQhEghK70HQrv2B13hciAMtSzoWPlwLA9nFpdnC5J1hJ-37rX6Asf6SA51WVFbmABpFF9BwPn_UjVh0M7Io2otu1QilOvKnp0yK1VNC18K10swgzgHwCvcWUiup-Zp3j257Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+<div class="absolute bottom-6 left-6 p-4 bg-surface-container rounded-lg border border-outline-variant/30 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="business">business</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Novorize HQ</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Indiranagar, Bengaluru</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-4">Novorize</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Engineering hyper-growth through precision performance marketing and data-driven CRM systems.</p>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-label-md text-label-md text-primary mb-2">SERVICES</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Meta Ads</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Google Ads</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Funnels</a>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-label-md text-label-md text-primary mb-2">SOCIAL</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">X</a>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-label-md text-label-md text-primary mb-2">OFFICE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">India Office</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="mt-20 text-center px-margin-desktop border-t border-outline-variant/10 pt-10">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Novorize. All rights reserved. Built for performance.</p>
+</div>
+</footer>
+</body></html>

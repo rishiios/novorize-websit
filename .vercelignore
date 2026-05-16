@@ -1,0 +1,23 @@
+# Stitch asset directories (not needed for deployment)
+about_novorize_the_performance_architects/
+audit_booked_we_ll_scale_soon/
+careers_join_the_growth_team/
+contact_novorize_start_your_growth_audit_1/
+contact_novorize_start_your_growth_audit_2/
+digital_vanguard/
+insights_the_performance_marketing_playbook/
+novorize_premium_performance_agency/
+novorize_premium_performance_agency_home/
+novorize_premium_performance_agency_india/
+our_services_high_performance_marketing_solutions/
+premium_agency_performance_system/
+pricing_plans_invest_in_your_growth/
+privacy_policy_terms_novorize_legal/
+video_showcase_creative_intelligence_in_motion/
+video_showcase_performance_first_creative_strategy/
+
+# Utility scripts
+update_nav.py
+update_nav.ps1
+start_server.ps1
+novorize_research_summary.txt

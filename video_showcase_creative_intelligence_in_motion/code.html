@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Novorize | Video Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#7a38bf",
+                    "on-secondary-container": "#00686f",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#7df4ff",
+                    "inverse-surface": "#e2e2ea",
+                    "on-primary": "#480082",
+                    "background": "#111319",
+                    "tertiary-fixed-dim": "#7fdd55",
+                    "secondary-fixed-dim": "#00dbe9",
+                    "tertiary-container": "#246a00",
+                    "on-surface": "#e2e2ea",
+                    "inverse-on-surface": "#2e3036",
+                    "error-container": "#93000a",
+                    "surface-bright": "#37393f",
+                    "on-tertiary-fixed": "#062100",
+                    "surface-container-lowest": "#0c0e13",
+                    "surface-container-high": "#282a30",
+                    "on-primary-fixed-variant": "#631ba8",
+                    "secondary-container": "#00eefc",
+                    "on-surface-variant": "#cec2d5",
+                    "on-secondary-fixed-variant": "#004f54",
+                    "primary-fixed": "#efdbff",
+                    "surface": "#111319",
+                    "on-primary-fixed": "#2b0052",
+                    "on-secondary": "#00363a",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed-dim": "#dbb8ff",
+                    "on-primary-container": "#e6cbff",
+                    "primary": "#dbb8ff",
+                    "outline": "#978d9e",
+                    "surface-variant": "#33353b",
+                    "surface-tint": "#dbb8ff",
+                    "inverse-primary": "#7c3bc1",
+                    "surface-container-highest": "#33353b",
+                    "surface-dim": "#111319",
+                    "surface-container-low": "#191b21",
+                    "on-tertiary": "#0f3900",
+                    "on-secondary-fixed": "#002022",
+                    "tertiary": "#7fdd55",
+                    "on-tertiary-container": "#8dec62",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#9afa6e",
+                    "on-background": "#e2e2ea",
+                    "secondary": "#d3fbff",
+                    "outline-variant": "#4c4453",
+                    "on-tertiary-fixed-variant": "#1a5200",
+                    "surface-container": "#1d1f25"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "48px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .video-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .video-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-card {
+            background: rgba(238, 238, 246, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(238, 238, 246, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(17, 19, 25, 0) 0%, rgba(17, 19, 25, 1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-sm flex justify-between items-center px-margin-desktop h-20 w-full z-50">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">Novorize</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Case Studies</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Pricing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Blog</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden md:block font-label-md text-label-md text-secondary border border-secondary/30 px-6 py-2 rounded-lg hover:bg-secondary/10 active:scale-95 duration-200">WhatsApp</button>
+<button class="font-label-md text-label-md bg-primary-container text-on-primary-container px-6 py-2 rounded-lg hover:bg-primary-container/90 active:scale-95 duration-200 shadow-[0_0_20px_rgba(122,56,191,0.3)]">Book Consultation</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Featured Video Section -->
+<section class="relative w-full aspect-video md:h-[819px] overflow-hidden group">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic wide-angle shot of a professional high-tech film studio with deep purple and neon cyan lighting accents. In the center, a large glowing screen displays vibrant performance marketing data visualizations and high-energy motion graphics. The atmosphere is sophisticated and futuristic, featuring sleek black surfaces and subtle atmospheric haze to reflect a premium agency environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXA8z43ZhECs3eSKxHNvVpzSgcoLsiO1IeYsdyAr1I1824szEdA5AfMosfDkvwEfTIiMxsbgEm1u4Cl0CsR6sTnwr88ldREojv-DEyqV0xTgCGOjxidlnhi_cb9IEEUCbI14vq6FUK2A2XcP5uBHMb0LoCQa2MELzitr1A_FUE1Gf04iPWdSKi-SDtqFcsB35Okexebd3lgjtPRDc06rC9vRY5b40odQv3L5EiHb75FbTcrsNy8_738aiQKwc1ln5rQpf8TCpocw"/>
+</div>
+<div class="absolute inset-0 hero-gradient z-20 flex flex-col justify-end px-margin-desktop pb-20">
+<div class="max-w-3xl space-y-6">
+<span class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary bg-tertiary-container/20 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+                        FEATURED SHOWCASE
+                    </span>
+<h1 class="font-display-lg text-display-lg text-white leading-none">The Future of Growth Marketing</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Experience how Novorize scales high-performance brands through strategic ad creatives and automated funnels. Our vision is technical precision meets creative soul.</p>
+<div class="flex items-center gap-4 pt-4">
+<a class="flex items-center gap-2 bg-white text-background font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-on-surface transition-all active:scale-95" href="https://youtu.be/LmI1wEmPE2c" target="_blank">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            Watch Now
+                        </a>
+<button class="flex items-center gap-2 bg-surface-container-high/40 backdrop-blur-md text-white font-label-md text-label-md px-8 py-4 rounded-lg border border-white/10 hover:bg-surface-container-high/60 transition-all">
+<span class="material-symbols-outlined">info</span>
+                            More Info
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Netflix Style Rows -->
+<div class="space-y-16 pb-24 -mt-10 relative z-30">
+<!-- Ad Creatives Row -->
+<section class="space-y-4 px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-white flex items-center gap-3">
+                    Ad Creatives
+                    <span class="material-symbols-outlined text-primary">chevron_right</span>
+</h2>
+<div class="flex gap-4 overflow-x-auto video-scroll snap-x snap-mandatory pb-4">
+<!-- Video Card 1 -->
+<div class="flex-none w-[300px] md:w-[400px] aspect-video glass-card rounded-xl overflow-hidden group/card snap-start cursor-pointer transition-transform duration-300 hover:scale-105 hover:z-40">
+<div class="relative h-full">
+<img class="w-full h-full object-cover" data-alt="A professional flat-lay of digital marketing devices including a high-end tablet and smartphone displaying colorful analytics charts and social media ad mockups. The setting is a dark, modern studio with atmospheric violet rim lighting and polished surfaces, evoking a sense of data-driven creative excellence and sophisticated performance marketing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2sEgojEh0KrJAbVDYT5WD8q6N1DxuucaJpXgPaSE73DIMdJyN35oSW239r_2ydTbQ7OcDpDftDJXUAJ1rEzD6frE5Ucj6o_AEyWGIwVqyO9yTO3LPgvmmqaOET1hjhJQ0cr_NUwLBdgA775j8zDbiPJRaL0iB16c5ExDFaNJidVWVw01UrDZ61LC24ues326flr31k_uvnbB1hAOkbjWTthAGcjznqSzazVCMCDUSB8u_NCqFJnPl8bclBZSh9VA0hp07Lmc5Ag"/>
+<div class="absolute inset-0 bg-black/20 group-hover/card:bg-black/0 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300">
+<p class="font-label-md text-label-md text-white drop-shadow-md">E-commerce Scaler Ad</p>
+<div class="flex gap-2 mt-2">
+<span class="bg-primary/20 text-primary text-[10px] px-2 py-0.5 rounded border border-primary/30 uppercase">Direct Response</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Video Card 2 -->
+<div class="flex-none w-[300px] md:w-[400px] aspect-video glass-card rounded-xl overflow-hidden group/card snap-start cursor-pointer transition-transform duration-300 hover:scale-105 hover:z-40">
+<div class="relative h-full">
+<img class="w-full h-full object-cover" data-alt="Modern abstract 3D motion graphics showcasing fluid, metallic shapes moving through a digital space lit by vibrant neon cyan and deep electric violet lights. The scene is high-contrast and energetic, representing the dynamic and fast-paced nature of high-converting social media advertising creatives for tech brands." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmww2ARDrzy6KTSo48VVbGJO3ff5PPoarvj0URB4DU-GB4ghszLYxuglAYCK_ah_Yf0QQ4qJt-MJP4HNSDRKDqUTw6rnbLVkmm9p_Vu-znHh9oAPpWDWJSylStlkNIKx9vACTfLVSN3e8wEMQtTstu0WLVe6mLN8v3V_OGHbQVG5F32w4TJAT4Hr1Ha7iTnpsj9z-0CMyQ2l3PSqR04JQgyxvCpXG6smxrnoM6sYT4grjDDPIJ55ppcyDo15akQysZZeV46LxGTw"/>
+<div class="absolute inset-0 bg-black/20 group-hover/card:bg-black/0 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300">
+<p class="font-label-md text-label-md text-white drop-shadow-md">SaaS Product Intro</p>
+<div class="flex gap-2 mt-2">
+<span class="bg-secondary/20 text-secondary-container text-[10px] px-2 py-0.5 rounded border border-secondary/30 uppercase">UGC Hybrid</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Video Card 3 -->
+<div class="flex-none w-[300px] md:w-[400px] aspect-video glass-card rounded-xl overflow-hidden group/card snap-start cursor-pointer transition-transform duration-300 hover:scale-105 hover:z-40">
+<div class="relative h-full">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a sleek smartphone interface showing a high-converting TikTok ad feed. The screen is bright and clear, reflecting a soft purple studio light. The background is a dark, textured surface, emphasizing the focus on mobile-first advertising strategies and engaging social media content." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAacU3Wt3-AYDJq-R3F4_p5fpslpksRPC47Ish7YomJlxiGoChnHFbSso6cQ7VCD8FAJ8XVGHC2XK_RyXzhao8AXfSlr_qsG7Autmwlf14ZAAwB8GPO9O1mEK7OufIFW1T9PIFdsH-MB-UK8wzBZf0nCaaNki4UMMY_lroSIL_5122Qs8odwpD58KNNrI_UamOjcnPQ8Zk4enNj5tr45pLmUvrth_G3_U6VhwHBTCfq_f8LHxK6TPQT7RiWShzhCTV3a3xrcLp7mA"/>
+<div class="absolute inset-0 bg-black/20 group-hover/card:bg-black/0 transition-colors"></div>
+<div class="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover/card:translate-y-0 group-hover/card:opacity-100 transition-all duration-300">
+<p class="font-label-md text-label-md text-white drop-shadow-md">Hooks &amp; Triggers</p>
+<div class="flex gap-2 mt-2">
+<span class="bg-tertiary/20 text-tertiary text-[10px] px-2 py-0.5 rounded border border-tertiary/30 uppercase">Strategy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reels Showcase Row (Vertical orientation) -->
+<section class="space-y-4 px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-white flex items-center gap-3">
+                    Reels Showcase
+                    <span class="material-symbols-outlined text-primary">chevron_right</span>
+</h2>
+<div class="flex gap-6 overflow-x-auto video-scroll snap-x snap-mandatory pb-4">
+<!-- Reel 1 -->
+<div class="flex-none w-[180px] md:w-[240px] aspect-[9/16] glass-card rounded-2xl overflow-hidden group/reel snap-start cursor-pointer transition-all duration-300 hover:ring-2 hover:ring-primary/50">
+<div class="relative h-full">
+<img class="w-full h-full object-cover" data-alt="A portrait-oriented cinematic shot of a content creator in a dimly lit studio with a glowing ring light reflected in their eyes. The background features colorful neon tubes and professional acoustic panels. The mood is creative and trendy, perfectly capturing the aesthetic of a high-end social media reel production." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUsRF7g_CcTdZsKkwMTpzWJPITW7blC6HeIA7Mnunx2rM9bF5c8iKk-i_ISdG8OcLXO5gyWeQd7RDhEumEjeqXvfoMv0c0uEnOYYBlqyGW7_FxOXtn0o8SnzPAaTjpmT0n-zqUthe7XfF2WNnkN7X340MwGraPFSu6_wTkYe79mkgktLZB17q2syebsXn81mGX4NJpeEOGPVrAypTwLC7fTPTxfr-pMIbrt7RN7ebgoEmrQAa-m8Kn-dic3B8TENVD9R6eav3QJA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-6 left-4 right-4">
+<div class="flex items-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-sm text-label-sm">45.2k</span>
+</div>
+<p class="font-label-md text-label-md text-white">Daily Growth Tips</p>
+</div>
+</div>
+</div>
+<!-- Reel 2 -->
+<div class="flex-none w-[180px] md:w-[240px] aspect-[9/16] glass-card rounded-2xl overflow-hidden group/reel snap-start cursor-pointer transition-all duration-300 hover:ring-2 hover:ring-primary/50">
+<div class="relative h-full">
+<img class="w-full h-full object-cover" data-alt="A dynamic action shot of a young professional working in a vibrant co-working space. The image is shot through a vertical lens, with a shallow depth of field focusing on their determined expression. Natural sunlight mixes with warm indoor lighting to create an inviting yet high-performance atmosphere for social content." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtszj_DvFglHBGePLbKe-mUJls0DIqtDfcL6rv9G1PB6DhbHe1PfX1-1uEkiu2ogOngS_dw6hEUkCXPjWqfNOWvTQ_awIod8Oznl_p3d933WA0JHFSH3X_rtHIX6S12XQgDkospj0Idj248MNu8DKkdkoDe5J5vT9Y5tAWu4-Md5_Mn1JcnJFdKoQrjgCAdbvbVfjCs8nnw7AHn3f4QMTxHZDVLyWgDdWiiwZzcil9G3buQ_QujBBk6m6sxGul0qJ1rMn7DEW-Xg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-6 left-4 right-4">
+<div class="flex items-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-sm text-label-sm">12.8k</span>
+</div>
+<p class="font-label-md text-label-md text-white">Agency Life Hack</p>
+</div>
+</div>
+</div>
+<!-- Reel 3 -->
+<div class="flex-none w-[180px] md:w-[240px] aspect-[9/16] glass-card rounded-2xl overflow-hidden group/reel snap-start cursor-pointer transition-all duration-300 hover:ring-2 hover:ring-primary/50">
+<div class="relative h-full">
+<img class="w-full h-full object-cover" data-alt="A fast-paced motion shot of a high-end luxury vehicle speeding through a city at night, with streetlights blurring into long streaks of gold and white. The composition is vertical and energetic, designed to stop the scroll on Instagram or TikTok, representing the high-energy lifestyle content produced by Novorize." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEc36R6fhDzBb_8R01i6QWoLBsxg1qG55r1muiUltr8K9YpXTE4N2E6BriPlyNHM_ci--_Sx7v03uUg-8L5X1Rw83whbak5ihmDTIDpxAN1vmcCAkhn4YdlQjQkvBBj71fYSnFa6vCa-KCQM30RgeBqDp-fHqUPpoq86X8H7PjtzQS13maBntr_x_dHHBPNuynxnUBvo6sDz71EUTR3C_DTCKLCuwY25IYcntAr9MkxV98kOtU5qCnZ_D9HsVM_wLLV50ukYOGFA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-6 left-4 right-4">
+<div class="flex items-center gap-2 text-primary mb-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-sm text-label-sm">89.5k</span>
+</div>
+<p class="font-label-md text-label-md text-white">Luxury Ad Concept</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Testimonials Row -->
+<section class="space-y-4 px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-white flex items-center gap-3">
+                    Client Testimonials
+                    <span class="material-symbols-outlined text-primary">chevron_right</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Testimonial Card 1 -->
+<div class="glass-card p-6 rounded-2xl border-l-4 border-l-primary group hover:-translate-y-2 transition-transform">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-background ring-2 ring-primary/20">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a smiling male executive in his mid-30s, wearing a crisp charcoal suit. He is set against a clean, out-of-focus modern office background with soft daylight. The image conveys trust, success, and professional reliability in a premium corporate setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABvWwEDIXIfxO-MdMlkDkgnUaZBaSm6sAeFpSE77qF2sHMQDhgz7VzwNcc1aL02aEbOoN-nR7L6mjV-LXfD1IlP9d3YxjvDnef1mwvlMmoNjf0i0WISHt1NzQHFi8ce0SJtZuXXP3dId1mX1jZVMhaN029nxSN60NBS3fVRFr39hENUChuhlGJUG9fKGKU57y2S4kIByV5uYRQe6xoicL2-SXl9yhM0aLZnsAiQDGgwk4hPexDa4NlKR4RA5VTfmW_6sag2Su00w"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white">Rahul Mehta</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">CEO, Zenith Global</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4 leading-relaxed">"Novorize transformed our digital presence within 3 months. Their video team is second to none in the Indian market. Technical precision at its best."</p>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- Testimonial Card 2 -->
+<div class="glass-card p-6 rounded-2xl border-l-4 border-l-secondary-container group hover:-translate-y-2 transition-transform">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-background ring-2 ring-secondary/20">
+<img class="w-full h-full object-cover" data-alt="A confident professional woman in her early 40s, dressed in elegant business casual attire. She is sitting in a brightly lit, minimalist office space with plants in the background. Her expression is warm and authoritative, embodying a successful entrepreneur who values quality and innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbUzGM-lX7Pe-uHweCYlk6cK5-WnYIwVzp562LXGuqKhIlfBxyU1E7gBy2YFtYbTnSo6jfwEFjfObugUTTgK7aVbo7pL3p0zrMWv7EgcVP1YCPlE8XhKzZPyILicUj_vtZ5Me15o7KxxUTi14UTDl5n1Ob6W4egdw3JxDjbGmP6IfGdJEXMjaaLvDu2UHhzdWTO_EBOadrPUqW0IdXhwENNA3vS9qQALZ8zT3I-tBvKsghfkz4UfcNxhG60TFNp_pUULvGHa5m9Q"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white">Ananya Iyer</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Founder, LuxeDecor</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4 leading-relaxed">"The creative direction they took for our ad campaigns was bold and refreshing. We saw a 4x ROI on our very first month with them."</p>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+<!-- Testimonial Card 3 -->
+<div class="glass-card p-6 rounded-2xl border-l-4 border-l-tertiary group hover:-translate-y-2 transition-transform">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-background ring-2 ring-tertiary/20">
+<img class="w-full h-full object-cover" data-alt="A portrait of a creative professional male in a modern, artistic loft studio. He is wearing a minimalist black turtleneck, and the background is filled with creative equipment like professional cameras and high-end monitors. The lighting is dramatic and warm, highlighting his expertise in the tech and creative industry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfXwDZrVr5aMdUEIZ1iOzwiiudhWs962gAhqtBkXztqdajg2vrNYfo3T8ZhbW5XMsOyC167YN26135kAMcWSGeglINdL1bXBCHGdvAf9gfj0Pb4IE9GlkEFknzskQ4uK1iuRztjF-lJWtCIHA49_3ElDjyyl90pmlsH9cKlJsxDbLRTQoA4D5ornMHQ1WeEEICLvrMXP2mybwwsV1_uW_z3bV5ekhyv4UaJkcAMiveqlBKc5GXy8jSFcZ6Bm1qY_ezJVvN81cPbw"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white">Karan Singh</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Marketing Head, TechPulse</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic mb-4 leading-relaxed">"Working with Novorize is like having an in-house performance team. They care about the numbers as much as the visuals."</p>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Behind The Scenes Row -->
+<section class="space-y-4 px-margin-desktop">
+<h2 class="font-headline-md text-headline-md text-white flex items-center gap-3">
+                    Behind The Scenes
+                    <span class="material-symbols-outlined text-primary">chevron_right</span>
+</h2>
+<div class="flex gap-4 overflow-x-auto video-scroll snap-x snap-mandatory pb-4">
+<div class="flex-none w-[280px] md:w-[350px] aspect-[4/3] rounded-xl overflow-hidden glass-card group/bts snap-start cursor-pointer">
+<img class="w-full h-full object-cover group-hover/bts:scale-110 transition-transform duration-500" data-alt="A candid, high-quality photograph of a professional film crew at work on a commercial set. High-end cinema cameras on stabilized rigs, professional lighting technicians adjusting large softboxes, and a director pointing at a monitor. The environment is dark and technical, with visible light beams and a sense of focused professional energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4qZaqcrsyXTJ7aqOiguEJQf-SCt6smaKxCGRGfolbFJWyrk581dSB10nUqvhi1YHZWC_G8kQ-l0pJllDRXSIDIqRc_XatUL97QRXdespQy5Uwrk8OUrdLnYwwVvi-zPvFab2r1z6LNJDNS58NYaYpSLGBp_lqFkrX8hmszu2IPMJALSLA3TaiUCxXyQ3d1R0ikx_u_8KT3IOQsw0MAj2D0veNuJS3QWkCSk_hK_MeqIs90kIuST8h4HSDUy4rky9MFRzXAO0HHw"/>
+</div>
+<div class="flex-none w-[280px] md:w-[350px] aspect-[4/3] rounded-xl overflow-hidden glass-card group/bts snap-start cursor-pointer">
+<img class="w-full h-full object-cover group-hover/bts:scale-110 transition-transform duration-500" data-alt="An over-the-shoulder shot of a video editor working on a multi-monitor setup in a darkened room. The screens show complex timeline sequences and professional color grading software with vibrant violet and teal color wheels. The editor's hands are on a high-precision editing console, emphasizing the technical mastery behind the final video product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAucRGHke8BTRjP2aBo_lqgXoU4lOZWbSgKBUeWZD1Av6B4oV5bbAD9bK0jVFyE7LgoG2yI07XwoqpsFs5-F2QUgfwPYnYZaJVSlpXG_JoTeBCP_VCWDbsXNthirDAuFHc-FAir2Cj9p6c54YKzI11THNZwfhRCG6bqOrFDmgtQVNRaHdkBYMb0WXDjrasNFt6X--8YCrZ65PF2W7DMViCFARUAZmSocKO-zQQfTPZT-xonbv1pHFd56oInSWgdKmthZPakyJ9nlw"/>
+</div>
+<div class="flex-none w-[280px] md:w-[350px] aspect-[4/3] rounded-xl overflow-hidden glass-card group/bts snap-start cursor-pointer">
+<img class="w-full h-full object-cover group-hover/bts:scale-110 transition-transform duration-500" data-alt="A professional recording studio setup with high-end microphones, soundproofed walls, and a warm, low-light atmosphere. A professional voice artist is seen in shadow through the glass of the control room. The scene conveys the audio-visual depth and high-quality sound engineering that goes into every agency project." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCngCekz-R32Ndl5s9rzbZbTKbpku4ezhd1fGlSbhYpXbWGssmf3ctF1uMo93Y2jTWSpefdqhi8yOAqUPO13JWDtn2ivAeaZYRSjItZMp53hPs5hoQg1T4bl9CJBFX9dFEDGeHU8u6xFWRIYfyJrLgCwnsEbIzp3dEoIqOyPTzbGTcSlYFqpWiHsOGa2aumFWRmlf8LO0xxfElMBDABIFQvT3L2XukyhWp9MVzJctNZutL6UAS_4S-K6w5iPuADhpjHIzkFm5hpRA"/>
+</div>
+</div>
+</section>
+</div>
+<!-- CTA Section -->
+<section class="px-margin-desktop py-24">
+<div class="w-full max-w-container-max mx-auto bg-gradient-to-br from-primary-container/20 to-secondary-container/10 border border-white/10 rounded-[32px] p-12 text-center space-y-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] -z-10"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 blur-[100px] -z-10"></div>
+<h3 class="font-display-lg text-display-lg text-white max-w-2xl mx-auto">Ready to scale your brand with cinema?</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">Join 50+ high-growth brands who trust Novorize for their performance marketing and video production.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6 pt-4">
+<button class="w-full md:w-auto font-label-md text-label-md bg-white text-background px-10 py-4 rounded-xl hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] active:scale-95 transition-all">Start Your Project</button>
+<button class="w-full md:w-auto font-label-md text-label-md border border-white/20 text-white px-10 py-4 rounded-xl hover:bg-white/10 active:scale-95 transition-all">Download Media Kit</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">Novorize</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Premium performance marketing agency specializing in high-converting ad creatives and full-funnel automation.
+                </p>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">brand_family</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-white uppercase tracking-widest">Solutions</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Meta Ads</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Google Ads</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Funnels</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-white uppercase tracking-widest">Company</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">X</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-white uppercase tracking-widest">Contact</h4>
+<nav class="flex flex-col gap-2">
+<p class="font-body-md text-body-md text-on-surface-variant">India Office</p>
+<p class="font-body-md text-body-md text-on-surface-variant">hello@novorize.agency</p>
+<p class="font-body-md text-body-md text-on-surface-variant">+91 99999 88888</p>
+</nav>
+</div>
+</div>
+<div class="mt-20 border-t border-outline-variant/10 pt-10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Novorize. All rights reserved. Built for performance.</p>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-white transition-colors" href="#">Cookies Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

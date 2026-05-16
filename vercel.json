@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/services", "dest": "/services.html" },
+    { "src": "/case-studies", "dest": "/case-studies.html" },
+    { "src": "/pricing", "dest": "/pricing.html" },
+    { "src": "/blogs", "dest": "/blogs.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/legal", "dest": "/legal.html" }
+  ]
+}

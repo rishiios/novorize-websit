@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Novorize | Creative Intelligence for DTC Brands</title>
+<meta content="Novorize is a premium performance marketing agency for DTC brands. We help you scale profitably through creative intelligence, Meta Ads, Google Ads, and CRO." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#201f20",
+                        "secondary": "#adc6ff",
+                        "outline-variant": "#4a4455",
+                        "outline": "#958da1",
+                        "primary-container": "#7c3aed",
+                        "surface-variant": "#353436",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#d8e2ff",
+                        "on-tertiary": "#2f3131",
+                        "surface-container-highest": "#353436",
+                        "inverse-primary": "#732ee4",
+                        "surface-container-lowest": "#0e0e0f",
+                        "tertiary-container": "#656767",
+                        "surface": "#131314",
+                        "on-primary": "#3f008e",
+                        "on-tertiary-container": "#e5e6e6",
+                        "primary-fixed": "#eaddff",
+                        "surface-tint": "#d2bbff",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary": "#c6c6c7",
+                        "surface-dim": "#131314",
+                        "surface-bright": "#3a393a",
+                        "inverse-surface": "#e5e2e3",
+                        "primary-fixed-dim": "#d2bbff",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "on-secondary": "#002e6a",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-fixed": "#001a42",
+                        "on-primary-fixed": "#25005a",
+                        "on-primary-container": "#ede0ff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "inverse-on-surface": "#313031",
+                        "secondary-container": "#0566d9",
+                        "on-background": "#e5e2e3",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-container-low": "#1c1b1c",
+                        "on-secondary-container": "#e6ecff",
+                        "on-surface": "#e5e2e3",
+                        "on-secondary-fixed-variant": "#004395",
+                        "surface-container-high": "#2a2a2b",
+                        "primary": "#d2bbff",
+                        "background": "#131314"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "stack-xs": "4px",
+                        "stack-xl": "80px",
+                        "stack-md": "24px",
+                        "margin-desktop": "64px",
+                        "stack-sm": "12px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0B;
+            color: #e5e2e3;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(18, 18, 20, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gradient-border {
+            position: relative;
+            background: #121214;
+            border: 1px solid transparent;
+            background-clip: padding-box;
+        }
+        .gradient-border::after {
+            position: absolute;
+            top: -1px; bottom: -1px; left: -1px; right: -1px;
+            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+            content: '';
+            z-index: -1;
+            border-radius: inherit;
+            opacity: 0.2;
+            transition: opacity 0.3s ease;
+        }
+        .gradient-border:hover::after {
+            opacity: 0.6;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+        }
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -2;
+            animation: float 20s infinite ease-in-out alternate;
+        }
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: rgba(124, 58, 237, 0.4);
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: rgba(59, 130, 246, 0.3);
+            bottom: 20%;
+            right: 10%;
+            animation-delay: -5s;
+        }
+        .orb-3 {
+            width: 300px;
+            height: 300px;
+            background: rgba(236, 72, 153, 0.2);
+            top: 40%;
+            left: 60%;
+            animation-delay: -10s;
+        }
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-[30px] border-b border-outline-variant/20 shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-on-surface">Novorize</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="case-studies.html">Case Studies</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="blogs.html">Blogs</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:scale-95 transition-transform active:scale-90 text-center">
+                Book Consultation
+            </a>
+<button id="mobile-menu-btn" class="md:hidden text-on-surface p-2 z-[60] relative">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-surface/98 backdrop-blur-xl z-[55] hidden flex-col items-center justify-center space-y-8 opacity-0 transition-opacity duration-300">
+<a class="text-primary font-bold font-headline-md text-headline-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="case-studies.html">Case Studies</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="blogs.html">Blogs</a>
+<a href="contact.html" class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-headline-md text-label-md font-bold mt-4 text-center">
+        Book Consultation
+    </a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center text-center px-margin-mobile overflow-hidden">
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="absolute inset-0 hero-glow -z-10"></div>
+<div class="max-w-4xl mx-auto space-y-stack-md relative z-10">
+<div class="gsap-reveal inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-sm text-label-sm uppercase tracking-wider mb-4">
+                    Performance Agency for the Bold
+                </div>
+<h1 class="gsap-reveal font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface leading-tight md:leading-tight">
+                    We Help DTC Brands Scale <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Profitably</span> through Creative Intelligence
+                </h1>
+<p class="gsap-reveal font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-6">
+                    Move beyond siloed ROAS. Our holistic framework aligns paid media, creative engineering, and retention to drive sustainable enterprise value.
+                </p>
+<div class="gsap-reveal flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+<a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-container to-secondary-container text-white rounded-xl font-headline-md text-label-md font-bold shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:brightness-110 transition-all text-center">
+                        Scale My Brand
+                    </a>
+<a href="case-studies.html" class="w-full sm:w-auto px-8 py-4 border border-outline-variant hover:bg-surface-variant/30 rounded-xl font-headline-md text-label-md font-bold transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+                        Watch Case Studies
+                    </a>
+</div>
+</div>
+</section>
+<!-- Trusted By -->
+<section class="py-stack-xl border-y border-outline-variant/10 bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<p class="text-center font-label-sm text-label-sm text-outline mb-10 uppercase tracking-widest">Powering High-Growth DTC Teams Globally</p>
+<div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgLS8YI5q6J5Tvv39_K7U9YfcGkiyNGmN20xehNXWHaZ_VtRODWqiz0S6hRWAH5eFqNBcinCsZxum3aTpKbqyh-0VAOuiUEpPtexNbOK9vFqB-lbinaqBwD6jV5xmRXYx_vHHS_gLfhdWG6zBUh_gWGwFO8hQLGJncGqeDx7maq2XgcbW7H8xs936ieeb5Z04BVuSKWt25lDVrDrHIhfgy8xUYjsfJxm1reInFwZ8G_1mdqZ6jywFtUjuXUqTXwKmSuFTdvzJHHA"/>
+<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzgQAzPG6jPW1Uj5dIZ5pRV2z5R756bvgNklQOWQ9Og-7_MloDGmTHSxfsjrLLwWSrQG-yrbqRv_XnTIqLwGYIgN8eVwM0fINqpMcctDCfBJIyx7UP40rh70OLuRTtOb0ngQrLe6eBA2kjo1ZTlvtw7ZHtbasIFLx3E-NZ8NsCj6CeB3nZGdCqzPTgFXrGoJy14Hbuz66Js1Onrau2NuJ1Q_319VvVWqTvHxvvj7ptBN6QAurNqhnKYXjNrhBSI_-Fqw7yZtY3Ng"/>
+<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xEI6eiytXwgu4PsLe57C7p3lE4kdsUa_dkjRB5VsN9LSoiD8SrmWfHwWYp2GS5x-ccYB4VRpmsf5HvjFY7wcakfXYiZaynfdKoFLvahwwCo9n20ofZSW2jsksa4hdaEu7w-rJ9MHMEIEvXJDIUxyqVITcbGQQA7tV8V7-G1za_N2PdQp0f0qp9rmeM_kM2amlZVU8WTIouNxk92-_ticW9GR3V89r6IVD5Gf3RP8S3vZoBYU2L8VClLtiBrGEsbRCO4iu8IilA"/>
+<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO3wIjaWFYdP-Nwl-TZaW2UfhJ4neUDoecgUNAiGMxGHXOQOpD_3ChwOmRMb_16r_5R4--waglaB6GWhq69dxesAO_MtAY7F9Sho7SmRtmbgtiMq7sredBmuTB_koxqkBfljQb19j0WlGg-JmgK4wc7_WrK3ftB4UdgJ_MYm5aeosWr_Sp67JAjKco2cjMYJiHcQ70a6Av6jaSSZwtCHX9JMGPNipMNF2OgYEbtaK79_Ocm8LaACznqyGmtcwe4HfyRAORpNy-kQ"/>
+<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKJOAAhfvBbBFKRhJrtB-0BSTpxHeoxNLo2_yNTkLo6EMGtZXkfS6VnLsmCbUvEBs81-crYx3oBUbikwSvn6eHQ9jMbusp7klJnHcYEm9r3F5qqeId8PHXw5rjohhFCcK5a6ejf0hVsyNDiIlID9sOClc0DTVmQ_S0b9mtbNIZIefkUxxu0QNlpXatPoUIFVUZ7AVS6FjoiwURV8jpgQdMLUdDPtlq4MTJpSKMctVcH_1Mz8o7PGWAewHuQHU2LA9Hva2CRwiJMw"/>
+</div>
+</div>
+</section>
+<!-- Precision Engineering (Services) -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Precision Engineering</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">We don't just "run ads". We build scientific systems for sustainable customer acquisition.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Meta Ads -->
+<div class="gradient-border p-8 rounded-2xl space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">ads_click</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Meta Ads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Creative-led broad targeting strategies that exploit the algorithm for maximum reach.</p>
+</div>
+<!-- Google Ads -->
+<div class="gradient-border p-8 rounded-2xl space-y-4">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">troubleshoot</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Google Ads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Precision-targeted search and Performance Max campaigns built for high-intent capture.</p>
+</div>
+<!-- CRO -->
+<div class="gradient-border p-8 rounded-2xl space-y-4">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">web_traffic</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">CRO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Landing page optimization and psychological triggers to squeeze more revenue from every click.</p>
+</div>
+<!-- Retention -->
+<div class="gradient-border p-8 rounded-2xl space-y-4">
+<div class="w-12 h-12 rounded-lg bg-inverse-primary/10 flex items-center justify-center text-inverse-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Retention</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Advanced Klaviyo automations that turn one-time buyers into lifelong brand advocates.</p>
+</div>
+</div>
+</section>
+<!-- See Our Work In Action -->
+<section class="py-stack-xl bg-surface-container-low overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface text-center">See Our Work In Action</h2>
+</div>
+<div class="flex gap-gutter overflow-x-auto pb-10 px-margin-mobile md:px-margin-desktop snap-x scrollbar-hide">
+<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
+<img class="w-full h-full object-cover" data-alt="A vertical performance-driven UGC video advertisement for a premium tech accessory, featuring high-energy editing and vibrant purple studio lighting. The aesthetic is clean and modern, focusing on the tactile quality of the product with cinematic close-ups and dynamic transitions. The overall mood is high-performance and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnl023v-zK67CeG8UFmO9D2VXn5IddXYawRNfY_DG68uZxpYot17qpeOyhRBFoXhMHP6RmuXSToFtK8avVUWXrBP24Kbl-sljQL_qyyOR1Okw-yjF-RvEZNXpU6iZ0PeOidH4nzLwHdqLuOQA7BpjwcOsukKAXpt9R_q3eYu5dn8xLABKZ0OHNM9MutL7oakD9jZl4AF_dfTqo0Fi5IFR9x0mosdxEV0M9EfB6SGCZcYpcO_4OqEguUvedDrG-ORpTr6AvAo_Qgg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<p class="text-white font-label-md text-label-md">DTC Skincare: +240% Sales Increase</p>
+</div>
+</div>
+<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
+<img class="w-full h-full object-cover" data-alt="A creative strategy brainstorming session shown through a digital whiteboard with vibrant purple and blue sticky notes and complex flowcharts. The setting is a dark-mode inspired digital workspace with glowing UI elements and analytical charts in the background. The lighting is focused and moody, emphasizing a high-tech agency environment dedicated to growth marketing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxDBhrn6o-gEo04jxyFYwItYDENuc1wPqe1ShW559Qk5f5bkg0FLAI9IYqo4dCPUof5iOxN4BJattumAwkVBnKUjzQyimmqqrZvTBr-nmy34CWyDzZxkLIkG2WEWjV7W2XGyS5EohpKfxTtNYEzNth10KyvW7LIrFW3e35UAArBAo-jmBLFBo6GV0wDONeA0lDD3uRcY7E-u5SwxyRuu6QC99bQEx31KZUZPkNYua79mcCwVBh9-S2WDEX6TUDybadKeV7mqB-dw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<p class="text-white font-label-md text-label-md">Tech Gadgets: 5.4x MER Achievement</p>
+</div>
+</div>
+<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
+<img class="w-full h-full object-cover" data-alt="A futuristic data visualization dashboard showing exponential growth curves in vibrant neon violet and electric blue against a deep black background. The interface is clean and minimal, using glassmorphism effects for the data cards. Tiny points of light represent data packets flowing through a network, symbolizing high-speed scaling and creative intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVMB3A2t3MvTbRr-RTOrb9Pu8zs78S50C3GXuf9a0vtfOpmA7GNnp48WTtNtvnDCLYEG0hZk8bkgKOApvj3vppc2gUHxePxBTunztaAW4uDIMO75CNWbx4D8r7rvX7u55bZbBqJBFn-XVOfs4H-8d9RQM74m40GH4x7aPQTVs0-3gZ3zzgi5SEBzgE8iFUwDpLN-EXlzXet26_KjHd9aHnOQuNA9jn3K6rQkEizAA8ohv961f7FAichGGy84L_IadAY99CklbGNQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<p class="text-white font-label-md text-label-md">Home Decor: Scaling to $2M/mo</p>
+</div>
+</div>
+<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
+<img class="w-full h-full object-cover" data-alt="A professional growth marketer analyzing multi-screen data visualizations in a dark, high-performance command center. The lighting is low-key, with the glow from the screens illuminating the scene in primary violet and secondary blue. The atmosphere is one of intense focus and engineering precision, typical of a top-tier digital agency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArWoKh07s7RN-lQzrngK12RDrhCroE3RGF2M82YnpLRxi-xP-h8Pw3uRiWqI91mOztM0QIqeSala00AqK4PbFpqSiG4f90QXz27B4Z9XjMWHat0EF5shGs8rv2YxoktKghxDQS6DbwTHpTqshqeVB1GoQXj32y9Yvi99EwutONpesMixbuDRx7yNm1ge9jZ-BJHLStUcOYgfI1OkSkGFxE0Bn8uadKw7q7r0xlwl3X3tWCV8vH9vTxAK2SAg4xs6mkS0EFnM8r_A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+<p class="text-white font-label-md text-label-md">Luxury Apparel: 32% Lower CPA</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Revenue Outcomes -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-stack-lg text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Revenue Outcomes</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Hard data from our recent brand audits and management periods.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<div class="glass-card p-8 rounded-3xl border-outline-variant/20">
+<div class="flex justify-between items-end mb-6">
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase">Monthly Revenue Growth</p>
+<p class="font-headline-lg text-headline-lg text-primary">+312%</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-outline">Industry</p>
+<p class="font-body-md text-body-md">Personal Care</p>
+</div>
+</div>
+<div class="h-48 flex items-end gap-2 px-2">
+<div class="w-full bg-surface-variant h-[20%] rounded-t-lg"></div>
+<div class="w-full bg-surface-variant h-[25%] rounded-t-lg"></div>
+<div class="w-full bg-surface-variant h-[35%] rounded-t-lg"></div>
+<div class="w-full bg-primary h-[55%] rounded-t-lg shadow-[0_0_15px_rgba(124,58,237,0.4)]"></div>
+<div class="w-full bg-primary h-[75%] rounded-t-lg shadow-[0_0_15px_rgba(124,58,237,0.4)]"></div>
+<div class="w-full bg-primary h-[95%] rounded-t-lg shadow-[0_0_15px_rgba(124,58,237,0.4)]"></div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-3xl border-outline-variant/20">
+<div class="flex justify-between items-end mb-6">
+<div>
+<p class="font-label-sm text-label-sm text-outline uppercase">CAC Optimization</p>
+<p class="font-headline-lg text-headline-lg text-secondary">-42%</p>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-label-sm text-outline">Industry</p>
+<p class="font-body-md text-body-md">Fashion &amp; Apparel</p>
+</div>
+</div>
+<div class="h-48 flex items-end gap-2 px-2">
+<div class="w-full bg-secondary h-[90%] rounded-t-lg opacity-40"></div>
+<div class="w-full bg-secondary h-[80%] rounded-t-lg opacity-50"></div>
+<div class="w-full bg-secondary h-[70%] rounded-t-lg opacity-70"></div>
+<div class="w-full bg-secondary h-[60%] rounded-t-lg shadow-[0_0_15px_rgba(59,130,246,0.4)]"></div>
+<div class="w-full bg-secondary h-[50%] rounded-t-lg shadow-[0_0_15px_rgba(59,130,246,0.4)]"></div>
+<div class="w-full bg-secondary h-[45%] rounded-t-lg shadow-[0_0_15px_rgba(59,130,246,0.4)]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Scaling Framework -->
+<section class="py-stack-xl bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The Scaling Framework</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Our proven 3-step process to move from stagnant revenue to predictable profits.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative">
+<div class="hidden md:block absolute top-12 left-0 w-full h-px bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent -z-10"></div>
+<div class="space-y-6 text-center px-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center mx-auto text-primary font-bold text-xl relative">
+                            1
+                        </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Brand audit, unit economics mapping, and creative roadmap development.</p>
+</div>
+<div class="space-y-6 text-center px-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center mx-auto text-primary font-bold text-xl">
+                            2
+                        </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Execution</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">UGC production, ad account launch, and retention flow automation.</p>
+</div>
+<div class="space-y-6 text-center px-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center mx-auto text-primary font-bold text-xl">
+                            3
+                        </div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Scaling</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Daily optimization, creative refreshes, and vertical budget expansion.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Transparent Growth Plans</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">High-performance management with zero hidden fees.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Starter -->
+<div class="glass-card p-10 rounded-3xl flex flex-col h-full border-outline-variant/10">
+<p class="font-label-md text-label-md text-on-surface-variant mb-2">Starter</p>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-headline-lg font-bold">₹2,00,000</span>
+<span class="text-outline">/mo</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Meta or Google Management
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Basic Creative Strategy
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Monthly Analytics Report
+                        </li>
+</ul>
+<button class="w-full py-3 rounded-xl border border-outline-variant hover:bg-surface-variant font-label-md text-label-md font-bold transition-all">Select Starter</button>
+</div>
+<!-- Growth -->
+<div class="gradient-border p-10 rounded-3xl flex flex-col h-full border-primary/20 scale-105 shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
+<div class="flex justify-between items-center mb-2">
+<p class="font-label-md text-label-md text-primary">Growth</p>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary text-[10px] font-bold uppercase">Popular</span>
+</div>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-headline-lg font-bold">₹4,00,000</span>
+<span class="text-outline">/mo</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Full Omni-channel Management
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            UGC Production &amp; Creative Editing
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Klaviyo Retention Engine
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Bi-weekly Growth Sprints
+                        </li>
+</ul>
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-label-md text-label-md font-bold hover:brightness-110 transition-all">Start Scaling</button>
+</div>
+<!-- Enterprise -->
+<div class="glass-card p-10 rounded-3xl flex flex-col h-full border-outline-variant/10">
+<p class="font-label-md text-label-md text-on-surface-variant mb-2">Enterprise</p>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-headline-lg font-bold">Custom</span>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Fractional Growth Partner
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Bespoke Analytics Dashboards
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+                            Global Market Expansion
+                        </li>
+</ul>
+<button class="w-full py-3 rounded-xl border border-outline-variant hover:bg-surface-variant font-label-md text-label-md font-bold transition-all">Contact Sales</button>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-stack-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -z-10 blur-[100px]"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center py-16 md:py-20 bg-surface-container rounded-[20px] md:rounded-[40px] border border-outline-variant/10 mx-4 md:mx-auto">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6">Ready to Scale to the Moon?</h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10">Stop guessing. Start growing. Join the top 1% of DTC brands who treat marketing as an engineering problem.</p>
+<a href="contact.html" class="w-full sm:w-auto px-12 py-5 bg-primary text-on-primary rounded-full font-headline-md text-label-md font-bold hover:scale-105 transition-all shadow-[0_10px_40px_rgba(124,58,237,0.4)] text-center inline-block">
+                    Book Your Audit Now
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full py-stack-xl border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="text-headline-md font-headline-md font-bold text-on-surface">Novorize</div>
+<p class="font-body-md text-body-md text-on-surface-variant pr-4">Precision-engineered performance for the next generation of DTC brands.</p>
+</div>
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Company</p>
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="blogs.html">Blogs</a>
+</div>
+</div>
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Growth</p>
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="case-studies.html">Case Studies</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
+</div>
+</div>
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Legal</p>
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="legal.html">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="legal.html">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="mt-stack-xl pt-8 border-t border-outline-variant/5 text-center px-margin-mobile">
+<p class="font-body-md text-body-md text-outline">Â© 2024 Novorize. All rights reserved. Built for the Indian Market.</p>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.to(".gsap-reveal", {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        if(btn && menu) {
+            btn.addEventListener("click", () => {
+                if (menu.classList.contains("hidden")) {
+                    menu.classList.remove("hidden");
+                    setTimeout(() => menu.classList.remove("opacity-0"), 10);
+                    btn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    menu.classList.add("opacity-0");
+                    setTimeout(() => menu.classList.add("hidden"), 300);
+                    btn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+    });
+</script>
+</body></html>

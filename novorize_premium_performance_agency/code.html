@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Novorize | Performance-Driven Digital Marketing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#0566d9",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "primary-fixed-dim": "#d2bbff",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#eaddff",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#004395",
+                        "on-background": "#e5e2e3",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-primary": "#732ee4",
+                        "surface-container-lowest": "#0e0e0f",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "on-secondary": "#002e6a",
+                        "on-tertiary-container": "#e5e6e6",
+                        "inverse-surface": "#e5e2e3",
+                        "on-secondary-fixed": "#001a42",
+                        "on-secondary-container": "#e6ecff",
+                        "primary-container": "#7c3aed",
+                        "outline": "#958da1",
+                        "secondary-fixed": "#d8e2ff",
+                        "primary": "#d2bbff",
+                        "on-tertiary": "#2f3131",
+                        "surface-container-high": "#2a2a2b",
+                        "inverse-on-surface": "#313031",
+                        "surface-tint": "#d2bbff",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "background": "#131314",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#353436",
+                        "tertiary": "#c6c6c7",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "error-container": "#93000a",
+                        "on-primary": "#3f008e",
+                        "surface": "#131314",
+                        "on-primary-container": "#ede0ff",
+                        "surface-dim": "#131314",
+                        "surface-bright": "#3a393a",
+                        "surface-container-low": "#1c1b1c",
+                        "on-surface": "#e5e2e3",
+                        "tertiary-container": "#656767",
+                        "on-primary-fixed": "#25005a",
+                        "outline-variant": "#4a4455",
+                        "on-surface-variant": "#ccc3d8",
+                        "surface-container": "#201f20",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "surface-variant": "#353436",
+                        "secondary": "#adc6ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-xs": "4px",
+                        "container-max": "1280px",
+                        "stack-md": "24px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "48px",
+                        "stack-xl": "80px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: #0A0A0B; color: #e5e2e3; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(30px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .hero-gradient { background: radial-gradient(circle at 50% -20%, rgba(124, 58, 237, 0.15) 0%, rgba(10, 10, 11, 0) 60%); }
+        .glow-border:hover { border-color: #7c3aed; box-shadow: 0 0 20px rgba(124, 58, 237, 0.1); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-white">
+<!-- Navbar -->
+<nav class="sticky top-0 w-full z-50 bg-background/80 backdrop-blur-[30px] border-b border-white/10">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Novorize</span>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Case Studies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Pricing</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">FAQ</a>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-2.5 rounded-full scale-95 active:scale-90 transition-transform duration-200">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-gradient pt-stack-xl pb-stack-xl md:pt-32 md:pb-40 relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 mb-8">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-bold tracking-widest uppercase text-primary">Performance Intelligence 2.0</span>
+</div>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl mb-6 max-w-4xl mx-auto bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+                We Help DTC Brands Scale Profitably through Creative Intelligence.
+            </h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                Moving beyond traditional targeting with AI-driven creative assets and retention engines designed for modern high-growth ecosystems.
+            </p>
+<div class="flex flex-col sm:flex-row gap-stack-md justify-center items-center mb-stack-xl">
+<button class="w-full sm:w-auto bg-primary-container hover:bg-primary-container/90 text-white font-label-md text-label-md px-8 py-4 rounded-xl transition-all shadow-[0_0_30px_rgba(124,58,237,0.3)]">
+                    Get a Growth Audit
+                </button>
+<button class="w-full sm:w-auto border border-white/10 hover:bg-white/5 text-white font-label-md text-label-md px-8 py-4 rounded-xl transition-all">
+                    Watch Case Studies
+                </button>
+</div>
+<!-- Dashboard Mockup Visual -->
+<div class="relative max-w-5xl mx-auto mt-stack-xl">
+<div class="glass p-2 rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Dashboard visualization" class="w-full rounded-xl opacity-90" data-alt="A high-tech digital analytics dashboard showing complex line charts, data points, and performance metrics in an electric violet and deep slate color scheme. The interface features translucent glass layers and glowing data nodes, reflecting a sophisticated SaaS aesthetic with professional data visualization. The lighting is low and focused, emphasizing the vibrant purple data trends." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxYgajsrrVyvMA7gHQmLdj4PsFFrjo3z9HTPzztSjczp44uc4Log9C39YOLm_Sh_ZDEZMDcAWfpKOBtDLuv5l2pX6lqNUEBcAP5O2V6ontzS_xMuTqHWegw18RiWLd6EIHpv0jS3AmugqavmiyhrZTj04OS-nG2RJFmLVmeH9Zeg8FWVx2s4M1HC-D2CZ9AWhXoLGmf5HXPXjFtF9XS8BXGChzFnm3EA5niXkMsnXNolaOqWuk9ptEhpWYEzVEZIZ_m694IeR83w"/>
+</div>
+<!-- Floating Decorative Elements -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 blur-[80px] rounded-full"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/20 blur-[80px] rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="border-y border-white/5 bg-surface-container-lowest/50 py-12">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<p class="font-headline-md text-primary">$500M+</p>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest mt-2">Managed</p>
+</div>
+<div>
+<p class="font-headline-md text-primary">4.2x</p>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest mt-2">Avg. ROAS</p>
+</div>
+<div>
+<p class="font-headline-md text-primary">150+</p>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest mt-2">Brands Scaled</p>
+</div>
+<div>
+<p class="font-headline-md text-primary">24/7</p>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest mt-2">Monitoring</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By -->
+<section class="py-stack-lg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<p class="text-center font-label-sm text-on-surface-variant/60 uppercase tracking-widest mb-10">TRUSTED BY INDUSTRY DISRUPTORS</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale transition-all hover:grayscale-0">
+<img alt="Logo 1" class="h-6 md:h-8 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIdUxlYDWhiTsyRy7C0GcFK8okZAJr2w0hT_TBWS6oTTjEv2-7WrpZbUQoR3cZNBXFWakFRmyxYwWA9Qs9n653LfDmTYHrQ1E8XrybrNxikczfxiaCKERhOepc5IrZInlq0kSjBccf_o3iGS7cIidQpYeM26Tzi9EX6KIrZ3NomDSxnubhUgXPuLa_Fp2ogXLph1JsSkwhPvVx7SePH8_h5RVCCAnum4_y2V_65qZEHtOZ-fxDdFfTUmkZgL9ibI_D1nytdo2Zzw"/>
+<img alt="Logo 2" class="h-6 md:h-8 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHp80icMmga3xKy1JC7uDcMHON57ttVBY2cifY6v7DlIw6JngcNUEB8b2O8tkFqeNBiBoHPQD95IrM0dDXHUEq4WQHxx65BcwOPoOdn93XNN5XRedf0o78Y0ImUoszPcocfZhbTiLs7cMGuNn4qUXs9PInGt3MrMxZHPfof3y0VssN4oURRjjzUjWK3hZEmGUYp7wnu9YpYSaP8T1Kr5zGnPOSiHm9T8up9xA4vnVhTofDaybCgm0NZ8s6rYJ2dy9t0rvPS7Njyw"/>
+<img alt="Logo 3" class="h-6 md:h-8 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1uSw1yxUNBBLmQ6CRKNxHd-4iDG4XBymA1dVuoaNmcOFO4dLfVUCe63bQUUssMrJyh6nEl2nnACNlkF2-DmJIgHN7jvN-2FmPUCWHqLx58zWAmBeR9vpAYP09FZ5D5rKXnszkUNLKuFKvf7GUm5hfWZOrCwADnjkP2g7bmwZEG2QxyKAoL6FM8jtsx-OXy3xB9pk_d8V6Z8BRWJXNCXF8KR6t60b4G1LJLLJ0ef0L7eX0K9NtgAn6dNtmhyhZOPfXq0UIO6PXwQ"/>
+<img alt="Logo 4" class="h-6 md:h-8 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiumIMro9sy9bHGZOQaFZ5WW_BxOCIBoIfsuO4yGVnSpp6wrzl_5VQpudRdZqMES1i8polaRbvCuoLT-TBWzKaGueCyDhDHD-viZA7YQGLW0mgIKPwl5-15mLIGgHKbYp-G7eO7-RT83TYAd_28-7lqnWa8-grvLzUvEnwTP0t2KEuqiUSDt9qEwCUIqxRQVaTmnCwR3NuKcYygyam6dD9FVMXOS5sP0QLqiENqpkgbu8Mw-gt2Pfq_ANEz1sj3k-LzSHH9aUdIA"/>
+<img alt="Logo 5" class="h-6 md:h-8 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhosdqIXE9AR35GGxR4QlvuLqdK5CoPovO21Yit_gMn1ji34pjpBcyhPoon_95EMzb7vWdrxeuvi2iKr0rBU36acE8psID9axwHANx1uiQgFv0ENWCQAjiX1LaDQn6a_GQcm2YF0UaRuIwYeb9O-wINHWXUEzdTQSb-3z1PDfQEbirMay_Cza2VsEj6z3S_vUOcpz9rS5VspJYj9Eswz_2vZo6qDE2-ZeNLCHS9JTTqVvL15U-EVeE6tMhy8TpNtOOSKGsZlfO8Q"/>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-stack-xl">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end gap-stack-md mb-16">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">Precision Engineering for DTC Growth</h2>
+<p class="font-body-md text-on-surface-variant">We don't just run ads; we architect growth engines that capture, convert, and retain customers with lethal efficiency.</p>
+</div>
+<button class="text-primary font-label-md flex items-center gap-2 group">
+                    Explore all services <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service Cards -->
+<div class="glass p-8 rounded-2xl glow-border transition-all flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">campaign</span>
+</div>
+<h3 class="font-headline-md text-white">Meta Ads</h3>
+<p class="font-body-md text-on-surface-variant">Precision-targeted campaigns focusing on high-intent audiences and dynamic creative optimization.</p>
+</div>
+<div class="glass p-8 rounded-2xl glow-border transition-all flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">ads_click</span>
+</div>
+<h3 class="font-headline-md text-white">Google Ads</h3>
+<p class="font-body-md text-on-surface-variant">Capturing high-intent demand through search, shopping, and performance max campaigns.</p>
+</div>
+<div class="glass p-8 rounded-2xl glow-border transition-all flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">video_stable</span>
+</div>
+<h3 class="font-headline-md text-white">UGC Strategy</h3>
+<p class="font-body-md text-on-surface-variant">High-performance creative production that converts scrolling into revenue through authentic storytelling.</p>
+</div>
+<div class="glass p-8 rounded-2xl glow-border transition-all flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<h3 class="font-headline-md text-white">Retention (Klaviyo)</h3>
+<p class="font-body-md text-on-surface-variant">Lifecycle automation that maximizes LTV through intelligent email and SMS flows.</p>
+</div>
+<div class="glass p-8 rounded-2xl glow-border transition-all flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">monitoring</span>
+</div>
+<h3 class="font-headline-md text-white">CRO</h3>
+<p class="font-body-md text-on-surface-variant">Data-driven testing to optimize your landing pages for maximum conversion velocity.</p>
+</div>
+<div class="glass p-8 rounded-2xl glow-border transition-all flex flex-col gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">auto_fix_high</span>
+</div>
+<h3 class="font-headline-md text-white">Funnel Design</h3>
+<p class="font-body-md text-on-surface-variant">Architecting the full customer journey from first touchpoint to repeat purchase.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Showcase -->
+<section class="py-stack-xl bg-surface-container-low/30 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-12">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-center">See Our Work In Action</h2>
+</div>
+<div class="flex gap-gutter overflow-x-auto pb-8 px-margin-mobile md:px-margin-desktop no-scrollbar">
+<!-- Video Cards -->
+<div class="min-w-[300px] md:min-w-[400px] glass rounded-3xl overflow-hidden relative group">
+<img alt="UGC 1" class="w-full h-[500px] object-cover opacity-60 group-hover:opacity-100 transition-opacity" data-alt="A cinematic behind-the-scenes shot of a professional content creator filming a product in a modern, brightly lit studio setting. The atmosphere is creative and industrious, featuring high-end camera equipment and softbox lighting that creates a clean, professional aesthetic. The color palette is dominated by neutral tones with subtle, warm highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC8P8zWmgK2MZamjR78MFglsaStOrCaRtn2MJf56ruujefaHrMXDZu3IUxh7pvYh7MSWQicytAty3d_Mw5Fqf9xH3gMji6VaNP-P1ZO57rchtmnMZt4251yk3KXbC675TQ8K1URqCk7QSBp8YGjCECG4hZPLsCWESf-3KnVoViHH-JlXgMAOpwrlaoL-sYE7_EIhVdOhjVAumYxtUg0zrwfHmqy7zyT1EPYlGq5qSwY0LCBEFBW091mxgqXUEeY4z6hs9fFMDfTw"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-background to-transparent">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase">UGC Performance</span>
+</div>
+<h4 class="font-headline-md text-white">Lifestyle Tech Brand</h4>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<div class="min-w-[300px] md:min-w-[400px] glass rounded-3xl overflow-hidden relative group">
+<img alt="UGC 2" class="w-full h-[500px] object-cover opacity-60 group-hover:opacity-100 transition-opacity" data-alt="A sleek, modern desk setup with high-end tech accessories and a minimalist monitor. The scene is illuminated by soft, violet ambient lighting reflecting off clean surfaces. The aesthetic is extremely polished and high-performance, capturing a sophisticated professional workspace with developer-adjacent clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTUAjc1MoWSQ6kc5xsTgx2lPLiU4CEm6JraJMgppyvo0811io76sh03iakVNgTxqQVSLtFQ7tVxZT_sbhBhS85_OatCBqjLOxuAyG_n-n5Lqe2zPaqfVsos7jUiRrCq9FmzpKlVsgjKqBBjIXcPet6oU47O2dZp3IBpGyemevCBTVsC5grCE00BdgUs44u0z_RbzZdSSRkJoLgpZALGMxSw694NGIlhr9LX2i9wWPsF2bkVTdw1Fnd8Plat9gbwAq_O0kReWji0g"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-background to-transparent">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Growth Hack</span>
+</div>
+<h4 class="font-headline-md text-white">SaaS Product Launch</h4>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<div class="min-w-[300px] md:min-w-[400px] glass rounded-3xl overflow-hidden relative group">
+<img alt="UGC 3" class="w-full h-[500px] object-cover opacity-60 group-hover:opacity-100 transition-opacity" data-alt="Close-up of a high-resolution mobile phone display showing vibrant social media interface with aesthetic content. The lighting is neon-inspired with deep purples and blues, creating a high-energy digital mood. The focus is sharp, highlighting the premium design and modern app interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLEeCvf6vwXtJhU5SO8vqpZbiUWsgobwPvgVc0V0pDqvPtd-o8qHtkXYNanFLUqNhg2pMoCkwa151WFvGquA_7zjKpJd5x63qE1H54iHLeJOvwX_QUGt2vJlZrSPVN6QUe6zY2sZqyB6RA2ORNpZ0lOYYIy0Hurmm3D4Iu_C8pSPxrcyNREqBW1XDOQBWcYSxk2YHetK-jKb0h3FOrQR5Eoo6gPIfikGtJ2Su-B4I7IC6YXBF1XjmZjaw4fLC07WVj3OmyjBRP8g"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-background to-transparent">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase">Direct Response</span>
+</div>
+<h4 class="font-headline-md text-white">Luxury Apparel Ads</h4>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Results/Case Studies -->
+<section class="py-stack-xl">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-center mb-16">Revenue Outcomes</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="glass p-10 rounded-3xl relative overflow-hidden group">
+<div class="flex justify-between items-start mb-12">
+<div>
+<p class="font-label-sm text-primary uppercase tracking-widest mb-2">Fashion &amp; Apparel</p>
+<h3 class="font-headline-md">The 7-Figure Scale</h3>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-white">300%</p>
+<p class="font-label-sm text-on-surface-variant">ROI Increase</p>
+</div>
+</div>
+<div class="h-48 flex items-end gap-2 px-2 border-b border-white/10 mb-8">
+<div class="flex-1 bg-primary/20 h-[30%] rounded-t-lg transition-all group-hover:h-[40%]"></div>
+<div class="flex-1 bg-primary/30 h-[45%] rounded-t-lg transition-all group-hover:h-[55%]"></div>
+<div class="flex-1 bg-primary/40 h-[40%] rounded-t-lg transition-all group-hover:h-[50%]"></div>
+<div class="flex-1 bg-primary/60 h-[70%] rounded-t-lg transition-all group-hover:h-[80%]"></div>
+<div class="flex-1 bg-primary/80 h-[85%] rounded-t-lg transition-all group-hover:h-[95%] shadow-[0_0_20px_rgba(124,58,237,0.4)]"></div>
+</div>
+<div class="flex justify-between items-center">
+<p class="font-body-md text-on-surface-variant">Scaled monthly revenue from $40k to $450k in 6 months using Meta creative loops.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="glass p-10 rounded-3xl relative overflow-hidden group">
+<div class="flex justify-between items-start mb-12">
+<div>
+<p class="font-label-sm text-primary uppercase tracking-widest mb-2">Health &amp; Wellness</p>
+<h3 class="font-headline-md">Profit Maximization</h3>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-white">1.8x</p>
+<p class="font-label-sm text-on-surface-variant">LTV Boost</p>
+</div>
+</div>
+<div class="h-48 flex items-end gap-2 px-2 border-b border-white/10 mb-8">
+<div class="flex-1 bg-secondary/20 h-[20%] rounded-t-lg transition-all group-hover:h-[30%]"></div>
+<div class="flex-1 bg-secondary/30 h-[35%] rounded-t-lg transition-all group-hover:h-[45%]"></div>
+<div class="flex-1 bg-secondary/40 h-[60%] rounded-t-lg transition-all group-hover:h-[70%]"></div>
+<div class="flex-1 bg-secondary/60 h-[50%] rounded-t-lg transition-all group-hover:h-[60%]"></div>
+<div class="flex-1 bg-secondary/80 h-[90%] rounded-t-lg transition-all group-hover:h-[100%] shadow-[0_0_20px_rgba(59,130,246,0.4)]"></div>
+</div>
+<div class="flex justify-between items-center">
+<p class="font-body-md text-on-surface-variant">Implemented automated retention engines to stabilize cash flow and reduce churn by 40%.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process -->
+<section class="py-stack-xl bg-surface-container-low/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-center mb-20">The Scaling Framework</h2>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Line background for desktop -->
+<div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-primary/10 via-primary to-primary/10"></div>
+<div class="relative flex flex-col items-center text-center gap-6">
+<div class="w-24 h-24 rounded-full bg-background border border-primary flex items-center justify-center z-10 shadow-[0_0_30px_rgba(124,58,237,0.2)]">
+<span class="material-symbols-outlined text-3xl text-primary">analytics</span>
+</div>
+<h3 class="font-headline-md">1. Strategy</h3>
+<p class="font-body-md text-on-surface-variant">Deep audit of current performance metrics, audience mapping, and competitive analysis to find your growth lever.</p>
+</div>
+<div class="relative flex flex-col items-center text-center gap-6">
+<div class="w-24 h-24 rounded-full bg-background border border-primary flex items-center justify-center z-10 shadow-[0_0_30px_rgba(124,58,237,0.2)]">
+<span class="material-symbols-outlined text-3xl text-primary">rocket_launch</span>
+</div>
+<h3 class="font-headline-md">2. Execution</h3>
+<p class="font-body-md text-on-surface-variant">Rapid testing of creative variations and audience segments using our proprietary AI optimization tools.</p>
+</div>
+<div class="relative flex flex-col items-center text-center gap-6">
+<div class="w-24 h-24 rounded-full bg-background border border-primary flex items-center justify-center z-10 shadow-[0_0_30px_rgba(124,58,237,0.2)]">
+<span class="material-symbols-outlined text-3xl text-primary">trending_up</span>
+</div>
+<h3 class="font-headline-md">3. Scaling</h3>
+<p class="font-body-md text-on-surface-variant">Aggressive vertical and horizontal scaling once profitability benchmarks are consistently smashed.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team/About -->
+<section class="py-stack-xl">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-center mb-16">Meet the Architects</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass p-8 rounded-3xl text-center flex flex-col items-center">
+<div class="w-32 h-32 rounded-full border-2 border-primary p-1 mb-6">
+<img alt="Founder" class="w-full h-full object-cover rounded-full" data-alt="Professional headshot of a confident male founder in a modern business-casual setting. He is wearing a dark, minimalist blazer and has a friendly yet authoritative expression. The lighting is sophisticated and soft, typical of high-end corporate photography, with a neutral, slightly blurred office background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxTInXMPZLMcvowb3gqLpRVfj4f6efSmUrTy9ZT_M1uxuAHCjUYhx2YpF79geJBk1VlLB8F496kWRgGTsZ5pkcBxeGCWRr9QlIgo3I2XBMKAjTNgfqxe5SCJ4APnqJ7Qi7T89DCP8keeOFR8lHfiYJDOdKiBwF59RtR6F6jV_cOZGE4wWna2v-IYY85H_XnzED1Voj2R3FOp72X1ATkB4TOK_JaEkMXZpbydHwuvTfzxUR93mFj_XoIP1d7TUkjnuOZAdFiGzH8Q"/>
+</div>
+<h3 class="font-headline-md">Marcus Vance</h3>
+<p class="font-label-sm text-primary uppercase tracking-widest mb-4">Founder &amp; Chief Strategist</p>
+<p class="font-body-md text-on-surface-variant mb-6">Ex-Google performance lead with over 10 years of experience scaling 8-figure e-commerce brands.</p>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+<div class="glass p-8 rounded-3xl text-center flex flex-col items-center">
+<div class="w-32 h-32 rounded-full border-2 border-primary p-1 mb-6">
+<img alt="Team 1" class="w-full h-full object-cover rounded-full" data-alt="Professional portrait of a high-performance female marketing director. She has an intelligent, focused gaze and is dressed in professional, modern attire. The lighting is bright and clean, emphasizing her clear, expert persona, set against a blurred, minimalist corporate interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOIeyysKqEEyFOXjSbOA--Qemf94ZmpqpO7QYokzn7iOBk9I_cd8NoZ-pZwbOaB-ZKcjMAMomo_a-Y-9vJ4a3XwSaI4lQYNowfTR1LrJlYC1PZzpkgfHzAElvTy0ek1jjQiVyM4IjNqPAnklPPJ98QTUkJf9bbb-D9QXsGeFsM5h0oxk8g8D73W3yLHHQx1mmg1WPW7OOvB4o2v6tiUl9aPvwCgeBv_YRSDdoWy1eAs4TsEA9vmq7L25f8I1un4JSyeNnOra4wGg"/>
+</div>
+<h3 class="font-headline-md">Sarah Chen</h3>
+<p class="font-label-sm text-primary uppercase tracking-widest mb-4">Head of Creative</p>
+<p class="font-body-md text-on-surface-variant mb-6">Expert in psychological branding and high-conversion creative production for viral e-commerce.</p>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+<div class="glass p-8 rounded-3xl text-center flex flex-col items-center">
+<div class="w-32 h-32 rounded-full border-2 border-primary p-1 mb-6">
+<img alt="Team 2" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a young, innovative male technical lead in a sleek tech-focused environment. He is wearing a minimalist dark sweater, and the lighting is high-key with soft violet highlights, creating a modern, developer-adjacent vibe that feels authoritative yet approachable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5enLRUXUVfCm0W70674yrpHkRbsSRj-AtrbnEBDmsw4HGjr_wsFn-7FNwZ7WZ07BxJSORMD24fNIeAPThUoCn_trATgZnM-drJCMacXX1fEgqvsbh0yMb56Bc3trZnoUARIywOvJBPwr9dwejXy3I-8NnYB-LasUTYyLEJsj1TdDa2v215rc9o-ff78IN9NhoXbVNYE8Qb-afRRT_8ie2JcSI8XN1gQMYBPc6uMeYLVdgRsqwRBQFV8l3G19Lc38mEUBymhjflA"/>
+</div>
+<h3 class="font-headline-md">David Miller</h3>
+<p class="font-label-sm text-primary uppercase tracking-widest mb-4">Lead Data Analyst</p>
+<p class="font-body-md text-on-surface-variant mb-6">The mathematical mind behind our predictive modeling and attribution engine software.</p>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-stack-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-center mb-16">Simple Performance Pricing</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Tier 1 -->
+<div class="glass p-8 rounded-3xl flex flex-col">
+<h3 class="font-headline-md mb-2">Growth Start</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Perfect for emerging brands scaling past $50k/mo.</p>
+<div class="mb-8">
+<span class="text-4xl font-bold text-white">$2,500</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+<ul class="flex flex-col gap-4 mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Meta &amp; Google Management</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> 5 Creative Assets / mo</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Weekly Performance Sync</li>
+</ul>
+<button class="w-full border border-white/10 hover:bg-white/5 py-3 rounded-xl font-label-md transition-all">Select Plan</button>
+</div>
+<!-- Tier 2 -->
+<div class="glass p-8 rounded-3xl flex flex-col border-primary relative">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+<h3 class="font-headline-md mb-2">Scale Pro</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Aggressive growth for brands $100k-$500k/mo.</p>
+<div class="mb-8">
+<span class="text-4xl font-bold text-white">$5,000</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+<ul class="flex flex-col gap-4 mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Full Funnel Management</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> 15 Creative Assets / mo</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Klaviyo Retention Engine</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Bi-Weekly Strategy Calls</li>
+</ul>
+<button class="w-full bg-primary-container text-white py-3 rounded-xl font-label-md transition-all shadow-[0_0_20px_rgba(124,58,237,0.2)]">Select Plan</button>
+</div>
+<!-- Tier 3 -->
+<div class="glass p-8 rounded-3xl flex flex-col">
+<h3 class="font-headline-md mb-2">Enterprise</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Custom performance architecture for $1M+/mo.</p>
+<div class="mb-8">
+<span class="text-4xl font-bold text-white">Custom</span>
+</div>
+<ul class="flex flex-col gap-4 mb-10 flex-grow">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Dedicated Growth Director</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Unlimited Creative Assets</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Proprietary Analytics Software</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary">check_circle</span> Daily Monitoring &amp; Reports</li>
+</ul>
+<button class="w-full border border-white/10 hover:bg-white/5 py-3 rounded-xl font-label-md transition-all">Contact Sales</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-stack-xl">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<h2 class="font-headline-lg text-center mb-16">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="glass p-6 rounded-2xl">
+<button class="w-full flex justify-between items-center text-left font-headline-md group">
+                        How long until we see results?
+                        <span class="material-symbols-outlined transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<p class="mt-4 font-body-md text-on-surface-variant">Typically, we see directional results within the first 14 days. Full scale and optimization usually occur between days 45 and 90 as we build creative momentum.</p>
+</div>
+<div class="glass p-6 rounded-2xl">
+<button class="w-full flex justify-between items-center text-left font-headline-md group">
+                        Do you handle creative production?
+                        <span class="material-symbols-outlined transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<p class="hidden mt-4 font-body-md text-on-surface-variant">Yes, our in-house studio handles everything from scripting and sourcing creators to editing high-performance UGC and motion graphics.</p>
+</div>
+<div class="glass p-6 rounded-2xl">
+<button class="w-full flex justify-between items-center text-left font-headline-md group">
+                        What is your average ROAS for fashion brands?
+                        <span class="material-symbols-outlined transition-transform group-hover:rotate-180">expand_more</span>
+</button>
+<p class="hidden mt-4 font-body-md text-on-surface-variant">While it varies by product margin, our average fashion client sees a 3.8x to 5.2x return on ad spend within the first 6 months of partnership.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-stack-xl px-margin-mobile">
+<div class="max-w-container-max mx-auto glass p-12 md:p-24 rounded-[3rem] relative overflow-hidden text-center">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 blur-[100px] -z-10"></div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl mb-8">Ready to Scale to the Moon?</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">Book your free growth audit today. We'll look under the hood of your current campaigns and show you exactly where the leaks are.</p>
+<button class="bg-white text-background font-bold px-12 py-5 rounded-2xl hover:bg-primary transition-all hover:text-white shadow-[0_0_50px_rgba(255,255,255,0.2)]">
+                Claim Your Free Growth Audit
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div>
+<span class="font-headline-md text-headline-md font-bold text-on-surface mb-6 block">Novorize</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Performance-driven digital marketing for the next generation of e-commerce giants.</p>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-6">Services</h4>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Meta Ads</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Google Ads</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Funnels</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Retention</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-6">Agency</h4>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Strategy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-6">Contact</h4>
+<p class="font-body-md text-on-surface-variant mb-4">hello@novorize.com</p>
+<p class="font-body-md text-on-surface-variant">London / NYC / Sydney</p>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 py-6 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Novorize. Performance-driven digital marketing.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform active:scale-95" href="https://wa.me/123456789">
+<svg class="w-8 h-8 fill-white" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.892-11.891 11.892-1.999 0-3.956-.503-5.69-1.448l-6.305 1.665zm6.357-3.691c1.596.941 3.277 1.435 5.066 1.435 5.454 0 9.891-4.438 9.891-9.891 0-2.64-1.03-5.123-2.901-6.994-1.871-1.871-4.353-2.901-6.99-2.901-5.456 0-9.892 4.438-9.892 9.891 0 1.932.569 3.814 1.645 5.44l-.997 3.645 3.738-.985zm11.367-7.62c-.31-.155-1.837-.906-2.12-.103-.282.803-.565.103-.847 1.103s-.565.155-.847.103c-.282-.103-1.196-.441-2.278-1.408-.842-.752-1.412-1.681-1.577-1.965s-.017-.438.123-.578c.127-.125.282-.328.423-.494.141-.166.188-.282.282-.471.094-.188.047-.353-.023-.494s-.565-1.361-.776-1.867c-.205-.494-.411-.426-.565-.433-.146-.007-.313-.008-.48-.008s-.438.063-.667.313c-.229.25-1.332 1.305-1.332 3.181s1.365 3.681 1.554 3.93c.188.25 2.684 4.098 6.499 5.739 3.815 1.64 3.815 1.094 4.5 1.032.684-.063 2.12-.867 2.417-1.705.297-.838.297-1.556.212-1.705s-.312-.25-.623-.406z"></path></svg>
+</a>
+</body></html>

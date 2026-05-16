@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#7a38bf",
+                    "on-secondary-container": "#00686f",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#7df4ff",
+                    "inverse-surface": "#e2e2ea",
+                    "on-primary": "#480082",
+                    "background": "#111319",
+                    "tertiary-fixed-dim": "#7fdd55",
+                    "secondary-fixed-dim": "#00dbe9",
+                    "tertiary-container": "#246a00",
+                    "on-surface": "#e2e2ea",
+                    "inverse-on-surface": "#2e3036",
+                    "error-container": "#93000a",
+                    "surface-bright": "#37393f",
+                    "on-tertiary-fixed": "#062100",
+                    "surface-container-lowest": "#0c0e13",
+                    "surface-container-high": "#282a30",
+                    "on-primary-fixed-variant": "#631ba8",
+                    "secondary-container": "#00eefc",
+                    "on-surface-variant": "#cec2d5",
+                    "on-secondary-fixed-variant": "#004f54",
+                    "primary-fixed": "#efdbff",
+                    "surface": "#111319",
+                    "on-primary-fixed": "#2b0052",
+                    "on-secondary": "#00363a",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed-dim": "#dbb8ff",
+                    "on-primary-container": "#e6cbff",
+                    "primary": "#dbb8ff",
+                    "outline": "#978d9e",
+                    "surface-variant": "#33353b",
+                    "surface-tint": "#dbb8ff",
+                    "inverse-primary": "#7c3bc1",
+                    "surface-container-highest": "#33353b",
+                    "surface-dim": "#111319",
+                    "surface-container-low": "#191b21",
+                    "on-tertiary": "#0f3900",
+                    "on-secondary-fixed": "#002022",
+                    "tertiary": "#7fdd55",
+                    "on-tertiary-container": "#8dec62",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#9afa6e",
+                    "on-background": "#e2e2ea",
+                    "secondary": "#d3fbff",
+                    "outline-variant": "#4c4453",
+                    "on-tertiary-fixed-variant": "#1a5200",
+                    "surface-container": "#1d1f25"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "48px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "display-lg": ["Montserrat"],
+                    "label-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(29, 31, 37, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(238, 238, 246, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(122, 56, 191, 0.4);
+            box-shadow: 0 0 20px rgba(122, 56, 191, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #dbb8ff, #00eefc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #7a38bf 0%, #480082 100%);
+            box-shadow: 0 4px 15px rgba(122, 56, 191, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-white/10 shadow-sm z-50 flex justify-between items-center px-margin-desktop h-20">
+<div class="font-headline-md text-headline-md font-bold text-on-surface">Novorize</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Case Studies</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Pricing</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-md text-label-md bg-transparent text-secondary border border-secondary px-6 py-2 rounded-lg hover:bg-secondary/10 transition-all active:scale-95">WhatsApp</button>
+<button class="font-label-md text-label-md btn-primary text-white px-6 py-2 rounded-lg transition-all active:scale-95">Book Consultation</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative py-24 px-margin-desktop overflow-hidden">
+<div class="absolute top-0 right-0 -z-10 w-full h-full opacity-20">
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-primary-container blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-on-secondary-container blur-[100px]"></div>
+</div>
+<div class="max-w-container-max mx-auto text-center">
+<span class="font-label-md text-label-md text-primary-fixed tracking-[0.2em] mb-6 block uppercase">Join the Elite</span>
+<h1 class="font-display-lg text-display-lg md:text-[80px] mb-8 max-w-4xl mx-auto leading-none">Build the Future of <span class="text-gradient">Performance.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">We are scaling high-growth startups with technical precision and creative audacity. Join a team where velocity beats bureaucracy.</p>
+<div class="flex justify-center gap-6">
+<a class="btn-primary text-white font-label-md text-label-md px-10 py-4 rounded-xl flex items-center gap-2 transition-all" href="#positions">
+                        View Openings
+                        <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Bento Grid Culture Section -->
+<section class="py-24 px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 glass-card p-12 rounded-3xl flex flex-col justify-end relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="A modern, high-tech collaborative office environment at night with neon purple and cyan lighting. A small, focused team of young professionals is gathered around a large digital display showing growth metrics and performance data. The atmosphere is intense, innovative, and sleek, reflecting a high-growth startup culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrk-2buzewtB4wR8XU2v33ZWe7BvpjB13twGP4CvdKJSqNjBPEJDSsxQ1wnOL-v7XmJb5kag5E3qvgT4WGf52xZzxXrEkHMKgsTdfupGMN7J-xtcpCmUQmIFU9XsJxZfigKC4lOVvIZIRavBMTTJwnB863P1bXCXTT9jygtDvD5HPgNOOeAZXKKN198Qg2CXAY27j85abArXhawO_U8NheVknSBVrs-63YuAPJJDaq3dMV6S_jwKP2ebUU74UDm1K2yISVoeSS-w"/>
+<div class="relative z-10">
+<h3 class="font-headline-lg text-headline-lg mb-4">Velocity over Bureaucracy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">We move at the speed of the market. No red tape, no endless meetings. Just pure execution and data-driven results.</p>
+</div>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-3xl flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">bolt</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">High Impact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Every line of code and every ad set contributes to measurable global growth.</p>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-3xl flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-2xl bg-on-secondary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl">psychology</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-2">Radical Clarity</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">We value honest feedback and transparent data over office politics.</p>
+</div>
+<div class="md:col-span-8 glass-card p-12 rounded-3xl bg-primary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-20">
+<span class="material-symbols-outlined text-[120px]">workspace_premium</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-white mb-4">Investor-Quality Standards</h3>
+<p class="font-body-md text-body-md text-white/80 max-w-xl">We operate like a portfolio of high-value assets. Professionalism is our default state, and excellence is our baseline.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Perks Section -->
+<section class="py-24 px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-4 block">Perks &amp; Benefits</span>
+<h2 class="font-headline-lg text-headline-lg">Designed for High Performers</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 rounded-2xl border border-outline-variant/30 hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">payments</span>
+<h4 class="font-headline-md text-headline-md mb-4">Competitive INR Salary</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Best-in-class compensation packages that attract and retain the top 1% of Indian talent.</p>
+</div>
+<div class="p-8 rounded-2xl border border-outline-variant/30 hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">trending_up</span>
+<h4 class="font-headline-md text-headline-md mb-4">Professional Growth</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Annual learning stipends and access to the world's most elite performance marketing communities.</p>
+</div>
+<div class="p-8 rounded-2xl border border-outline-variant/30 hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-3xl">laptop_mac</span>
+<h4 class="font-headline-md text-headline-md mb-4">Top-Tier Equipment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Get the latest MacBook Pro and a high-end ergonomic setup to do your best work.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Open Positions Section -->
+<section class="py-24 px-margin-desktop bg-surface-container-low" id="positions">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg mb-12 text-center">Open Positions</h2>
+<div class="space-y-6">
+<!-- Position 1 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col md:flex-row md:items-center justify-between group cursor-pointer hover:scale-[1.01]">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<h3 class="font-headline-md text-headline-md">Creative Director</h3>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase">Remote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Lead the visual narrative for disruptive D2C brands and FinTech leaders.</p>
+</div>
+<div class="mt-6 md:mt-0 flex items-center gap-4">
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:block">Full-time • Global</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Position 2 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col md:flex-row md:items-center justify-between group cursor-pointer hover:scale-[1.01]">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<h3 class="font-headline-md text-headline-md">Paid Media Specialist</h3>
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase">Hybrid</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage 8-figure monthly spends across Meta and Google ecosystems.</p>
+</div>
+<div class="mt-6 md:mt-0 flex items-center gap-4">
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:block">Full-time • Bangalore/Delhi</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Position 3 -->
+<div class="glass-card p-8 rounded-2xl flex flex-col md:flex-row md:items-center justify-between group cursor-pointer hover:scale-[1.01]">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<h3 class="font-headline-md text-headline-md">Growth Analyst</h3>
+<span class="bg-tertiary-container/20 text-tertiary px-3 py-1 rounded-full font-label-sm text-label-sm uppercase">Full-time</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Turn raw lead-gen data into actionable revenue strategies for our partners.</p>
+</div>
+<div class="mt-6 md:mt-0 flex items-center gap-4">
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:block">Full-time • Mumbai</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-desktop relative">
+<div class="max-w-4xl mx-auto glass-card p-16 rounded-[40px] text-center relative overflow-hidden border-primary/20">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/10 to-transparent pointer-events-none"></div>
+<h2 class="font-display-lg text-display-lg mb-6">Join the Vanguard</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">Don't see a role that fits? If you are extraordinary, we'll find a place for you. Send us your portfolio and let's talk about the future.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="btn-primary text-white font-label-md text-label-md px-12 py-5 rounded-xl active:scale-95 transition-all">Apply Now</button>
+<button class="bg-surface-container-high border border-outline-variant/30 text-on-surface font-label-md text-label-md px-12 py-5 rounded-xl hover:bg-surface-container-highest transition-all">Send Portfolio</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-surface mb-6">Novorize</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Performance marketing at scale. Built for the ambitious.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase">Expertise</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Meta Ads</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Google Ads</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Funnels</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">LinkedIn</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">X</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">India Office</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-6 uppercase">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-20 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Novorize. All rights reserved. Built for performance.</p>
+</div>
+</footer>
+</body></html>
