@@ -358,7 +358,7 @@
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-12 md:pt-16 flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant text-sm">
-<p>Â© 2026 Naizo. All rights reserved. Built for performance.</p>
+<p>© 2026 Naizo. All rights reserved. Built for performance.</p>
 <div class="flex gap-8">
 <a class="hover:text-primary transition-colors" href="legal.html">Privacy Policy</a>
 <a class="hover:text-primary transition-colors" href="legal.html">Terms of Service</a>
@@ -428,5 +428,27 @@
             handleNewsletterSubmit(footerNlForm, document.getElementById('footer-nl-btn'), document.getElementById('footer-nl-spinner'), document.getElementById('footer-nl-status'), document.getElementById('footer-nl-icon'));
         });
     }
+</script>
+
+<!-- Sticky Mobile CTA Bar -->
+<div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 p-2 hidden" style="animation: slideUp 0.3s ease;">
+<style>@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }</style>
+<div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 py-2.5 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="text-[11px] font-bold">WhatsApp</span>
+</a>
+<a href="tel:+919546059823" class="flex flex-col items-center gap-1 py-2.5 bg-blue-500/10 border border-blue-500/30 rounded-xl text-blue-400 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">call</span>
+<span class="text-[11px] font-bold">Call Now</span>
+</a>
+<a href="contact.html" class="flex flex-col items-center gap-1 py-2.5 bg-purple-600 text-white rounded-xl active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+<span class="text-[11px] font-bold">Book Now</span>
+</a>
+</div>
+</div>
+<script>
+(function(){var s=document.getElementById("sticky-cta");if(s){window.addEventListener("scroll",function(){s.classList.toggle("hidden",window.scrollY<300)},{passive:true})}})();
 </script>
 </body></html>

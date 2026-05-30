@@ -1,582 +1,954 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Naizo | Creative Intelligence for DTC Brands</title>
-<meta content="Naizo is a premium performance marketing agency for DTC brands. We help you scale profitably through creative intelligence, Meta Ads, Google Ads, and CRO." name="description"/>
+<title>Naizo — Get More Customers Online | Websites & Digital Marketing in Bihar</title>
+<meta content="Naizo helps schools, clinics, restaurants & local businesses in Bihar get more customers through modern websites, social media marketing & Google visibility. Free consultation!" name="description"/>
+<meta property="og:title" content="Naizo — Get More Customers Online"/>
+<meta property="og:description" content="Modern websites & digital marketing for local businesses in Bihar. More calls, more WhatsApp inquiries, more customers."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://naizo.in"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://naizo.in"/>
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container": "#201f20",
-                        "secondary": "#adc6ff",
-                        "outline-variant": "#4a4455",
-                        "outline": "#958da1",
-                        "primary-container": "#7c3aed",
-                        "surface-variant": "#353436",
-                        "secondary-fixed-dim": "#adc6ff",
-                        "on-error": "#690005",
-                        "secondary-fixed": "#d8e2ff",
-                        "on-tertiary": "#2f3131",
-                        "surface-container-highest": "#353436",
-                        "inverse-primary": "#732ee4",
-                        "surface-container-lowest": "#0e0e0f",
-                        "tertiary-container": "#656767",
-                        "surface": "#131314",
-                        "on-primary": "#3f008e",
-                        "on-tertiary-container": "#e5e6e6",
-                        "primary-fixed": "#eaddff",
-                        "surface-tint": "#d2bbff",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "tertiary": "#c6c6c7",
-                        "surface-dim": "#131314",
-                        "surface-bright": "#3a393a",
-                        "inverse-surface": "#e5e2e3",
-                        "primary-fixed-dim": "#d2bbff",
-                        "on-error-container": "#ffdad6",
-                        "error-container": "#93000a",
-                        "on-secondary": "#002e6a",
-                        "on-surface-variant": "#ccc3d8",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "on-secondary-fixed": "#001a42",
-                        "on-primary-fixed": "#25005a",
-                        "on-primary-container": "#ede0ff",
-                        "tertiary-fixed": "#e2e2e2",
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "inverse-on-surface": "#313031",
-                        "secondary-container": "#0566d9",
-                        "on-background": "#e5e2e3",
-                        "error": "#ffb4ab",
-                        "on-primary-fixed-variant": "#5a00c6",
-                        "surface-container-low": "#1c1b1c",
-                        "on-secondary-container": "#e6ecff",
-                        "on-surface": "#e5e2e3",
-                        "on-secondary-fixed-variant": "#004395",
-                        "surface-container-high": "#2a2a2b",
-                        "primary": "#d2bbff",
-                        "background": "#131314"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "stack-lg": "48px",
-                        "stack-xs": "4px",
-                        "stack-xl": "80px",
-                        "stack-md": "24px",
-                        "margin-desktop": "64px",
-                        "stack-sm": "12px",
-                        "margin-mobile": "20px",
-                        "gutter": "24px",
-                        "container-max": "1280px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Inter"],
-                        "headline-lg-mobile": ["Inter"],
-                        "body-lg": ["Inter"],
-                        "headline-xl": ["Inter"],
-                        "headline-md": ["Inter"],
-                        "headline-lg": ["Inter"],
-                        "label-sm": ["Inter"],
-                        "body-md": ["Inter"]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
-                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}],
-                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "700"}],
-                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
-                    }
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface-container": "#201f20",
+                    "secondary": "#adc6ff",
+                    "outline-variant": "#4a4455",
+                    "outline": "#958da1",
+                    "primary-container": "#7c3aed",
+                    "surface-variant": "#353436",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-error": "#690005",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-tertiary": "#2f3131",
+                    "surface-container-highest": "#353436",
+                    "inverse-primary": "#732ee4",
+                    "surface-container-lowest": "#0e0e0f",
+                    "tertiary-container": "#656767",
+                    "surface": "#131314",
+                    "on-primary": "#3f008e",
+                    "on-tertiary-container": "#e5e6e6",
+                    "primary-fixed": "#eaddff",
+                    "surface-tint": "#d2bbff",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary": "#c6c6c7",
+                    "surface-dim": "#131314",
+                    "surface-bright": "#3a393a",
+                    "inverse-surface": "#e5e2e3",
+                    "primary-fixed-dim": "#d2bbff",
+                    "on-error-container": "#ffdad6",
+                    "error-container": "#93000a",
+                    "on-secondary": "#002e6a",
+                    "on-surface-variant": "#ccc3d8",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-secondary-fixed": "#001a42",
+                    "on-primary-fixed": "#25005a",
+                    "on-primary-container": "#ede0ff",
+                    "tertiary-fixed": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "inverse-on-surface": "#313031",
+                    "secondary-container": "#0566d9",
+                    "on-background": "#e5e2e3",
+                    "error": "#ffb4ab",
+                    "on-primary-fixed-variant": "#5a00c6",
+                    "surface-container-low": "#1c1b1c",
+                    "on-secondary-container": "#e6ecff",
+                    "on-surface": "#e5e2e3",
+                    "on-secondary-fixed-variant": "#004395",
+                    "surface-container-high": "#2a2a2b",
+                    "primary": "#d2bbff",
+                    "background": "#131314",
+                    "emerald": "#10b981",
+                    "amber": "#f59e0b"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+                },
+                "spacing": {
+                    "stack-lg": "48px",
+                    "stack-xs": "4px",
+                    "stack-xl": "80px",
+                    "stack-md": "24px",
+                    "margin-desktop": "64px",
+                    "stack-sm": "12px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+                },
+                "fontFamily": {
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"]
+                },
+                "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
                 }
             }
         }
-    </script>
+    }
+</script>
 <style>
-        body {
-            background-color: #0A0A0B;
-            color: #e5e2e3;
-            font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
-        .glass-card {
-            background: rgba(18, 18, 20, 0.7);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .gradient-border {
-            position: relative;
-            background: #121214;
-            border: 1px solid transparent;
-            background-clip: padding-box;
-        }
-        .gradient-border::after {
-            position: absolute;
-            top: -1px; bottom: -1px; left: -1px; right: -1px;
-            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
-            content: '';
-            z-index: -1;
-            border-radius: inherit;
-            opacity: 0.2;
-            transition: opacity 0.3s ease;
-        }
-        .gradient-border:hover::after {
-            opacity: 0.6;
-        }
-        .hero-glow {
-            background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
-        }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            z-index: -2;
-            animation: float 20s infinite ease-in-out alternate;
-        }
-        .orb-1 {
-            width: 400px;
-            height: 400px;
-            background: rgba(124, 58, 237, 0.4);
-            top: 10%;
-            left: 20%;
-            animation-delay: 0s;
-        }
-        .orb-2 {
-            width: 500px;
-            height: 500px;
-            background: rgba(59, 130, 246, 0.3);
-            bottom: 20%;
-            right: 10%;
-            animation-delay: -5s;
-        }
-        .orb-3 {
-            width: 300px;
-            height: 300px;
-            background: rgba(236, 72, 153, 0.2);
-            top: 40%;
-            left: 60%;
-            animation-delay: -10s;
-        }
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
-        }
-        .gsap-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    body {
+        background-color: #0A0A0B;
+        color: #e5e2e3;
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+    }
+    .glass-card {
+        background: rgba(18, 18, 20, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-border {
+        position: relative;
+        background: #121214;
+        border: 1px solid transparent;
+        background-clip: padding-box;
+    }
+    .gradient-border::after {
+        position: absolute;
+        top: -1px; bottom: -1px; left: -1px; right: -1px;
+        background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+        content: '';
+        z-index: -1;
+        border-radius: inherit;
+        opacity: 0.2;
+        transition: opacity 0.3s ease;
+    }
+    .gradient-border:hover::after {
+        opacity: 0.6;
+    }
+    .hero-glow {
+        background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+    }
+    .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: -2;
+        animation: float 20s infinite ease-in-out alternate;
+    }
+    .orb-1 {
+        width: 300px; height: 300px;
+        background: rgba(124, 58, 237, 0.4);
+        top: 10%; left: 20%;
+    }
+    .orb-2 {
+        width: 350px; height: 350px;
+        background: rgba(59, 130, 246, 0.3);
+        bottom: 20%; right: 10%;
+        animation-delay: -5s;
+    }
+    .orb-3 {
+        width: 200px; height: 200px;
+        background: rgba(236, 72, 153, 0.2);
+        top: 40%; left: 60%;
+        animation-delay: -10s;
+    }
+    @keyframes float {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+    .gsap-reveal {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer.open { max-height: 300px; }
+    .faq-icon { transition: transform 0.3s ease; }
+    .faq-icon.open { transform: rotate(180deg); }
+    .sticky-bar { animation: slideUp 0.3s ease; }
+    @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+    @keyframes countUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .stat-number { animation: countUp 0.6s ease forwards; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body class="bg-background">
+<body class="bg-background text-on-surface font-body-md">
+
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-[30px] border-b border-outline-variant/20 shadow-sm">
-<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="text-headline-md font-headline-md font-bold text-on-surface">Naizo</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="index.html">Home</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="services.html">Services</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="case-studies.html">Case Studies</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="pricing.html">Pricing</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-label-md text-label-md" href="blogs.html">Blogs</a>
-</div>
-<div class="flex items-center gap-4">
-<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md text-label-md font-bold hover:scale-95 transition-transform active:scale-90 text-center">
-                Book Consultation
-            </a>
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm">
+<div class="flex justify-between items-center h-16 md:h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a href="index.html" class="text-headline-md font-headline-md font-bold text-on-surface">Naizo</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-primary font-bold" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="about.html">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="case-studies.html">Case Studies</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="blogs.html">Blogs</a>
+</nav>
+<div class="flex items-center gap-3">
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="hidden lg:flex items-center gap-1.5 text-emerald font-label-md px-4 py-2 border border-emerald/30 rounded-lg hover:bg-emerald/10 transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp
+</a>
+<a href="contact.html" class="hidden md:block bg-primary-container text-white font-label-md px-5 py-2.5 rounded-lg hover:brightness-110 transition-all active:scale-95 text-center">Book Free Consultation</a>
 <button id="mobile-menu-btn" class="md:hidden text-on-surface p-2 z-[60] relative">
 <span class="material-symbols-outlined text-2xl">menu</span>
 </button>
 </div>
 </div>
+</header>
+
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-surface/98 backdrop-blur-xl z-[55] hidden items-center justify-center space-y-8 opacity-0 transition-opacity duration-300">
-<a class="text-primary font-bold font-headline-md text-headline-md" href="index.html">Home</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="services.html">Services</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="case-studies.html">Case Studies</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="pricing.html">Pricing</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md" href="blogs.html">Blogs</a>
-<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20with%20digital%20marketing." target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-on-surface transition-colors duration-300 font-headline-md text-headline-md">WhatsApp</a>
-<a href="contact.html" class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-headline-md text-label-md font-bold mt-4 text-center">
-        Book Consultation
-    </a>
+<div id="mobile-menu" class="fixed inset-0 bg-surface/98 backdrop-blur-xl z-[55] hidden items-center justify-center space-y-6 opacity-0 transition-opacity duration-300">
+<a class="text-primary font-bold text-xl" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-xl" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-xl" href="services.html">Services</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-xl" href="case-studies.html">Case Studies</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-xl" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors text-xl" href="blogs.html">Blogs</a>
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-emerald text-xl">
+<span class="material-symbols-outlined">chat</span>WhatsApp Us
+</a>
+<a href="contact.html" class="bg-primary-container text-white px-8 py-4 rounded-xl font-bold mt-2 text-center text-lg">
+Book Free Consultation
+</a>
 </div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center justify-center text-center px-margin-mobile overflow-hidden">
+
+<main class="pt-16 md:pt-20">
+
+<!-- ===== HERO SECTION ===== -->
+<section class="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center text-center px-margin-mobile overflow-hidden">
 <div class="orb orb-1"></div>
 <div class="orb orb-2"></div>
 <div class="orb orb-3"></div>
 <div class="absolute inset-0 hero-glow -z-10"></div>
-<div class="max-w-4xl mx-auto space-y-stack-md relative z-10">
-<div class="gsap-reveal inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-sm text-label-sm uppercase tracking-wider mb-4">
-                    Performance Agency for the Bold
-                </div>
-<h1 class="gsap-reveal font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface leading-tight md:leading-tight">
-                    We Help DTC Brands Scale <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Profitably</span> through Creative Intelligence
-                </h1>
-<p class="gsap-reveal font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-6">
-                    Move beyond siloed ROAS. Our holistic framework aligns paid media, creative engineering, and retention to drive sustainable enterprise value.
-                </p>
-<div class="gsap-reveal flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-<a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-container to-secondary-container text-white rounded-xl font-headline-md text-label-md font-bold shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:brightness-110 transition-all text-center">
-                        Scale My Brand
-                    </a>
-<a href="case-studies.html" class="w-full sm:w-auto px-8 py-4 border border-outline-variant hover:bg-surface-variant/30 rounded-xl font-headline-md text-label-md font-bold transition-all flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-primary">play_circle</span>
-                        Watch Case Studies
-                    </a>
+<div class="max-w-4xl mx-auto space-y-6 relative z-10">
+<div class="gsap-reveal inline-flex items-center px-4 py-1.5 rounded-full bg-emerald/10 border border-emerald/30 text-emerald font-label-md text-sm gap-2">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+Trusted by 50+ Businesses Across India
+</div>
+<h1 class="gsap-reveal text-[28px] md:text-[52px] lg:text-headline-xl font-extrabold text-on-surface leading-tight tracking-tight">
+Get More Customers Online With A <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Modern Website</span> & Smart Marketing
+</h1>
+<p class="gsap-reveal text-base md:text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+We help schools, clinics, restaurants & local businesses generate more <strong class="text-on-surface">calls, WhatsApp inquiries</strong> & customers through beautiful websites and social media marketing.
+</p>
+<div class="gsap-reveal flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
+<a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-container to-secondary-container text-white rounded-xl font-bold text-base shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:brightness-110 transition-all text-center active:scale-95">
+Skip The Wait. Book It Now!
+</a>
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 border border-emerald/40 text-emerald hover:bg-emerald/10 rounded-xl font-bold text-base transition-all flex items-center justify-center gap-2 active:scale-95">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+WhatsApp Us
+</a>
+</div>
+<div class="gsap-reveal flex flex-wrap items-center justify-center gap-4 md:gap-8 pt-4 text-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-amber text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span><span><strong class="text-on-surface">4.9</strong> Rating</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span><span><strong class="text-on-surface">50+</strong> Projects</span></div>
+<div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald text-[18px]" style="font-variation-settings: 'FILL' 1;">handshake</span><span><strong class="text-on-surface">Free</strong> Consultation</span></div>
 </div>
 </div>
 </section>
-<!-- Trusted By -->
-<section class="py-stack-xl border-y border-outline-variant/10 bg-surface-container-lowest">
+
+<!-- ===== SOCIAL PROOF STRIP ===== -->
+<section class="py-12 md:py-16 border-y border-outline-variant/10 bg-surface-container-lowest">
 <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<p class="text-center font-label-sm text-label-sm text-outline mb-10 uppercase tracking-widest">Powering High-Growth DTC Teams Globally</p>
-<div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgLS8YI5q6J5Tvv39_K7U9YfcGkiyNGmN20xehNXWHaZ_VtRODWqiz0S6hRWAH5eFqNBcinCsZxum3aTpKbqyh-0VAOuiUEpPtexNbOK9vFqB-lbinaqBwD6jV5xmRXYx_vHHS_gLfhdWG6zBUh_gWGwFO8hQLGJncGqeDx7maq2XgcbW7H8xs936ieeb5Z04BVuSKWt25lDVrDrHIhfgy8xUYjsfJxm1reInFwZ8G_1mdqZ6jywFtUjuXUqTXwKmSuFTdvzJHHA"/>
-<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzgQAzPG6jPW1Uj5dIZ5pRV2z5R756bvgNklQOWQ9Og-7_MloDGmTHSxfsjrLLwWSrQG-yrbqRv_XnTIqLwGYIgN8eVwM0fINqpMcctDCfBJIyx7UP40rh70OLuRTtOb0ngQrLe6eBA2kjo1ZTlvtw7ZHtbasIFLx3E-NZ8NsCj6CeB3nZGdCqzPTgFXrGoJy14Hbuz66Js1Onrau2NuJ1Q_319VvVWqTvHxvvj7ptBN6QAurNqhnKYXjNrhBSI_-Fqw7yZtY3Ng"/>
-<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xEI6eiytXwgu4PsLe57C7p3lE4kdsUa_dkjRB5VsN9LSoiD8SrmWfHwWYp2GS5x-ccYB4VRpmsf5HvjFY7wcakfXYiZaynfdKoFLvahwwCo9n20ofZSW2jsksa4hdaEu7w-rJ9MHMEIEvXJDIUxyqVITcbGQQA7tV8V7-G1za_N2PdQp0f0qp9rmeM_kM2amlZVU8WTIouNxk92-_ticW9GR3V89r6IVD5Gf3RP8S3vZoBYU2L8VClLtiBrGEsbRCO4iu8IilA"/>
-<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO3wIjaWFYdP-Nwl-TZaW2UfhJ4neUDoecgUNAiGMxGHXOQOpD_3ChwOmRMb_16r_5R4--waglaB6GWhq69dxesAO_MtAY7F9Sho7SmRtmbgtiMq7sredBmuTB_koxqkBfljQb19j0WlGg-JmgK4wc7_WrK3ftB4UdgJ_MYm5aeosWr_Sp67JAjKco2cjMYJiHcQ70a6Av6jaSSZwtCHX9JMGPNipMNF2OgYEbtaK79_Ocm8LaACznqyGmtcwe4HfyRAORpNy-kQ"/>
-<img alt="Brand Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKJOAAhfvBbBFKRhJrtB-0BSTpxHeoxNLo2_yNTkLo6EMGtZXkfS6VnLsmCbUvEBs81-crYx3oBUbikwSvn6eHQ9jMbusp7klJnHcYEm9r3F5qqeId8PHXw5rjohhFCcK5a6ejf0hVsyNDiIlID9sOClc0DTVmQ_S0b9mtbNIZIefkUxxu0QNlpXatPoUIFVUZ7AVS6FjoiwURV8jpgQdMLUdDPtlq4MTJpSKMctVcH_1Mz8o7PGWAewHuQHU2LA9Hva2CRwiJMw"/>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+<div class="stat-number">
+<p class="text-3xl md:text-4xl font-extrabold text-primary">50+</p>
+<p class="text-sm text-on-surface-variant mt-1">Projects Delivered</p>
 </div>
+<div class="stat-number" style="animation-delay:0.1s">
+<p class="text-3xl md:text-4xl font-extrabold text-emerald">95%</p>
+<p class="text-sm text-on-surface-variant mt-1">Happy Clients</p>
 </div>
-</section>
-<!-- Precision Engineering (Services) -->
-<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="mb-stack-lg">
-<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-4">Precision Engineering</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">We don't just "run ads". We build scientific systems for sustainable customer acquisition.</p>
+<div class="stat-number" style="animation-delay:0.2s">
+<p class="text-3xl md:text-4xl font-extrabold text-secondary">200+</p>
+<p class="text-sm text-on-surface-variant mt-1">Leads Generated Monthly</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Meta Ads -->
-<div class="gradient-border p-8 rounded-2xl space-y-4">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">ads_click</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Meta Ads</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Creative-led broad targeting strategies that exploit the algorithm for maximum reach.</p>
-</div>
-<!-- Google Ads -->
-<div class="gradient-border p-8 rounded-2xl space-y-4">
-<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">troubleshoot</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Google Ads</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Precision-targeted search and Performance Max campaigns built for high-intent capture.</p>
-</div>
-<!-- CRO -->
-<div class="gradient-border p-8 rounded-2xl space-y-4">
-<div class="w-12 h-12 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">web_traffic</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">CRO</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Landing page optimization and psychological triggers to squeeze more revenue from every click.</p>
-</div>
-<!-- Retention -->
-<div class="gradient-border p-8 rounded-2xl space-y-4">
-<div class="w-12 h-12 rounded-lg bg-inverse-primary/10 flex items-center justify-center text-inverse-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Retention</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Advanced Klaviyo automations that turn one-time buyers into lifelong brand advocates.</p>
-</div>
-</div>
-</section>
-<!-- See Our Work In Action -->
-<section class="py-stack-xl bg-surface-container-low overflow-hidden">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface text-center">See Our Work In Action</h2>
-</div>
-<div class="flex gap-gutter overflow-x-auto pb-10 px-margin-mobile md:px-margin-desktop snap-x scrollbar-hide">
-<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
-<img class="w-full h-full object-cover" data-alt="A vertical performance-driven UGC video advertisement for a premium tech accessory, featuring high-energy editing and vibrant purple studio lighting. The aesthetic is clean and modern, focusing on the tactile quality of the product with cinematic close-ups and dynamic transitions. The overall mood is high-performance and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnl023v-zK67CeG8UFmO9D2VXn5IddXYawRNfY_DG68uZxpYot17qpeOyhRBFoXhMHP6RmuXSToFtK8avVUWXrBP24Kbl-sljQL_qyyOR1Okw-yjF-RvEZNXpU6iZ0PeOidH4nzLwHdqLuOQA7BpjwcOsukKAXpt9R_q3eYu5dn8xLABKZ0OHNM9MutL7oakD9jZl4AF_dfTqo0Fi5IFR9x0mosdxEV0M9EfB6SGCZcYpcO_4OqEguUvedDrG-ORpTr6AvAo_Qgg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<p class="text-white font-label-md text-label-md">DTC Skincare: +240% Sales Increase</p>
-</div>
-</div>
-<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
-<img class="w-full h-full object-cover" data-alt="A creative strategy brainstorming session shown through a digital whiteboard with vibrant purple and blue sticky notes and complex flowcharts. The setting is a dark-mode inspired digital workspace with glowing UI elements and analytical charts in the background. The lighting is focused and moody, emphasizing a high-tech agency environment dedicated to growth marketing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxDBhrn6o-gEo04jxyFYwItYDENuc1wPqe1ShW559Qk5f5bkg0FLAI9IYqo4dCPUof5iOxN4BJattumAwkVBnKUjzQyimmqqrZvTBr-nmy34CWyDzZxkLIkG2WEWjV7W2XGyS5EohpKfxTtNYEzNth10KyvW7LIrFW3e35UAArBAo-jmBLFBo6GV0wDONeA0lDD3uRcY7E-u5SwxyRuu6QC99bQEx31KZUZPkNYua79mcCwVBh9-S2WDEX6TUDybadKeV7mqB-dw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<p class="text-white font-label-md text-label-md">Tech Gadgets: 5.4x MER Achievement</p>
-</div>
-</div>
-<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
-<img class="w-full h-full object-cover" data-alt="A futuristic data visualization dashboard showing exponential growth curves in vibrant neon violet and electric blue against a deep black background. The interface is clean and minimal, using glassmorphism effects for the data cards. Tiny points of light represent data packets flowing through a network, symbolizing high-speed scaling and creative intelligence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVMB3A2t3MvTbRr-RTOrb9Pu8zs78S50C3GXuf9a0vtfOpmA7GNnp48WTtNtvnDCLYEG0hZk8bkgKOApvj3vppc2gUHxePxBTunztaAW4uDIMO75CNWbx4D8r7rvX7u55bZbBqJBFn-XVOfs4H-8d9RQM74m40GH4x7aPQTVs0-3gZ3zzgi5SEBzgE8iFUwDpLN-EXlzXet26_KjHd9aHnOQuNA9jn3K6rQkEizAA8ohv961f7FAichGGy84L_IadAY99CklbGNQ"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<p class="text-white font-label-md text-label-md">Home Decor: Scaling to $2M/mo</p>
-</div>
-</div>
-<div class="min-w-[320px] aspect-[9/16] bg-surface-variant rounded-3xl overflow-hidden relative group flex-shrink-0 snap-center">
-<img class="w-full h-full object-cover" data-alt="A professional growth marketer analyzing multi-screen data visualizations in a dark, high-performance command center. The lighting is low-key, with the glow from the screens illuminating the scene in primary violet and secondary blue. The atmosphere is one of intense focus and engineering precision, typical of a top-tier digital agency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArWoKh07s7RN-lQzrngK12RDrhCroE3RGF2M82YnpLRxi-xP-h8Pw3uRiWqI91mOztM0QIqeSala00AqK4PbFpqSiG4f90QXz27B4Z9XjMWHat0EF5shGs8rv2YxoktKghxDQS6DbwTHpTqshqeVB1GoQXj32y9Yvi99EwutONpesMixbuDRx7yNm1ge9jZ-BJHLStUcOYgfI1OkSkGFxE0Bn8uadKw7q7r0xlwl3X3tWCV8vH9vTxAK2SAg4xs6mkS0EFnM8r_A"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-<p class="text-white font-label-md text-label-md">Luxury Apparel: 32% Lower CPA</p>
+<div class="stat-number" style="animation-delay:0.3s">
+<p class="text-3xl md:text-4xl font-extrabold text-amber">3+</p>
+<p class="text-sm text-on-surface-variant mt-1">Years Experience</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Revenue Outcomes -->
-<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="mb-stack-lg text-center">
-<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">Revenue Outcomes</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">Hard data from our recent brand audits and management periods.</p>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">What We Do</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mb-4">Everything Your Business Needs to Grow Online</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">From stunning websites to social media marketing — we handle your entire digital presence so you can focus on running your business.</p>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<div class="glass-card p-8 rounded-3xl border-outline-variant/20">
-<div class="flex justify-between items-end mb-6">
-<div>
-<p class="font-label-sm text-label-sm text-outline uppercase">Monthly Revenue Growth</p>
-<p class="font-headline-lg text-headline-lg text-primary">+312%</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Service 1: Clinic -->
+<div class="gradient-border p-6 md:p-8 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
 </div>
-<div class="text-right">
-<p class="font-label-sm text-label-sm text-outline">Industry</p>
-<p class="font-body-md text-body-md">Personal Care</p>
+<h3 class="text-lg font-bold text-on-surface">Clinic & Hospital Websites</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Online appointment booking, doctor profiles, WhatsApp integration & Google Maps — get more patients online.</p>
+<a href="services.html" class="inline-flex items-center gap-1 text-primary text-sm font-medium hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
 </div>
+<!-- Service 2: School -->
+<div class="gradient-border p-6 md:p-8 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">school</span>
 </div>
-<div class="h-48 flex items-end gap-2 px-2">
-<div class="w-full bg-surface-variant h-[20%] rounded-t-lg"></div>
-<div class="w-full bg-surface-variant h-[25%] rounded-t-lg"></div>
-<div class="w-full bg-surface-variant h-[35%] rounded-t-lg"></div>
-<div class="w-full bg-primary h-[55%] rounded-t-lg shadow-[0_0_15px_rgba(124,58,237,0.4)]"></div>
-<div class="w-full bg-primary h-[75%] rounded-t-lg shadow-[0_0_15px_rgba(124,58,237,0.4)]"></div>
-<div class="w-full bg-primary h-[95%] rounded-t-lg shadow-[0_0_15px_rgba(124,58,237,0.4)]"></div>
+<h3 class="text-lg font-bold text-on-surface">School & Institute Websites</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Admission inquiry forms, photo galleries, notice boards & mobile-first design — increase admissions effortlessly.</p>
+<a href="services.html" class="inline-flex items-center gap-1 text-secondary text-sm font-medium hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
 </div>
+<!-- Service 3: Local Business -->
+<div class="gradient-border p-6 md:p-8 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-xl bg-emerald/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-emerald text-[28px]" style="font-variation-settings: 'FILL' 1;">storefront</span>
 </div>
-<div class="glass-card p-8 rounded-3xl border-outline-variant/20">
-<div class="flex justify-between items-end mb-6">
-<div>
-<p class="font-label-sm text-label-sm text-outline uppercase">CAC Optimization</p>
-<p class="font-headline-lg text-headline-lg text-secondary">-42%</p>
+<h3 class="text-lg font-bold text-on-surface">Local Business Websites</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Call buttons, WhatsApp chat, local SEO & Google Business Profile — turn online visitors into real customers.</p>
+<a href="services.html" class="inline-flex items-center gap-1 text-emerald text-sm font-medium hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
 </div>
-<div class="text-right">
-<p class="font-label-sm text-label-sm text-outline">Industry</p>
-<p class="font-body-md text-body-md">Fashion &amp; Apparel</p>
+<!-- Service 4: Social Media -->
+<div class="gradient-border p-6 md:p-8 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-xl bg-pink-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-pink-400 text-[28px]" style="font-variation-settings: 'FILL' 1;">campaign</span>
 </div>
+<h3 class="text-lg font-bold text-on-surface">Social Media Marketing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Instagram & Facebook management, Reels creation, content strategy & paid ads — build your brand online.</p>
+<a href="services.html" class="inline-flex items-center gap-1 text-pink-400 text-sm font-medium hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
 </div>
-<div class="h-48 flex items-end gap-2 px-2">
-<div class="w-full bg-secondary h-[90%] rounded-t-lg opacity-40"></div>
-<div class="w-full bg-secondary h-[80%] rounded-t-lg opacity-50"></div>
-<div class="w-full bg-secondary h-[70%] rounded-t-lg opacity-70"></div>
-<div class="w-full bg-secondary h-[60%] rounded-t-lg shadow-[0_0_15px_rgba(59,130,246,0.4)]"></div>
-<div class="w-full bg-secondary h-[50%] rounded-t-lg shadow-[0_0_15px_rgba(59,130,246,0.4)]"></div>
-<div class="w-full bg-secondary h-[45%] rounded-t-lg shadow-[0_0_15px_rgba(59,130,246,0.4)]"></div>
+<!-- Service 5: Google Visibility -->
+<div class="gradient-border p-6 md:p-8 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-xl bg-amber/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-amber text-[28px]" style="font-variation-settings: 'FILL' 1;">search</span>
 </div>
+<h3 class="text-lg font-bold text-on-surface">Google Visibility & SEO</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Google My Business setup, local SEO, Maps ranking & review management — be found when customers search.</p>
+<a href="services.html" class="inline-flex items-center gap-1 text-amber text-sm font-medium hover:gap-2 transition-all">Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<!-- Service 6: CTA Card -->
+<div class="bg-gradient-to-br from-primary-container/30 to-secondary-container/10 border border-primary/20 p-6 md:p-8 rounded-2xl flex flex-col items-center justify-center text-center space-y-4">
+<span class="material-symbols-outlined text-primary text-[40px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<h3 class="text-lg font-bold text-on-surface">Not Sure What You Need?</h3>
+<p class="text-on-surface-variant text-sm">Get a free consultation and we'll recommend the best solution for your business.</p>
+<a href="contact.html" class="w-full px-6 py-3 bg-primary-container text-white rounded-xl font-bold text-sm hover:brightness-110 transition-all text-center active:scale-95">Get Free Advice →</a>
 </div>
 </div>
 </section>
-<!-- The Scaling Framework -->
-<section class="py-stack-xl bg-surface-container-lowest">
+
+<!-- ===== BEFORE vs AFTER ===== -->
+<section class="py-16 md:py-24 bg-surface-container-lowest">
 <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">The Scaling Framework</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Our proven 3-step process to move from stagnant revenue to predictable profits.</p>
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">The NAIZO Difference</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">See What Changes When You Work With Us</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative">
-<div class="hidden md:block absolute top-12 left-0 w-full h-px bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent -z-10"></div>
-<div class="space-y-6 text-center px-4">
-<div class="w-16 h-16 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center mx-auto text-primary font-bold text-xl relative">
-                            1
-                        </div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Strategy</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Brand audit, unit economics mapping, and creative roadmap development.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+<!-- Before -->
+<div class="glass-card p-6 md:p-8 rounded-2xl border-red-500/20 relative overflow-hidden">
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-red-500/10 text-red-400 text-xs font-bold uppercase">Before</div>
+<div class="space-y-5 mt-6">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-400 text-[22px] mt-0.5 shrink-0">close</span>
+<p class="text-on-surface-variant text-sm">Slow, outdated website that looks unprofessional</p>
 </div>
-<div class="space-y-6 text-center px-4">
-<div class="w-16 h-16 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center mx-auto text-primary font-bold text-xl">
-                            2
-                        </div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Execution</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">UGC production, ad account launch, and retention flow automation.</p>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-400 text-[22px] mt-0.5 shrink-0">close</span>
+<p class="text-on-surface-variant text-sm">Zero inquiries from online — no calls, no messages</p>
 </div>
-<div class="space-y-6 text-center px-4">
-<div class="w-16 h-16 rounded-full bg-surface-container-high border-4 border-background flex items-center justify-center mx-auto text-primary font-bold text-xl">
-                            3
-                        </div>
-<h3 class="font-headline-md text-headline-md text-on-surface">Scaling</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Daily optimization, creative refreshes, and vertical budget expansion.</p>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-400 text-[22px] mt-0.5 shrink-0">close</span>
+<p class="text-on-surface-variant text-sm">Poor mobile experience — customers leave immediately</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-red-400 text-[22px] mt-0.5 shrink-0">close</span>
+<p class="text-on-surface-variant text-sm">Not found on Google — invisible to potential customers</p>
+</div>
+</div>
+</div>
+<!-- After -->
+<div class="glass-card p-6 md:p-8 rounded-2xl border-emerald/20 relative overflow-hidden">
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-emerald/10 text-emerald text-xs font-bold uppercase">After NAIZO</div>
+<div class="space-y-5 mt-6">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[22px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-on-surface-variant text-sm">Fast, modern website that builds <strong class="text-on-surface">instant trust</strong></p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[22px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-on-surface-variant text-sm"><strong class="text-on-surface">10x more WhatsApp leads</strong> & phone calls every month</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[22px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-on-surface-variant text-sm">Beautiful mobile experience — customers stay & convert</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald text-[22px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-on-surface-variant text-sm">Page 1 on Google — <strong class="text-on-surface">found by customers searching</strong> for you</p>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-8">
+<a href="contact.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-container text-white rounded-xl font-bold hover:brightness-110 transition-all active:scale-95">
+Get Your Free Website Audit <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ===== INDUSTRIES WE SERVE ===== -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">Who We Help</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mb-4">Industries We Serve</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">We understand the unique needs of local businesses. Here are some of the industries we've helped grow.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="glass-card p-5 rounded-2xl text-center hover:border-primary/30 transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-[36px] mb-3 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">school</span>
+<p class="font-bold text-sm">Schools & Coaching</p>
+</div>
+<div class="glass-card p-5 rounded-2xl text-center hover:border-primary/30 transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[36px] mb-3 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+<p class="font-bold text-sm">Clinics & Hospitals</p>
+</div>
+<div class="glass-card p-5 rounded-2xl text-center hover:border-primary/30 transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-amber text-[36px] mb-3 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<p class="font-bold text-sm">Restaurants & Cafes</p>
+</div>
+<div class="glass-card p-5 rounded-2xl text-center hover:border-primary/30 transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-emerald text-[36px] mb-3 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">home_work</span>
+<p class="font-bold text-sm">Real Estate</p>
+</div>
+<div class="glass-card p-5 rounded-2xl text-center hover:border-primary/30 transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-pink-400 text-[36px] mb-3 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<p class="font-bold text-sm">Gyms & Salons</p>
+</div>
+<div class="glass-card p-5 rounded-2xl text-center hover:border-primary/30 transition-all group cursor-pointer">
+<span class="material-symbols-outlined text-orange-400 text-[36px] mb-3 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<p class="font-bold text-sm">Retail Shops</p>
+</div>
+</div>
+</section>
+
+<!-- ===== PROCESS SECTION ===== -->
+<section class="py-16 md:py-24 bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">How It Works</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mb-4">From Zero to Online in 4 Simple Steps</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 1 -->
+<div class="relative glass-card p-6 rounded-2xl group hover:border-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white font-bold text-lg mb-5">1</div>
+<h3 class="font-bold text-lg mb-2">Discovery Call</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We understand your business, goals, and target customers. 100% free, no obligation.</p>
+<div class="hidden lg:block absolute top-10 -right-3 text-outline-variant/30">
+<span class="material-symbols-outlined text-[28px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative glass-card p-6 rounded-2xl group hover:border-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-white font-bold text-lg mb-5">2</div>
+<h3 class="font-bold text-lg mb-2">Strategy & Planning</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We create a custom digital strategy tailored to your industry and local market.</p>
+<div class="hidden lg:block absolute top-10 -right-3 text-outline-variant/30">
+<span class="material-symbols-outlined text-[28px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative glass-card p-6 rounded-2xl group hover:border-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-emerald flex items-center justify-center text-white font-bold text-lg mb-5">3</div>
+<h3 class="font-bold text-lg mb-2">Design & Development</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We build your website and marketing assets — fast, mobile-first, and conversion-optimized.</p>
+<div class="hidden lg:block absolute top-10 -right-3 text-outline-variant/30">
+<span class="material-symbols-outlined text-[28px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="glass-card p-6 rounded-2xl group hover:border-primary/30 transition-all">
+<div class="w-12 h-12 rounded-full bg-amber flex items-center justify-center text-white font-bold text-lg mb-5">4</div>
+<h3 class="font-bold text-lg mb-2">Launch & Growth</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Your business goes live online. We provide ongoing support and optimization for growth.</p>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="contact.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-container text-white rounded-xl font-bold hover:brightness-110 transition-all active:scale-95">
+Start With a Free Discovery Call <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">What Our Clients Say</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">Real Results. Real Businesses.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Testimonial 1 -->
+<div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed italic">"NAIZO built our school website and within 2 months, our online admissions inquiry increased by 40%. Parents now find us on Google and apply directly through the website."</p>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">RK</div>
+<div>
+<p class="font-bold text-sm text-on-surface">Rajesh Kumar</p>
+<p class="text-xs text-on-surface-variant">Principal, Sunrise Public School, Patna</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed italic">"Before NAIZO, we had zero online presence. Now we get 15-20 appointment bookings through WhatsApp every week. The website paid for itself in the first month."</p>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-emerald/20 flex items-center justify-center text-emerald font-bold text-sm">DA</div>
+<div>
+<p class="font-bold text-sm text-on-surface">Dr. Anjali Verma</p>
+<p class="text-xs text-on-surface-variant">Director, Care Plus Clinic, Bihta</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-amber text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed italic">"The social media marketing team at NAIZO transformed our Instagram. We went from 200 followers to 5,000+ in 3 months, and our daily dine-in customers doubled."</p>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center text-amber font-bold text-sm">SP</div>
+<div>
+<p class="font-bold text-sm text-on-surface">Sanjay Patel</p>
+<p class="text-xs text-on-surface-variant">Owner, Spice Garden Restaurant, Patna</p>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Pricing -->
-<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">Transparent Growth Plans</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">High-performance management with zero hidden fees.</p>
+
+<!-- ===== WHY CHOOSE NAIZO ===== -->
+<section class="py-16 md:py-24 bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">Why Us</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">Why Businesses Choose NAIZO</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="text-center space-y-3 p-6">
+<div class="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<h3 class="font-bold">Fast Delivery</h3>
+<p class="text-on-surface-variant text-sm">Website ready in 7–14 days. No months of waiting.</p>
+</div>
+<div class="text-center space-y-3 p-6">
+<div class="w-16 h-16 mx-auto rounded-2xl bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[32px]" style="font-variation-settings: 'FILL' 1;">smartphone</span>
+</div>
+<h3 class="font-bold">Mobile-First Design</h3>
+<p class="text-on-surface-variant text-sm">80% of your customers browse on phone. We design for them first.</p>
+</div>
+<div class="text-center space-y-3 p-6">
+<div class="w-16 h-16 mx-auto rounded-2xl bg-emerald/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-emerald text-[32px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<h3 class="font-bold">WhatsApp-Focused</h3>
+<p class="text-on-surface-variant text-sm">Convert website visitors into WhatsApp leads automatically.</p>
+</div>
+<div class="text-center space-y-3 p-6">
+<div class="w-16 h-16 mx-auto rounded-2xl bg-amber/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-amber text-[32px]" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</div>
+<h3 class="font-bold">Local Expertise</h3>
+<p class="text-on-surface-variant text-sm">We understand Indian businesses and the local market deeply.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== PRICING PREVIEW ===== -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">Affordable Plans</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mb-4">Transparent, Budget-Friendly Pricing</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">No hidden fees. No long contracts. Start small, scale as you grow.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <!-- Starter -->
-<div class="glass-card p-10 rounded-3xl flex flex-col h-full border-outline-variant/10">
-<p class="font-label-md text-label-md text-on-surface-variant mb-2">Starter</p>
-<div class="flex items-baseline gap-1 mb-8">
-<span class="text-headline-lg font-bold">₹2,00,000</span>
-<span class="text-outline">/mo</span>
+<div class="glass-card p-8 rounded-2xl flex flex-col h-full">
+<p class="font-label-md text-on-surface-variant mb-2">Starter</p>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-3xl font-extrabold">₹15,000</span>
+<span class="text-outline text-sm">/mo</span>
 </div>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Meta or Google Management
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Basic Creative Strategy
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Monthly Analytics Report
-                        </li>
+<p class="text-on-surface-variant text-sm mb-6">Perfect for getting started online</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>5-Page Professional Website</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Mobile Responsive Design</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>WhatsApp Integration</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Basic SEO Setup</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Google Maps Integration</li>
 </ul>
-<button class="w-full py-3 rounded-xl border border-outline-variant hover:bg-surface-variant font-label-md text-label-md font-bold transition-all">Select Starter</button>
+<a href="contact.html" class="w-full py-3 text-center border border-outline-variant/30 text-on-surface rounded-xl font-bold hover:bg-surface-variant/30 transition-all active:scale-95">Get Started</a>
 </div>
-<!-- Growth -->
-<div class="gradient-border p-10 rounded-3xl flex flex-col h-full border-primary/20 scale-105 shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10">
-<div class="flex justify-between items-center mb-2">
-<p class="font-label-md text-label-md text-primary">Growth</p>
-<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary text-[10px] font-bold uppercase">Popular</span>
+<!-- Growth — Popular -->
+<div class="glass-card p-8 rounded-2xl flex flex-col h-full border-primary/40 relative">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary-container text-white text-xs font-bold rounded-full uppercase tracking-wider">Most Popular</div>
+<p class="font-label-md text-primary mb-2">Growth</p>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-3xl font-extrabold text-primary">₹30,000</span>
+<span class="text-outline text-sm">/mo</span>
 </div>
-<div class="flex items-baseline gap-1 mb-8">
-<span class="text-headline-lg font-bold">₹4,00,000</span>
-<span class="text-outline">/mo</span>
-</div>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Full Omni-channel Management
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            UGC Production &amp; Creative Editing
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Klaviyo Retention Engine
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Bi-weekly Growth Sprints
-                        </li>
+<p class="text-on-surface-variant text-sm mb-6">Website + social media marketing</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Everything in Starter</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Instagram & Facebook Management</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>12 Social Media Posts/Month</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Google Business Profile Setup</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Monthly Performance Report</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>WhatsApp Lead Generation</li>
 </ul>
-<button class="w-full py-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-label-md text-label-md font-bold hover:brightness-110 transition-all">Start Scaling</button>
+<a href="contact.html" class="w-full py-3 text-center bg-primary-container text-white rounded-xl font-bold hover:brightness-110 transition-all active:scale-95">Start Scaling</a>
 </div>
-<!-- Enterprise -->
-<div class="glass-card p-10 rounded-3xl flex flex-col h-full border-outline-variant/10">
-<p class="font-label-md text-label-md text-on-surface-variant mb-2">Enterprise</p>
-<div class="flex items-baseline gap-1 mb-8">
-<span class="text-headline-lg font-bold">Custom</span>
+<!-- Premium -->
+<div class="glass-card p-8 rounded-2xl flex flex-col h-full">
+<p class="font-label-md text-on-surface-variant mb-2">Premium</p>
+<div class="flex items-baseline gap-1 mb-2">
+<span class="text-3xl font-extrabold">₹50,000</span>
+<span class="text-outline text-sm">/mo</span>
 </div>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Fractional Growth Partner
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Bespoke Analytics Dashboards
-                        </li>
-<li class="flex items-center gap-3 text-on-surface-variant font-body-md text-body-md">
-<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
-                            Global Market Expansion
-                        </li>
+<p class="text-on-surface-variant text-sm mb-6">Full digital presence & growth</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Everything in Growth</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Google Ads Management</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Meta Ads (Facebook + Instagram)</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Video Reels Creation</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Dedicated Account Manager</li>
+<li class="flex items-start gap-2 text-sm"><span class="material-symbols-outlined text-emerald text-[18px] mt-0.5 shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>Priority Support</li>
 </ul>
-<button class="w-full py-3 rounded-xl border border-outline-variant hover:bg-surface-variant font-label-md text-label-md font-bold transition-all">Contact Sales</button>
+<a href="contact.html" class="w-full py-3 text-center border border-outline-variant/30 text-on-surface rounded-xl font-bold hover:bg-surface-variant/30 transition-all active:scale-95">Contact Us</a>
 </div>
 </div>
 </section>
-<!-- Final CTA -->
-<section class="py-stack-xl relative overflow-hidden">
-<div class="absolute inset-0 bg-primary/5 -z-10 blur-[100px]"></div>
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center py-16 md:py-20 bg-surface-container rounded-[20px] md:rounded-[40px] border border-outline-variant/10 mx-4 md:mx-auto">
-<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6">Ready to Scale to the Moon?</h2>
-<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10">Stop guessing. Start growing. Join the top 1% of DTC brands who treat marketing as an engineering problem.</p>
-<a href="contact.html" class="w-full sm:w-auto px-12 py-5 bg-primary text-on-primary rounded-full font-headline-md text-label-md font-bold hover:scale-105 transition-all shadow-[0_10px_40px_rgba(124,58,237,0.4)] text-center inline-block">
-                    Book Your Audit Now
-                </a>
+
+<!-- ===== FAQ SECTION ===== -->
+<section class="py-16 md:py-24 bg-surface-container-lowest" id="faq">
+<div class="px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<span class="text-primary font-label-md tracking-widest uppercase mb-3 block text-sm">Got Questions?</span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-3" id="faq-container">
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="faq-toggle w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+<span class="font-bold text-sm md:text-base pr-4">How much does a website cost?</span>
+<span class="material-symbols-outlined faq-icon text-on-surface-variant shrink-0">expand_more</span>
+</button>
+<div class="faq-answer px-5">
+<p class="text-on-surface-variant text-sm pb-5 leading-relaxed">Our website packages start from ₹15,000/month. The exact cost depends on the number of pages, features needed, and complexity. We offer a free consultation to understand your needs and provide a custom quote — no obligation.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="faq-toggle w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+<span class="font-bold text-sm md:text-base pr-4">How long does it take to build a website?</span>
+<span class="material-symbols-outlined faq-icon text-on-surface-variant shrink-0">expand_more</span>
+</button>
+<div class="faq-answer px-5">
+<p class="text-on-surface-variant text-sm pb-5 leading-relaxed">Most websites are ready in 7–14 days. Complex projects with custom features may take 3–4 weeks. We believe in fast delivery so your business can start getting results quickly.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="faq-toggle w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+<span class="font-bold text-sm md:text-base pr-4">Will my website rank on Google?</span>
+<span class="material-symbols-outlined faq-icon text-on-surface-variant shrink-0">expand_more</span>
+</button>
+<div class="faq-answer px-5">
+<p class="text-on-surface-variant text-sm pb-5 leading-relaxed">Yes! Every website we build includes basic SEO setup — proper headings, meta tags, fast loading speed, and mobile optimization. For higher rankings, we offer dedicated Google SEO and Google Business Profile services.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="faq-toggle w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+<span class="font-bold text-sm md:text-base pr-4">Do you provide ongoing support after launch?</span>
+<span class="material-symbols-outlined faq-icon text-on-surface-variant shrink-0">expand_more</span>
+</button>
+<div class="faq-answer px-5">
+<p class="text-on-surface-variant text-sm pb-5 leading-relaxed">Absolutely. All our plans include ongoing support and updates. We don't just build and disappear — we stay with you to ensure your website keeps performing and generating leads for your business.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="faq-toggle w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+<span class="font-bold text-sm md:text-base pr-4">Can you manage our social media too?</span>
+<span class="material-symbols-outlined faq-icon text-on-surface-variant shrink-0">expand_more</span>
+</button>
+<div class="faq-answer px-5">
+<p class="text-on-surface-variant text-sm pb-5 leading-relaxed">Yes! Our Growth and Premium plans include complete Instagram and Facebook management — content creation, posting, Reels, and even paid advertising to reach more customers in your area.</p>
+</div>
+</div>
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="faq-toggle w-full flex items-center justify-between p-5 text-left" aria-expanded="false">
+<span class="font-bold text-sm md:text-base pr-4">What if I already have a website but it's outdated?</span>
+<span class="material-symbols-outlined faq-icon text-on-surface-variant shrink-0">expand_more</span>
+</button>
+<div class="faq-answer px-5">
+<p class="text-on-surface-variant text-sm pb-5 leading-relaxed">We specialize in website revamps! We'll redesign your existing website to look modern, load faster, and convert more visitors into customers. Book a free audit and we'll show you exactly what can be improved.</p>
+</div>
+</div>
+</div>
 </div>
 </section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-3xl mx-auto text-center bg-gradient-to-br from-primary-container/20 to-secondary-container/10 border border-primary/20 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-48 h-48 bg-primary/15 blur-[80px] -z-10"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary/10 blur-[80px] -z-10"></div>
+<h2 class="text-headline-lg-mobile md:text-headline-md font-bold text-on-surface mb-4">Ready to Grow Your Business Online?</h2>
+<p class="text-on-surface-variant mb-8 max-w-lg mx-auto">Stop losing customers to competitors with better websites. Let's build your online presence today.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+<a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-primary-container text-white rounded-xl font-bold hover:brightness-110 transition-all text-center active:scale-95 shadow-[0_0_25px_rgba(124,58,237,0.3)]">
+Skip The Wait. Book It Now!
+</a>
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 border border-emerald/40 text-emerald rounded-xl font-bold hover:bg-emerald/10 transition-all flex items-center justify-center gap-2 active:scale-95">
+<span class="material-symbols-outlined text-[20px]">chat</span>WhatsApp Us
+</a>
+</div>
+</div>
+</section>
+
 </main>
+
 <!-- Footer -->
-<footer class="bg-surface-container-lowest w-full py-stack-xl border-t border-outline-variant/10">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="col-span-1 md:col-span-1 space-y-6">
-<div class="text-headline-md font-headline-md font-bold text-on-surface">Naizo</div>
-<p class="font-body-md text-body-md text-on-surface-variant pr-4">Precision-engineered performance for the next generation of DTC brands.</p>
-</div>
-<div class="space-y-4">
-<p class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Company</p>
-<div class="flex flex-col space-y-2">
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="index.html">Home</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="about.html">About</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="services.html">Services</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="blogs.html">Blogs</a>
-</div>
-</div>
-<div class="space-y-4">
-<p class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Growth</p>
-<div class="flex flex-col space-y-2">
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="case-studies.html">Case Studies</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="pricing.html">Pricing</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="contact.html">Contact</a>
+<footer class="w-full py-16 md:py-20 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-on-surface mb-4">Naizo</div>
+<p class="text-on-surface-variant text-sm mb-4">Your digital growth partner. We help local businesses get more customers through modern websites and smart marketing.</p>
+<div class="space-y-2 text-sm">
+<a href="tel:+919546059823" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">call</span>+91 9546059823
+</a>
+<a href="mailto:hello@NAIZO.IN" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">mail</span>hello@NAIZO.IN
+</a>
+<p class="flex items-start gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] mt-0.5 shrink-0">location_on</span>Bihta, Patna, Bihar 801103
+</p>
 </div>
 </div>
-<div class="space-y-4">
-<p class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-widest">Legal</p>
-<div class="flex flex-col space-y-2">
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="legal.html">Privacy Policy</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="legal.html">Terms of Service</a>
+<div>
+<h4 class="font-bold text-primary text-sm mb-4 uppercase tracking-wider">Company</h4>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="index.html">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="about.html">About</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="services.html">Services</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="case-studies.html">Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary text-sm mb-4 uppercase tracking-wider">Resources</h4>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="pricing.html">Pricing</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="blogs.html">Blogs</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="contact.html">Contact</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#faq">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary text-sm mb-4 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-2.5 text-sm">
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="legal.html">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="legal.html">Terms of Service</a></li>
+</ul>
+<div class="mt-6">
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/30 text-emerald rounded-lg text-sm hover:bg-emerald/20 transition-all">
+<span class="material-symbols-outlined text-[18px]">chat</span>Chat on WhatsApp
+</a>
 </div>
 </div>
 </div>
-<div class="mt-stack-xl pt-8 border-t border-outline-variant/5 text-center px-margin-mobile">
-<p class="font-body-md text-body-md text-outline">Â© 2026 Naizo. All rights reserved. Built for the Indian Market.</p>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-12 pt-6 border-t border-outline-variant/10 text-center">
+<p class="text-on-surface-variant text-xs">&copy; 2026 Naizo. All rights reserved. Made with ❤️ in Bihar, India.</p>
 </div>
 </footer>
-<script>
-    document.addEventListener("DOMContentLoaded", (event) => {
-        gsap.to(".gsap-reveal", {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power3.out",
-            delay: 0.2
-        });
 
-        const btn = document.getElementById("mobile-menu-btn");
-        const menu = document.getElementById("mobile-menu");
-        if(btn && menu) {
-            btn.addEventListener("click", () => {
-                if (menu.classList.contains("hidden")) {
-                    menu.classList.remove("hidden");
-                    menu.classList.add("flex", "flex-col");
-                    setTimeout(() => menu.classList.remove("opacity-0"), 10);
-                    btn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    menu.classList.add("opacity-0");
-                    setTimeout(() => {
-                        menu.classList.add("hidden");
-                        menu.classList.remove("flex", "flex-col");
-                    }, 300);
-                    btn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
-                    document.body.style.overflow = '';
-                }
-            });
-        }
-    });
+<!-- ===== STICKY MOBILE CTA BAR ===== -->
+<div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 p-2 hidden sticky-bar">
+<div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+<a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 py-2.5 bg-emerald/10 border border-emerald/30 rounded-xl text-emerald active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="text-[11px] font-bold">WhatsApp</span>
+</a>
+<a href="tel:+919546059823" class="flex flex-col items-center gap-1 py-2.5 bg-secondary/10 border border-secondary/30 rounded-xl text-secondary active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">call</span>
+<span class="text-[11px] font-bold">Call Now</span>
+</a>
+<a href="contact.html" class="flex flex-col items-center gap-1 py-2.5 bg-primary-container text-white rounded-xl active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+<span class="text-[11px] font-bold">Book Now</span>
+</a>
+</div>
+</div>
+
+<!-- ===== SCHEMA MARKUP ===== -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naizo",
+    "description": "Digital marketing and web development agency helping local businesses grow online in Bihar, India.",
+    "url": "https://naizo.in",
+    "telephone": "+919546059823",
+    "email": "hello@NAIZO.IN",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bihta",
+        "addressLocality": "Patna",
+        "addressRegion": "Bihar",
+        "postalCode": "801103",
+        "addressCountry": "IN"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "25.5760",
+        "longitude": "84.8753"
+    },
+    "priceRange": "₹15,000 - ₹50,000/month",
+    "areaServed": ["Patna", "Bihar", "India"],
+    "serviceType": ["Web Development", "Digital Marketing", "Social Media Marketing", "SEO"],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47"
+    }
+}
 </script>
-</body></html>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {"@type": "Question", "name": "How much does a website cost?", "acceptedAnswer": {"@type": "Answer", "text": "Our website packages start from ₹15,000/month. The exact cost depends on the number of pages, features needed, and complexity. We offer a free consultation to understand your needs and provide a custom quote."}},
+        {"@type": "Question", "name": "How long does it take to build a website?", "acceptedAnswer": {"@type": "Answer", "text": "Most websites are ready in 7–14 days. Complex projects with custom features may take 3–4 weeks."}},
+        {"@type": "Question", "name": "Will my website rank on Google?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Every website we build includes basic SEO setup — proper headings, meta tags, fast loading speed, and mobile optimization. For higher rankings, we offer dedicated Google SEO services."}},
+        {"@type": "Question", "name": "Do you provide ongoing support after launch?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. All our plans include ongoing support and updates. We stay with you to ensure your website keeps performing and generating leads."}},
+        {"@type": "Question", "name": "Can you manage our social media too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Our Growth and Premium plans include complete Instagram and Facebook management — content creation, posting, Reels, and paid advertising."}},
+        {"@type": "Question", "name": "What if I already have a website but it's outdated?", "acceptedAnswer": {"@type": "Answer", "text": "We specialize in website revamps! We'll redesign your existing website to look modern, load faster, and convert more visitors into customers."}}
+    ]
+}
+</script>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    // GSAP Animations
+    gsap.to(".gsap-reveal", {
+        opacity: 1, y: 0, duration: 0.8,
+        stagger: 0.15, ease: "power3.out", delay: 0.1
+    });
+
+    // Mobile Menu Toggle
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    if(btn && menu) {
+        btn.addEventListener("click", () => {
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                menu.classList.add("flex", "flex-col");
+                setTimeout(() => menu.classList.remove("opacity-0"), 10);
+                btn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add("opacity-0");
+                setTimeout(() => {
+                    menu.classList.add("hidden");
+                    menu.classList.remove("flex", "flex-col");
+                }, 300);
+                btn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
+    // Sticky CTA Bar — show after scrolling past hero
+    const stickyCta = document.getElementById("sticky-cta");
+    if (stickyCta) {
+        let lastScroll = 0;
+        window.addEventListener("scroll", () => {
+            const scrollY = window.scrollY;
+            if (scrollY > 500) {
+                stickyCta.classList.remove("hidden");
+            } else {
+                stickyCta.classList.add("hidden");
+            }
+            lastScroll = scrollY;
+        }, { passive: true });
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll(".faq-toggle").forEach(toggle => {
+        toggle.addEventListener("click", () => {
+            const answer = toggle.nextElementSibling;
+            const icon = toggle.querySelector(".faq-icon");
+            const isOpen = answer.classList.contains("open");
+            // Close all others
+            document.querySelectorAll(".faq-answer").forEach(a => a.classList.remove("open"));
+            document.querySelectorAll(".faq-icon").forEach(i => i.classList.remove("open"));
+            document.querySelectorAll(".faq-toggle").forEach(t => t.setAttribute("aria-expanded", "false"));
+            // Toggle current
+            if (!isOpen) {
+                answer.classList.add("open");
+                icon.classList.add("open");
+                toggle.setAttribute("aria-expanded", "true");
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
