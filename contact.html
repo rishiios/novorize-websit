@@ -35,6 +35,16 @@
     .map-container iframe { width: 100%; height: 100%; border: 0; filter: grayscale(100%) invert(90%) contrast(1.2); }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="E72lioIgi1ZsJPufDiMCHsNGytm5CTIKvQHy9ja5WDA" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPFJFGRTXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YPFJFGRTXM');
+</script>
 </head>
 <body class="bg-background text-on-surface">
 
@@ -282,4 +292,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     document.querySelectorAll(".faq-toggle").forEach(t=>{t.addEventListener("click",()=>{const a=t.nextElementSibling,i=t.querySelector(".faq-icon"),o=a.classList.contains("open");document.querySelectorAll(".faq-answer").forEach(x=>x.classList.remove("open"));document.querySelectorAll(".faq-icon").forEach(x=>x.classList.remove("open"));if(!o){a.classList.add("open");i.classList.add("open")}})});
 });
 </script>
+<!-- Analytics Tracking -->
+<script src="tracking.js"></script>
 </body></html>

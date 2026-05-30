@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
@@ -117,6 +117,16 @@
           },
         }
       </script>
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="E72lioIgi1ZsJPufDiMCHsNGytm5CTIKvQHy9ja5WDA" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPFJFGRTXM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YPFJFGRTXM');
+</script>
 </head>
 <body class="bg-background text-on-surface font-body-md overflow-x-hidden">
 <!-- TopNavBar -->
@@ -229,17 +239,17 @@
 <div class="bg-surface-container-high p-6 rounded-2xl border border-outline-variant/10">
 <h4 class="font-label-md text-primary mb-3">Direct Information</h4>
 <ul class="space-y-2 text-label-sm">
-<li class="flex items-start gap-2">â€¢ Full name and professional title</li>
-<li class="flex items-start gap-2">â€¢ Business email and contact numbers</li>
-<li class="flex items-start gap-2">â€¢ Billing and payment credentials</li>
+<li class="flex items-start gap-2">• Full name and professional title</li>
+<li class="flex items-start gap-2">• Business email and contact numbers</li>
+<li class="flex items-start gap-2">• Billing and payment credentials</li>
 </ul>
 </div>
 <div class="bg-surface-container-high p-6 rounded-2xl border border-outline-variant/10">
 <h4 class="font-label-md text-secondary-fixed-dim mb-3">Automated Data</h4>
 <ul class="space-y-2 text-label-sm">
-<li class="flex items-start gap-2">â€¢ IP Address and geolocation</li>
-<li class="flex items-start gap-2">â€¢ Browser type and OS versions</li>
-<li class="flex items-start gap-2">â€¢ Interaction metrics and heatmaps</li>
+<li class="flex items-start gap-2">• IP Address and geolocation</li>
+<li class="flex items-start gap-2">• Browser type and OS versions</li>
+<li class="flex items-start gap-2">• Interaction metrics and heatmaps</li>
 </ul>
 </div>
 </div>
@@ -389,7 +399,7 @@
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-outline-variant/5">
-<p class="text-on-surface-variant text-label-sm text-center">© 2026 Naizo. All rights reserved. Built for the Indian Market.</p>
+<p class="text-on-surface-variant text-label-sm text-center">� 2026 Naizo. All rights reserved. Built for the Indian Market.</p>
 </div>
 </footer>
 <script>
@@ -434,15 +444,15 @@
                 const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(legalForm) });
                 const data = await res.json();
                 if (data.success) {
-                    status.textContent = '✅ Inquiry sent successfully!';
+                    status.textContent = '? Inquiry sent successfully!';
                     status.className = 'text-sm py-2 px-4 rounded-xl text-tertiary bg-tertiary/10';
                     legalForm.reset();
                 } else {
-                    status.textContent = '❌ Failed. Please try again.';
+                    status.textContent = '? Failed. Please try again.';
                     status.className = 'text-sm py-2 px-4 rounded-xl text-error bg-error/10';
                 }
             } catch (err) {
-                status.textContent = '❌ Network error.';
+                status.textContent = '? Network error.';
                 status.className = 'text-sm py-2 px-4 rounded-xl text-error bg-error/10';
             } finally {
                 btn.disabled = false;
@@ -476,4 +486,6 @@
 <script>
 (function(){var s=document.getElementById("sticky-cta");if(s){window.addEventListener("scroll",function(){s.classList.toggle("hidden",window.scrollY<300)},{passive:true})}})();
 </script>
+<!-- Analytics Tracking -->
+<script src="tracking.js"></script>
 </body></html>
