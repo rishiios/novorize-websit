@@ -37,7 +37,9 @@ export default function LoginPage({ searchParams }: { searchParams: { error: str
           </div>
           
           {searchParams?.error && (
-            <p className="text-error text-sm text-center">Invalid email or password.</p>
+            <p className="text-error text-sm text-center bg-error/10 p-2 rounded border border-error/20">
+              {searchParams.error === 'true' ? 'Invalid email or password.' : searchParams.error}
+            </p>
           )}
 
           <button
