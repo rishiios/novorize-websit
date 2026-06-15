@@ -13,14 +13,6 @@ const initialState = {
 
 export function LoginForm({ initialError }: { initialError?: string }) {
   const [state, formAction] = useFormState(login, initialState)
-  const router = useRouter()
-
-  useEffect(() => {
-    if (state.success) {
-      router.push('/admin')
-      router.refresh()
-    }
-  }, [state.success, router])
 
   const displayError = state.error || initialError
 

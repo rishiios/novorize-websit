@@ -12,6 +12,8 @@ export async function login(prevState: any, formData: FormData) {
     password: formData.get('password') as string,
   }
 
+  let success = false;
+
   try {
     const { error } = await supabase.auth.signInWithPassword(data)
     
@@ -20,11 +22,15 @@ export async function login(prevState: any, formData: FormData) {
       return { error: error.message, success: false }
     }
     
-    revalidatePath('/admin', 'layout')
-    return { error: null, success: true }
+    success = true;
   } catch (err: any) {
     console.error("Caught Server Action Error:", err)
     return { error: err.message || "An unexpected error occurred during sign in", success: false }
+  }
+
+  if (success) {
+    revalidatePath('/admin', 'layout')
+    redirect('/admin')
   }
 }
 
