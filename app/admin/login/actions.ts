@@ -4,7 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/utils/supabase/server'
 
-export async function login(formData: FormData) {
+export async function login(prevState: any, formData: FormData) {
   const supabase = createClient()
 
   const data = {
@@ -12,14 +12,20 @@ export async function login(formData: FormData) {
     password: formData.get('password') as string,
   }
 
-  const { error } = await supabase.auth.signInWithPassword(data)
-
-  if (error) {
-    return redirect(`/admin/login?error=${encodeURIComponent(error.message)}`)
+  try {
+    const { error } = await supabase.auth.signInWithPassword(data)
+    
+    if (error) {
+      console.error("Supabase Auth Error:", error)
+      return { error: error.message, success: false }
+    }
+    
+    revalidatePath('/admin', 'layout')
+    return { error: null, success: true }
+  } catch (err: any) {
+    console.error("Caught Server Action Error:", err)
+    return { error: err.message || "An unexpected error occurred during sign in", success: false }
   }
-
-  revalidatePath('/admin', 'layout')
-  redirect('/admin')
 }
 
 export async function logout() {
