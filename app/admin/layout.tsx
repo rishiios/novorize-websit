@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { logout } from './login/actions'
-import { LayoutDashboard, FileText, IndianRupee, Users, MessageSquare, Briefcase, Settings, LogOut, ArrowLeft } from 'lucide-react'
+import { LayoutDashboard, FileText, IndianRupee, Users, MessageSquare, Briefcase, Settings, LogOut, ArrowLeft, Inbox, UserCheck } from 'lucide-react'
 
 export default function AdminLayout({
   children,
@@ -38,6 +38,14 @@ export default function AdminLayout({
           <Link href="/admin/case-studies" className="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-white hover:bg-surface-bright rounded-md transition-colors">
             <Briefcase size={20} />
             Case Studies
+          </Link>
+          <Link href="/admin/leads" className="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-white hover:bg-surface-bright rounded-md transition-colors">
+            <Inbox size={20} />
+            Leads
+          </Link>
+          <Link href="/admin/clients" className="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-white hover:bg-surface-bright rounded-md transition-colors">
+            <UserCheck size={20} />
+            Clients
           </Link>
           <Link href="/admin/settings" className="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-white hover:bg-surface-bright rounded-md transition-colors">
             <Settings size={20} />

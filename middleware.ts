@@ -18,7 +18,7 @@ export async function middleware(request: NextRequest) {
           return request.cookies.getAll()
         },
         setAll(cookiesToSet: { name: string; value: string; options: CookieOptions }[]) {
-          cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
+          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
           supabaseResponse = NextResponse.next({
             request,
           })
@@ -30,28 +30,8 @@ export async function middleware(request: NextRequest) {
     }
   )
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
-  // Protect the /admin routes except /admin/login
-  if (request.nextUrl.pathname.startsWith('/admin') && !request.nextUrl.pathname.startsWith('/admin/login')) {
-    if (!user) {
-      // Redirect to login
-      const url = request.nextUrl.clone()
-      url.pathname = '/admin/login'
-      return NextResponse.redirect(url)
-    }
-  }
-
-  // Redirect to dashboard if logged in user visits /admin/login
-  if (request.nextUrl.pathname === '/admin/login') {
-      if (user) {
-          const url = request.nextUrl.clone()
-          url.pathname = '/admin'
-          return NextResponse.redirect(url)
-      }
-  }
+  // Just refresh the session - no redirects from middleware
+  await supabase.auth.getUser()
 
   return supabaseResponse
 }

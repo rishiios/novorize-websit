@@ -1,13 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 import { createClient } from '@/utils/supabase/client'
 
 export function LoginForm({ initialError }: { initialError?: string }) {
   const [error, setError] = useState<string | undefined>(initialError)
   const [pending, setPending] = useState(false)
-  const router = useRouter()
   const supabase = createClient()
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -28,8 +26,7 @@ export function LoginForm({ initialError }: { initialError?: string }) {
       setError(authError.message)
       setPending(false)
     } else {
-      router.push('/admin')
-      router.refresh()
+      window.location.href = '/admin'
     }
   }
 
