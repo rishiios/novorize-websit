@@ -1,8 +1,6 @@
 'use client'
 
 import { useFormState } from 'react-dom'
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
 import { login } from './actions'
 import { SubmitButton } from './submit-button'
 
@@ -14,7 +12,7 @@ const initialState = {
 export function LoginForm({ initialError }: { initialError?: string }) {
   const [state, formAction] = useFormState(login, initialState)
 
-  const displayError = state.error || initialError
+  const displayError = state?.error || initialError
 
   return (
     <form action={formAction} className="space-y-4">
