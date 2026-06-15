@@ -1,4 +1,5 @@
 import { login } from './actions'
+import { SubmitButton } from './submit-button'
 
 export default function LoginPage({ searchParams }: { searchParams: { error: string } }) {
   return (
@@ -42,12 +43,7 @@ export default function LoginPage({ searchParams }: { searchParams: { error: str
             </p>
           )}
 
-          <button
-            type="submit"
-            className="w-full py-3 px-4 bg-primary text-black font-semibold rounded-lg hover:bg-primary/90 transition-colors mt-6"
-          >
-            Sign In
-          </button>
+          <SubmitButton />
         </form>
       </div>
     </div>
