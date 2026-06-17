@@ -1,15 +1,12 @@
-import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 
 export const metadata = {
   title: 'Pricing | NAIZO',
   description: 'Transparent pricing for websites and digital marketing plans.'
 };
-export default async function PricingPage() {
-  const supabase = createClient();
-  const { data: pricingPlans } = await supabase.from('pricing_plans').select('*').order('price', { ascending: true });
 
-  const monthlyPlans = pricingPlans && pricingPlans.length > 0 ? pricingPlans : [
+export default function PricingPage() {
+  const monthlyPlans = [
     { id: 1, name: 'Starter Plan', price: 15000, description: 'Basic digital presence & lead generation.', popular: false, features: ['Website Management', 'Google Business Profile Optimization', '10 Social Media Posts/mo', 'Basic Local SEO', 'Monthly Report'] },
     { id: 2, name: 'Growth Plan', price: 30000, description: 'Aggressive marketing for more walk-ins.', popular: true, features: ['Everything in Starter', '15 Social Media Posts/mo', 'Meta/Google Ads Setup & Management', 'Weekly Campaign Optimization', 'Bi-weekly Report'] },
     { id: 3, name: 'Premium Plan', price: 50000, description: 'Complete digital dominance in your city.', popular: false, features: ['Everything in Growth', '20 Posts + 4 Reels/mo', 'Advanced SEO & Content', 'Priority Support (Direct line)', 'WhatsApp Automation Setup'] }

@@ -1,10 +1,24 @@
+"use client";
+
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Contact Us | NAIZO',
-  description: 'Get a free consultation to grow your local business.'
-};
 export default function ContactPage() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const phone = formData.get('phone') as string;
+    const business_name = formData.get('business_name') as string;
+    const city = formData.get('city') as string;
+    const business_type = formData.get('business_type') as string;
+    const message = formData.get('message') as string;
+
+    const waText = `Hi Naizo,\n\nI want to get a free consultation.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Business:* ${business_name || 'N/A'}\n*City:* ${city || 'N/A'}\n*Type:* ${business_type}\n*Message:* ${message || 'N/A'}`;
+    const waUrl = `https://wa.me/919546059823?text=${encodeURIComponent(waText)}`;
+    
+    window.open(waUrl, '_blank');
+  };
+
   return (
     <main className="pt-16 md:pt-20">
       <section className="py-16 md:py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
@@ -43,7 +57,7 @@ export default function ContactPage() {
             <div className="glass-card p-6 md:p-8 rounded-3xl border-primary/20 shadow-[0_0_40px_rgba(124,58,237,0.05)] relative overflow-hidden">
               <h2 className="text-2xl font-bold text-on-surface mb-2">Get A Free Consultation</h2>
               <p className="text-on-surface-variant text-sm mb-6">Tell us about your business and we'll suggest the best next step. No pressure. No obligation.</p>
-              <form action="/api/contact" method="POST" className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div><label className="block text-xs font-bold text-on-surface-variant mb-1 ml-1 uppercase tracking-wider">Your Name *</label><input type="text" name="name" required className="w-full bg-surface-container/50 border border-outline-variant/30 rounded-xl px-4 py-3 text-sm focus:border-primary outline-none transition-all" /></div>
                   <div><label className="block text-xs font-bold text-on-surface-variant mb-1 ml-1 uppercase tracking-wider">Phone Number *</label><input type="tel" name="phone" required className="w-full bg-surface-container/50 border border-outline-variant/30 rounded-xl px-4 py-3 text-sm focus:border-primary outline-none transition-all" /></div>

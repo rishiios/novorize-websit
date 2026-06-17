@@ -1,22 +1,19 @@
-import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default async function Home() {
-  const supabase = createClient();
-  
-  // Fetch pricing plans dynamically
-  const { data: pricingPlans } = await supabase
-    .from('pricing_plans')
-    .select('*')
-    .order('price', { ascending: true });
+export default function Home() {
+  const pricingPlans = [
+    { id: 1, name: 'Starter Plan', price: 15000, description: 'Basic digital presence & lead generation.', popular: false, features: ['Website Management', 'Google Business Profile Optimization', '10 Social Media Posts/mo', 'Basic Local SEO', 'Monthly Report'] },
+    { id: 2, name: 'Growth Plan', price: 30000, description: 'Aggressive marketing for more walk-ins.', popular: true, features: ['Everything in Starter', '15 Social Media Posts/mo', 'Meta/Google Ads Setup & Management', 'Weekly Campaign Optimization', 'Bi-weekly Report'] },
+    { id: 3, name: 'Premium Plan', price: 50000, description: 'Complete digital dominance in your city.', popular: false, features: ['Everything in Growth', '20 Posts + 4 Reels/mo', 'Advanced SEO & Content', 'Priority Support (Direct line)', 'WhatsApp Automation Setup'] }
+  ];
 
-  // Fetch case studies for the "See Our Work" or "Revenue Outcomes"
-  const { data: caseStudies } = await supabase
-    .from('case_studies')
-    .select('*')
-    .order('created_at', { ascending: false })
-    .limit(4);
+  const caseStudies = [
+    { id: 1, title: 'Sunrise Public School — Online Admission Growth', category: 'Education', location: 'Patna', summary: 'Kaise ek school ne website banakar apne admissions 40% badha liye.', results: [{ value: '+40%', label: 'Inquiries' }, { value: '15+', label: 'Leads' }, { value: '#1', label: 'Rank' }] },
+    { id: 2, title: 'Care Plus Clinic — WhatsApp Appointment Booking Boost', category: 'Healthcare', location: 'Bihta', summary: 'Kaise ek clinic ne zero online presence se 20+ weekly WhatsApp bookings achieve ki.', results: [{ value: '+300%', label: 'Bookings' }, { value: '20+', label: 'Leads' }, { value: '4.8★', label: 'Rating' }] },
+    { id: 3, title: 'Spice Garden Restaurant — Social Media Transformation', category: 'Restaurant', location: 'Patna', summary: 'Kaise ek restaurant ne Instagram marketing se apne daily customers double kiye.', results: [{ value: '5,000+', label: 'Followers' }, { value: '2x', label: 'Customers' }, { value: '₹0', label: 'Ad Spend' }] },
+    { id: 4, title: 'Elite Gym & Fitness — Local Search Domination', category: 'Fitness', location: 'Danapur', summary: 'Google My Business optimize karke kaise gym ne apne local walk-ins double kiye.', results: [{ value: '2x', label: 'Walk-ins' }, { value: '#1', label: 'Map Rank' }, { value: '50+', label: 'Reviews' }] }
+  ];
 
   return (
     <main>

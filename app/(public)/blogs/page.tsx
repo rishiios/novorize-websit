@@ -1,15 +1,12 @@
-import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 
 export const metadata = {
   title: 'Blogs & Growth Tips | NAIZO',
   description: 'Simple guides to help you grow your business online.'
 };
-export default async function BlogsPage() {
-  const supabase = createClient();
-  const { data: blogs } = await supabase.from('blogs').select('*').order('created_at', { ascending: false });
 
-  const articles = blogs && blogs.length > 0 ? blogs : [
+export default function BlogsPage() {
+  const articles = [
     { id: 1, title: 'How Schools Can Get More Admissions With a Simple Website', category: 'For Schools', readTime: '6-8 min', summary: 'Parents pehle Google aur website dekhte hain, phir admission form bharte hain. Is article me hum batate hain kaise ek simple website se bhi admissions badh sakte hain.' },
     { id: 2, title: 'Why Every Clinic Needs a WhatsApp-Ready Website', category: 'For Clinics', readTime: '5-7 min', summary: 'Patients aaj kal call karne ke bajaye WhatsApp prefer karte hain. Janiye kaise WhatsApp buttons + simple website se weekly bookings increase hoti hain.' },
     { id: 3, title: 'Google Business Profile: Free Tool That Brings You Local Customers', category: 'For Local Businesses', readTime: '5-6 min', summary: '"Shop near me" search karne par kaun dikhai deta hai? Google Business Profile ka simple use karke aap local search me top par aa sakte hain.' }

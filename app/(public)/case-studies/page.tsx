@@ -1,15 +1,12 @@
-import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 
 export const metadata = {
   title: 'Case Studies | NAIZO',
   description: 'Real results for real businesses. See our success stories.'
 };
-export default async function CaseStudiesPage() {
-  const supabase = createClient();
-  const { data: caseStudies } = await supabase.from('case_studies').select('*').order('created_at', { ascending: false });
 
-  const cases = caseStudies && caseStudies.length > 0 ? caseStudies : [
+export default function CaseStudiesPage() {
+  const cases = [
     { id: 1, title: 'Sunrise Public School — Online Admission Growth', category: 'Education', location: 'Patna', summary: 'Kaise ek school ne website banakar apne admissions 40% badha liye.', results: [{ value: '+40%', label: 'Inquiries' }, { value: '15+', label: 'Leads' }, { value: '#1', label: 'Rank' }] },
     { id: 2, title: 'Care Plus Clinic — WhatsApp Appointment Booking Boost', category: 'Healthcare', location: 'Bihta', summary: 'Kaise ek clinic ne zero online presence se 20+ weekly WhatsApp bookings achieve ki.', results: [{ value: '+300%', label: 'Bookings' }, { value: '20+', label: 'Leads' }, { value: '4.8★', label: 'Rating' }] },
     { id: 3, title: 'Spice Garden Restaurant — Social Media Transformation', category: 'Restaurant', location: 'Patna', summary: 'Kaise ek restaurant ne Instagram marketing se apne daily customers double kiye.', results: [{ value: '5,000+', label: 'Followers' }, { value: '2x', label: 'Customers' }, { value: '₹0', label: 'Ad Spend' }] }

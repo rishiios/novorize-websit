@@ -1,4 +1,3 @@
-import { createClient } from '@/utils/supabase/server';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -6,14 +5,13 @@ export const metadata = {
   title: 'About Us | NAIZO',
   description: 'Learn about NAIZO, your premium performance marketing agency in India.'
 };
-export default async function AboutPage() {
-  const supabase = createClient();
-  
-  // Fetch team members dynamically
-  const { data: teamMembers } = await supabase
-    .from('team_members')
-    .select('*')
-    .order('created_at', { ascending: true });
+
+export default function AboutPage() {
+  const teamMembers = [
+    { id: 1, name: 'Aman Singh', role: 'Head of Growth', bio: 'Expert in scaling DTC brands through data-driven media buying and conversion optimization.', image_url: null, linkedin: '#' },
+    { id: 2, name: 'Priya Sharma', role: 'Creative Director', bio: 'Specializes in high-converting ad creatives and brand storytelling for the Indian market.', image_url: null, linkedin: '#' },
+    { id: 3, name: 'Rahul Verma', role: 'Technical SEO Lead', bio: 'Masters the algorithms to ensure our clients dominate organic search results.', image_url: null, linkedin: '#' }
+  ];
 
   const borderColors = ['border-primary', 'border-secondary-container', 'border-tertiary'];
   const textColors = ['text-primary', 'text-secondary-container', 'text-tertiary'];
