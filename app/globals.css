@@ -37,6 +37,29 @@
   .hero-glow {
     background: radial-gradient(circle at center, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
   }
+  .primary-gradient-text {
+    background: linear-gradient(135deg, #d2bbff 0%, #00eefc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .primary-button-gradient {
+    background: linear-gradient(135deg, #7c3aed 0%, #5a00c6 100%);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.25);
+  }
+  .inner-glow {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .gradient-text-primary {
+    background: linear-gradient(to right, #d2bbff, #adc6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-glow-violet {
+    box-shadow: 0 0 40px -10px rgba(124, 58, 237, 0.3);
+  }
+  .bg-glow-cyan {
+    box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.3);
+  }
 }
 
 @layer utilities {

@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 export default function AdminDashboard() {
   const [loading, setLoading] = useState(true)
   const [user, setUser] = useState<any>(null)
+  const [stats, setStats] = useState({ blogs: 0, leads: 0, cases: 0, pricing: 0 })
   const router = useRouter()
   const supabase = createClient()
 
@@ -17,11 +18,37 @@ export default function AdminDashboard() {
         router.replace('/admin/login')
       } else {
         setUser(user)
+        await loadStats()
         setLoading(false)
       }
     }
     checkAuth()
   }, [])
+
+  async function loadStats() {
+    try {
+      const [
+        { count: blogsCount },
+        { count: leadsCount },
+        { count: casesCount },
+        { count: pricingCount }
+      ] = await Promise.all([
+        supabase.from('blogs').select('*', { count: 'exact', head: true }),
+        supabase.from('leads').select('*', { count: 'exact', head: true }),
+        supabase.from('case_studies').select('*', { count: 'exact', head: true }),
+        supabase.from('pricing_plans').select('*', { count: 'exact', head: true })
+      ])
+      
+      setStats({
+        blogs: blogsCount || 0,
+        leads: leadsCount || 0,
+        cases: casesCount || 0,
+        pricing: pricingCount || 0
+      })
+    } catch (e) {
+      console.error('Error loading stats:', e)
+    }
+  }
 
   if (loading) {
     return (
@@ -59,19 +86,19 @@ export default function AdminDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="glass-card p-6 rounded-2xl border border-outline-variant">
             <p className="text-sm text-on-surface-variant mb-1">Total Blogs</p>
-            <p className="text-2xl font-bold text-white">0</p>
+            <p className="text-2xl font-bold text-white">{stats.blogs}</p>
           </div>
           <div className="glass-card p-6 rounded-2xl border border-outline-variant">
             <p className="text-sm text-on-surface-variant mb-1">New Leads</p>
-            <p className="text-2xl font-bold text-white">0</p>
+            <p className="text-2xl font-bold text-white">{stats.leads}</p>
           </div>
           <div className="glass-card p-6 rounded-2xl border border-outline-variant">
             <p className="text-sm text-on-surface-variant mb-1">Case Studies</p>
-            <p className="text-2xl font-bold text-white">0</p>
+            <p className="text-2xl font-bold text-white">{stats.cases}</p>
           </div>
           <div className="glass-card p-6 rounded-2xl border border-outline-variant">
             <p className="text-sm text-on-surface-variant mb-1">Pricing Plans</p>
-            <p className="text-2xl font-bold text-white">0</p>
+            <p className="text-2xl font-bold text-white">{stats.pricing}</p>
           </div>
         </div>
         
