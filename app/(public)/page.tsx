@@ -28,7 +28,7 @@ export default function Home() {
             Get More Customers Online With A <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Modern Website</span> & Smart Marketing
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-            Naizo aapke liye complete digital growth system banata hai — websites, social media, Google presence aur ads, sab ek jagah. Hum schools, clinics, restaurants aur local businesses ko WhatsApp inquiries aur customers laane me madad karte hain.
+            Nexora Digital aapke liye complete digital growth system banata hai — websites, social media, Google presence aur ads, sab ek jagah. Hum schools, clinics, restaurants aur local businesses ko WhatsApp inquiries aur customers laane me madad karte hain.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
             <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary-container to-secondary-container text-white rounded-xl font-headline-md text-label-md font-bold shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:brightness-110 transition-all text-center">

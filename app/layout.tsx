@@ -5,16 +5,16 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NAIZO | Websites & Digital Marketing For Local Businesses",
-  description: "NAIZO helps schools, clinics, restaurants and local businesses get more customers through websites, social media marketing and local SEO.",
+  title: "Nexora Digital | Websites & Digital Marketing For Local Businesses",
+  description: "Nexora Digital helps schools, clinics, restaurants and local businesses get more customers through websites, social media marketing and local SEO.",
   openGraph: {
-    title: "NAIZO | Websites & Digital Marketing For Local Businesses",
-    description: "NAIZO helps schools, clinics, restaurants and local businesses get more customers through websites, social media marketing and local SEO.",
-    url: "https://naizo.in",
-    siteName: "NAIZO",
+    title: "Nexora Digital | Websites & Digital Marketing For Local Businesses",
+    description: "Nexora Digital helps schools, clinics, restaurants and local businesses get more customers through websites, social media marketing and local SEO.",
+    url: "https://patnasocialcult.in",
+    siteName: "Nexora Digital",
     images: [
       {
-        url: "https://naizo.in/social-preview.png",
+        url: "https://patnasocialcult.in/social-preview.png",
         width: 1200,
         height: 630,
       },
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NAIZO | Websites & Digital Marketing For Local Businesses",
-    description: "NAIZO helps schools, clinics, restaurants and local businesses get more customers through websites, social media marketing and local SEO.",
-    images: ["https://naizo.in/social-preview.png"],
+    title: "Nexora Digital | Websites & Digital Marketing For Local Businesses",
+    description: "Nexora Digital helps schools, clinics, restaurants and local businesses get more customers through websites, social media marketing and local SEO.",
+    images: ["https://patnasocialcult.in/social-preview.png"],
   },
 };
 

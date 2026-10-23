@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About Us | NAIZO',
-  description: 'Learn about NAIZO, your premium performance marketing agency in India.'
+  title: 'About Us | Nexora Digital',
+  description: 'Learn about Nexora Digital, your premium performance marketing agency in India.'
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div>
             <span className="text-secondary-container font-label-md tracking-widest block mb-4 uppercase">The Visionaries Behind Your Growth</span>
             <h1 className="font-display-lg text-display-lg mb-8 leading-tight">Aapke Business Ka Digital <span className="primary-gradient-text">Growth Partner.</span></h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">Naizo isliye shuru hua kyunki humne dekha ki agencies sirf baate karti hain, results nahi deti. Hum sirf ads nahi chalate; hum ek complete revenue-generating system banate hain jisse aapka business har mahine badhe.</p>
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">Nexora Digital isliye shuru hua kyunki humne dekha ki agencies sirf baate karti hain, results nahi deti. Hum sirf ads nahi chalate; hum ek complete revenue-generating system banate hain jisse aapka business har mahine badhe.</p>
             <div className="flex flex-wrap gap-12 border-l border-primary/20 pl-8">
               <div>
                 <div className="font-headline-lg text-headline-lg text-primary">₹50Cr+</div>
@@ -54,7 +54,7 @@ export default function AboutPage() {
             <h3 className="font-headline-md text-headline-md text-primary mb-8 underline decoration-primary-container decoration-4 underline-offset-8">Rishi Yadav</h3>
             <div className="space-y-6 text-on-surface-variant font-body-md">
               <p>Saalon tak alag-alag digital marketing campaigns manage karne ke baad, humne ek cheez notice ki — zyada tar local businesses aur brands ko samajh hi nahi aata ki unka marketing budget kahan waste ho raha hai. Agencies unhe technical terms bolke confuse kar deti hain.</p>
-              <p>Isiliye humne Naizo shuru kiya, ek simple aur transparent approach ke sath. Humara maksad sirf "likes" ya "views" laana nahi hai. Humara clear focus hai aapke liye real business inquiries, footfall, aur sales lana. Hum aisi strategies banate hain jo sach me kaam aati hain.</p>
+              <p>Isiliye humne Nexora Digital shuru kiya, ek simple aur transparent approach ke sath. Humara maksad sirf "likes" ya "views" laana nahi hai. Humara clear focus hai aapke liye real business inquiries, footfall, aur sales lana. Hum aisi strategies banate hain jo sach me kaam aati hain.</p>
             </div>
             <div className="mt-12 p-8 glass-card rounded-xl">
               <p className="italic text-on-surface font-body-lg">"Humein 'likes' nahi chahiye, humein numbers se matlab hai. Agar aapka revenue nahi badh raha, toh humari marketing ka koi fayda nahi."</p>

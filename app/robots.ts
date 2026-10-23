@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/api/'],
     },
-    sitemap: 'https://naizo.in/sitemap.xml',
+    sitemap: 'https://patnasocialcult.in/sitemap.xml',
   }
 }

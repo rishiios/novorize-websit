@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-surface-container-lowest w-full py-16 md:py-24 border-t border-outline-variant/10">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="col-span-1 md:col-span-1 space-y-6">
-          <div className="text-[24px] font-bold text-on-surface">Naizo</div>
+          <div className="text-[24px] font-bold text-on-surface">Nexora Digital</div>
           <p className="text-base text-on-surface-variant pr-4">Redefining performance marketing for high-growth enterprises in the Indian market.</p>
           <div className="flex gap-4">
             <a className="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined text-[20px]">language</span></a>
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-16 pt-8 border-t border-outline-variant/5 text-center px-margin-mobile">
-        <p className="text-sm text-on-surface-variant">© {new Date().getFullYear()} Naizo. All rights reserved. Built for the Indian Market.</p>
+        <p className="text-sm text-on-surface-variant">© {new Date().getFullYear()} Nexora Digital. All rights reserved. Built for the Indian Market.</p>
       </div>
     </footer>
   );

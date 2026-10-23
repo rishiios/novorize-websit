@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Blogs & Growth Tips | NAIZO',
+  title: 'Blogs & Growth Tips | Nexora Digital',
   description: 'Simple guides to help you grow your business online.'
 };
 

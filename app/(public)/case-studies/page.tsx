@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Case Studies | NAIZO',
+  title: 'Case Studies | Nexora Digital',
   description: 'Real results for real businesses. See our success stories.'
 };
 
@@ -18,7 +18,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-3xl mx-auto">
           <span className="text-primary font-label-md tracking-widest uppercase mb-4 block text-sm">Case Studies</span>
           <h1 className="text-[28px] md:text-headline-lg font-extrabold text-on-surface leading-tight mb-6">Real Results for <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Real Businesses</span></h1>
-          <p className="text-on-surface-variant text-base md:text-body-lg leading-relaxed">Dekho kaise Bihar ke local businesses ne Naizo ke saath apni online presence build ki aur real customers gain kiye.</p>
+          <p className="text-on-surface-variant text-base md:text-body-lg leading-relaxed">Dekho kaise Bihar ke local businesses ne Nexora Digital ke saath apni online presence build ki aur real customers gain kiye.</p>
         </div>
       </section>
 

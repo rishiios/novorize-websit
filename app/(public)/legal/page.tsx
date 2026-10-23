@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy & Terms | NAIZO',
+  title: 'Privacy & Terms | Nexora Digital',
   description: 'Our privacy policy and terms of service.'
 };
 export default function LegalPage() {
@@ -13,7 +13,7 @@ export default function LegalPage() {
           <span className="text-primary font-label-md tracking-widest uppercase mb-4 block text-sm">Legal Center</span>
           <h1 className="font-headline-lg text-[32px] md:text-headline-lg mb-6 leading-tight font-extrabold text-on-surface">Privacy Policy &amp; Terms of Service</h1>
           <p className="text-on-surface-variant text-base md:text-body-lg mb-8 leading-relaxed">
-            Your trust is our most valuable asset. We are committed to protecting your data and being transparent about how we operate at Naizo.
+            Your trust is our most valuable asset. We are committed to protecting your data and being transparent about how we operate at Nexora Digital.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex items-center gap-2 bg-surface-container px-4 py-2 rounded-full border border-outline-variant/20">
@@ -66,7 +66,7 @@ export default function LegalPage() {
                 <span className="material-symbols-outlined text-primary">info</span> 1. Introduction
               </h2>
               <div className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
-                <p>Welcome to Naizo. This Privacy Policy describes how Naizo ("we", "us", or "our") collects, uses, and shares your personal information when you visit our website or use our performance marketing and CRM services.</p>
+                <p>Welcome to Nexora Digital. This Privacy Policy describes how Nexora Digital ("we", "us", or "our") collects, uses, and shares your personal information when you visit our website or use our performance marketing and CRM services.</p>
                 <p>By accessing or using our services, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.</p>
               </div>
             </div>
@@ -133,9 +133,9 @@ export default function LegalPage() {
               </h2>
               <div className="space-y-4 text-on-surface-variant text-sm md:text-base leading-relaxed">
                 <p className="font-bold text-on-surface">1. Acceptance of Terms</p>
-                <p>By using the Naizo platform, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you are prohibited from using our services.</p>
+                <p>By using the Nexora Digital platform, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you are prohibited from using our services.</p>
                 <p className="font-bold text-on-surface">2. Intellectual Property</p>
-                <p>All content, features, and functionality of the Naizo platform are the exclusive property of Naizo and are protected by international copyright and trademark laws.</p>
+                <p>All content, features, and functionality of the Nexora Digital platform are the exclusive property of Nexora Digital and are protected by international copyright and trademark laws.</p>
                 <p className="font-bold text-on-surface">3. User Conduct</p>
                 <p>Users are responsible for all activity under their account and must not use the service for any illegal or unauthorized purpose.</p>
               </div>
@@ -171,8 +171,8 @@ export default function LegalPage() {
               </p>
               <form id="legal-form" className="grid grid-cols-1 md:grid-cols-2 gap-6" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="dcd2c644-fc1d-4911-bf4b-31b2b1f18673" />
-                <input type="hidden" name="subject" value="Legal Inquiry - Naizo" />
-                <input type="hidden" name="from_name" value="Naizo Legal Page" />
+                <input type="hidden" name="subject" value="Legal Inquiry - Nexora Digital" />
+                <input type="hidden" name="from_name" value="Nexora Digital Legal Page" />
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-on-surface-variant ml-1">Your Email</label>
                   <input name="email" required className="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-xl px-4 py-3 text-sm focus:border-secondary outline-none transition-all" placeholder="name@company.com" type="email" />

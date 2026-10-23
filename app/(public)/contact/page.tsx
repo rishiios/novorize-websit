@@ -13,7 +13,7 @@ export default function ContactPage() {
     const business_type = formData.get('business_type') as string;
     const message = formData.get('message') as string;
 
-    const waText = `Hi Naizo,\n\nI want to get a free consultation.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Business:* ${business_name || 'N/A'}\n*City:* ${city || 'N/A'}\n*Type:* ${business_type}\n*Message:* ${message || 'N/A'}`;
+    const waText = `Hi Nexora Digital,\n\nI want to get a free consultation.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Business:* ${business_name || 'N/A'}\n*City:* ${city || 'N/A'}\n*Type:* ${business_type}\n*Message:* ${message || 'N/A'}`;
     const waUrl = `https://wa.me/919546059823?text=${encodeURIComponent(waText)}`;
     
     window.open(waUrl, '_blank');
@@ -36,13 +36,13 @@ export default function ContactPage() {
             <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-3"><span className="material-symbols-outlined text-[24px]">call</span></div>
             <h3 className="font-bold text-sm mb-1">Call Us</h3><p className="text-on-surface-variant text-xs">+91 9546059823</p>
           </a>
-          <a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" className="glass-card p-6 rounded-2xl flex flex-col items-center text-center hover:bg-surface-variant/30 transition-all active:scale-95">
+          <a href="https://wa.me/919546059823?text=Hi%20Nexora%20Digital%2C%20I%20want%20to%20grow%20my%20business%20online." target="_blank" className="glass-card p-6 rounded-2xl flex flex-col items-center text-center hover:bg-surface-variant/30 transition-all active:scale-95">
             <div className="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center text-emerald mb-3"><span className="material-symbols-outlined text-[24px]">chat</span></div>
             <h3 className="font-bold text-sm mb-1">WhatsApp Us</h3><p className="text-on-surface-variant text-xs">Fastest response</p>
           </a>
-          <a href="mailto:hello@NAIZO.IN" className="glass-card p-6 rounded-2xl flex flex-col items-center text-center hover:bg-surface-variant/30 transition-all active:scale-95">
+          <a href="mailto:hello@nexoradigital.com" className="glass-card p-6 rounded-2xl flex flex-col items-center text-center hover:bg-surface-variant/30 transition-all active:scale-95">
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-3"><span className="material-symbols-outlined text-[24px]">mail</span></div>
-            <h3 className="font-bold text-sm mb-1">Email Us</h3><p className="text-on-surface-variant text-xs">hello@NAIZO.IN</p>
+            <h3 className="font-bold text-sm mb-1">Email Us</h3><p className="text-on-surface-variant text-xs">hello@nexoradigital.com</p>
           </a>
           <div className="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
             <div className="w-12 h-12 rounded-full bg-amber/10 flex items-center justify-center text-amber mb-3"><span className="material-symbols-outlined text-[24px]">location_on</span></div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
             </div>
             <div className="space-y-8">
               <div>
-                <h3 className="font-bold text-lg mb-4 flex items-center gap-2"><span className="material-symbols-outlined text-primary text-[22px]">verified_user</span>Why Contact Naizo?</h3>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2"><span className="material-symbols-outlined text-primary text-[22px]">verified_user</span>Why Contact Nexora Digital?</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="glass-card p-3 rounded-xl flex items-center gap-2 text-sm"><span className="material-symbols-outlined text-emerald text-[18px]">check_circle</span>Fast Response</div>
                   <div className="glass-card p-3 rounded-xl flex items-center gap-2 text-sm"><span className="material-symbols-outlined text-emerald text-[18px]">check_circle</span>Local Business Expertise</div>

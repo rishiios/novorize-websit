@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Services | NAIZO',
+  title: 'Services | Nexora Digital',
   description: 'Explore our premium digital marketing, SEO, and web development services.'
 };
 export default function ServicesPage() {
@@ -13,7 +13,7 @@ export default function ServicesPage() {
         <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary-container/20 blur-[120px] rounded-full -z-10"></div>
         <span className="font-label-md text-primary tracking-widest uppercase mb-4 block">Our Services</span>
         <h1 className="font-display-lg text-display-lg mb-6 leading-tight">Everything Your Business Needs to <br/><span className="gradient-text-primary">Grow Online.</span></h1>
-        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Naizo aapke liye complete digital growth system banata hai — websites, social media, Google presence aur ads, sab ek jagah.</p>
+        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Nexora Digital aapke liye complete digital growth system banata hai — websites, social media, Google presence aur ads, sab ek jagah.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <div className="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full border border-outline-variant/30">
             <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>

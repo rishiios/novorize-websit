@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Pricing | NAIZO',
+  title: 'Pricing | Nexora Digital',
   description: 'Transparent pricing for websites and digital marketing plans.'
 };
 
@@ -109,7 +109,7 @@ export default function PricingPage() {
           <p className="text-on-surface-variant mb-8 max-w-lg mx-auto text-sm">Book a free consultation. Hum aapke business ke hisaab se best plan suggest karenge.</p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
             <Link href="/contact" className="w-full sm:w-auto px-8 py-4 bg-primary-container text-white rounded-xl font-bold hover:brightness-110 transition-all text-center active:scale-95 text-sm">Book Free Consultation</Link>
-            <a href="https://wa.me/919546059823?text=Hi%20Naizo%2C%20I%20need%20help%20with%20pricing." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 border border-emerald/40 text-emerald rounded-xl font-bold hover:bg-emerald/10 transition-all flex items-center justify-center gap-2 active:scale-95 text-sm"><span className="material-symbols-outlined text-[20px]">chat</span>WhatsApp Us</a>
+            <a href="https://wa.me/919546059823?text=Hi%20Nexora%20Digital%2C%20I%20need%20help%20with%20pricing." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 border border-emerald/40 text-emerald rounded-xl font-bold hover:bg-emerald/10 transition-all flex items-center justify-center gap-2 active:scale-95 text-sm"><span className="material-symbols-outlined text-[20px]">chat</span>WhatsApp Us</a>
           </div>
         </div>
       </section>
